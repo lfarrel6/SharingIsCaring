@@ -1,4 +1,4 @@
-# FileServerV2
+# Sharing is Caring :sparkles:
 
 ### Distributed file server written in Haskell.
 
