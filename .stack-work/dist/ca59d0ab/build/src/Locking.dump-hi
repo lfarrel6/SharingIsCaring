@@ -1,0 +1,170 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-29 23:39:52.7572673 UTC
+
+interface FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:Locking 8002
+  interface hash: 25428ef39a6702b11a3eae25373dba7d
+  ABI hash: 0c8227193825f0eacb49595eee0d2be4
+  export-list hash: a5ae4bab3fdbc6d42b7d2b090a48f834
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f8b847b675a91348479da0c1f8d4b9ba
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Locking.available
+  Locking.readOnly
+  Locking.unavailable
+  Locking.FileState
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+84aee55bf1c540a1f5efd1de2951a655
+  $fShowFileState :: GHC.Show.Show Locking.FileState
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Locking.FileState
+                  Locking.$fShowFileState_$cshowsPrec
+                  Locking.$fShowFileState_$cshow
+                  Locking.$fShowFileState_$cshowList -}
+73ca5848843af41fd5b228150935b5bd
+  $fShowFileState1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Unavailable"#) -}
+11334e0f94c9f2e00ed88090991caea0
+  $fShowFileState2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ReadOnly"#) -}
+97680f0ca94cf534ab4637ee99e78f96
+  $fShowFileState3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Available"#) -}
+84aee55bf1c540a1f5efd1de2951a655
+  $fShowFileState_$cshow :: Locking.FileState -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Locking.FileState) ->
+                 case x of wild {
+                   Locking.Available -> Locking.$fShowFileState3
+                   Locking.ReadOnly -> Locking.$fShowFileState2
+                   Locking.Unavailable -> Locking.$fShowFileState1 }) -}
+84aee55bf1c540a1f5efd1de2951a655
+  $fShowFileState_$cshowList :: [Locking.FileState] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Locking.FileState
+                   Locking.$w$cshowsPrec) -}
+84aee55bf1c540a1f5efd1de2951a655
+  $fShowFileState_$cshowsPrec ::
+    GHC.Types.Int -> Locking.FileState -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Locking.FileState)
+                   (w2 :: GHC.Base.String) ->
+                 Locking.$w$cshowsPrec w1 w2) -}
+8beca1dc8721e30af2b3bf0d0bc637f1
+  $tc'Available :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17720070697801272712##
+                   9490799184880634418##
+                   Locking.$trModule
+                   Locking.$tc'Available1) -}
+8fd15a12082810705b244f853d593a41
+  $tc'Available1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Available"#) -}
+68413388ddc333a2a5beefc6bb5674f0
+  $tc'ReadOnly :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11781636867449422779##
+                   5275149282761284280##
+                   Locking.$trModule
+                   Locking.$tc'ReadOnly1) -}
+4a9f7656b5499faaa62120905a527248
+  $tc'ReadOnly1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ReadOnly"#) -}
+0bdc090d20ce4af17d72a1de4a89ae73
+  $tc'Unavailable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11505641313004502158##
+                   3828672091411380295##
+                   Locking.$trModule
+                   Locking.$tc'Unavailable1) -}
+8e13470325f91f38500b7bbd07f6b02c
+  $tc'Unavailable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Unavailable"#) -}
+cb12cbab5b7f4e699dafbb705fca6253
+  $tcFileState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1053931787145532010##
+                   13783985788829343669##
+                   Locking.$trModule
+                   Locking.$tcFileState1) -}
+bc1fb909dc2de6d96a379775e9d75564
+  $tcFileState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FileState"#) -}
+300ea9704945f0036ba7ec748d97cb30
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Locking.$trModule2
+                   Locking.$trModule1) -}
+2cc5e0e7c2304c37d79ef5f73ab27583
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Locking"#) -}
+3f11ef02b0d89b04a59b008c01f08b13
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv"#) -}
+84aee55bf1c540a1f5efd1de2951a655
+  $w$cshowsPrec ::
+    Locking.FileState -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Locking.FileState) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Locking.Available
+                   -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState3 w1
+                   Locking.ReadOnly
+                   -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState2 w1
+                   Locking.Unavailable
+                   -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState1 w1 }) -}
+84aee55bf1c540a1f5efd1de2951a655
+  data FileState = Available | ReadOnly | Unavailable
+fb00406b7aed95d598ae5fbeb8cee195
+  available :: Locking.FileState
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) Locking.Available -}
+0b23fe56544b9bed152721536c24a1d5
+  readOnly :: Locking.FileState
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) Locking.ReadOnly -}
+f9c305d839b91ed57b50e1298c6344bb
+  unavailable :: Locking.FileState
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) Locking.Unavailable -}
+instance [safe] GHC.Show.Show [Locking.FileState]
+  = Locking.$fShowFileState
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
