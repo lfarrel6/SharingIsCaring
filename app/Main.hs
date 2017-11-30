@@ -11,5 +11,5 @@ main = do
    Just cfg -> do
     --putStrLn "Successful invocation"
     ds <- newDirectory
-    startServer ds (directoryPort cfg) 0 0
+    startServer ds (directoryPort cfg) (startPort cfg) (nServers cfg)
    Nothing  -> putStrLn "Bad Parameters."

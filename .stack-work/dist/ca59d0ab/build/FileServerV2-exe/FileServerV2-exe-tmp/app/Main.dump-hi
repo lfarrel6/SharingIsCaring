@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-30 20:52:27.6603793 UTC
+2017-11-30 21:30:43.8539773 UTC
 
 interface main@main:Main 8002
-  interface hash: ab19d31acfed178537e38e4047a80ad1
-  ABI hash: 7c4af423dfc945808fa1abfa795c67ca
-  export-list hash: 8d980919b0a14b80e135bb48dc267840
+  interface hash: 5707dbf4f6b48cc63b44c8de012d8f9b
+  ABI hash: 9be1c6256f809d400aa63b5c5a145cbe
+  export-list hash: 7471670a8c214648aba4eb751ac49dc5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5d14d12aad2792642bae218a4995e627
   sig of: Nothing
@@ -14,7 +14,7 @@ interface main@main:Main 8002
 exports:
   Main.main
 module dependencies:
-package dependencies: FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv
+package dependencies: FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK
                       array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
                       binary-0.8.3.0@binary-0.8.3.0
                       bytestring-0.10.8.1@bytestring-0.10.8.1
@@ -52,8 +52,8 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
-import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:Config 90d63117942eb9922816b23fbc53ba8a
-import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:DirectoryServer 1da24bbcc237ff4d1daf8ea458f97f0a
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK:Config 5224a322827129588b0c6a925c6acfd4
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK:DirectoryServer 0fb3ef59f3aa75e1ae62e0e69f23eb49
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
@@ -70,12 +70,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-83755f1a35f14c8fb19f4ec741d3747f
+5d579c87ded8d91596a52e63c2290445
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-ca2cf8bff4949d9b8572d3a4755b1dfd
+03a25c03d3cedc218254b5396824f7fb
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -96,12 +96,14 @@ ca2cf8bff4949d9b8572d3a4755b1dfd
                              (Data.Map.Base.Tip @ GHC.Types.Int @ FileServer.FileServer)
                              ipv of ds { (#,#) ipv2 ipv3 ->
                       DirectoryServer.$wstartServer
+                        ipv3
                         (Config.directoryPort cfg)
+                        (Config.startPort cfg)
                         ipv2 } } }) -}
 8c08532d1143796200bf216fc447bb60
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Bad Parameters."#) -}
-32683747e6d471d1618b0354d72b013f
+64d6f16ff69056b5b0b8ffb9c1e66eab
   main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

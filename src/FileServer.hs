@@ -1,6 +1,6 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module FileServer ( FileServer , newFileServer , initFileList , addFile ) where
+module FileServer ( FileServer , newFileServer , initFileList , addFile , startServer ) where
 
 import qualified File as F
 import qualified Data.Map as Map
@@ -8,18 +8,19 @@ import Data.Map (Map)
 import Control.Concurrent.STM
 import Data.Hashable
 import Network
+import System.IO
 
 data FileServer = FileServer
   { serverID      :: Int
   , directoryAddr :: FilePath
   , fileListing   :: TVar (Map Int F.File)
-  , port          :: PortNumber
+  , port          :: Int
   }
 
 instance Show FileServer where
   show fs@FileServer{..} = "[ServerID: " ++ show serverID ++ "]"
 
-newFileServer :: Int -> FilePath -> [F.File] -> PortNumber -> STM FileServer
+newFileServer :: Int -> FilePath -> [F.File] -> Int -> STM FileServer
 newFileServer id dir files portNum = do
   fileList <- newTVar $ initFileList files
   return FileServer { serverID      = id
@@ -55,3 +56,15 @@ addFile fs@FileServer{..} f@F.File{..} = do
       let fileRemoved = Map.delete fID files
           newListing  = Map.insert fID f fileRemoved
       writeTVar fileListing newListing
+
+startServer :: FileServer -> IO ()
+startServer fs@FileServer{..} = withSocketsDo $ do
+  sock <- listenOn $ portNum port
+  putStrLn $ "\t>[FileServer " ++ show serverID ++ "] listening on " ++ show port
+  listen sock
+  where
+   portNum n = PortNumber $ fromIntegral n
+   listen s = do
+    (handle, host, _) <- accept s
+    hPutStrLn handle $ "You have reached [File Server " ++ show serverID ++ "]"
+    listen s

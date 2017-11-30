@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-30 20:52:27.2958816 UTC
+2017-11-30 21:30:43.4860675 UTC
 
-interface FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:DirectoryServer 8002
-  interface hash: 12b87180abd2aecfd3fb72b552a7c61f
-  ABI hash: 1da24bbcc237ff4d1daf8ea458f97f0a
-  export-list hash: f8928d8c1eb24a5455be24a423ccaa20
+interface FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK:DirectoryServer 8002
+  interface hash: 67b43f1f8ce39efdc3685702c32ef1b4
+  ABI hash: 0fb3ef59f3aa75e1ae62e0e69f23eb49
+  export-list hash: 12cb1da39048027c84d42c6b5287ffb8
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b17205fb016d7ec64e27f697b667a002
   sig of: Nothing
@@ -53,14 +53,15 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
-import  -/  File ab28cabb9f09ce37cd24ca90103d7357
-  exports: a7a50674b698f8654485c9ec2cd5e781
-  newFile 586213bdbe8403f5b4055430b2431331
-import  -/  FileServer 59a64196e2ec2474a0b6d846b3d6652a
-  exports: d85de3dc43d32f5eb0814af70fdf5226
-  FileServer 65dac0c7d8f4cd414264c5b12dff4652
-  addFile 0e84807d6ba1b4a3bc151b46b0f7c1d3
-  newFileServer e234bc0157e1cbe510644e17c4359766
+import  -/  File 881a0a027669cbfcf8af6e3f25a7aba6
+  exports: 3b15c228ea8e29014a36cfe41caa01d2
+  newFile 5740426200b363f1f46ac425df884fe6
+import  -/  FileServer 8709ac8007f87d51cd64ff8f9a7c689f
+  exports: 19e27c4e88ee2def35a6245af991c03d
+  FileServer c346a2d8e01e1c88e19368fb8c0866ec
+  addFile 00eab4c00bea518f33144415266343de
+  newFileServer 3b818c9ea61185423a02301824a7369e
+  startServer aa532fc953e50693a8381dde1797f721
 import  -/  base-4.9.1.0:Control.Concurrent e3f6962e2eee72e46a7f524818b5ed3e
 import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
 import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
@@ -80,46 +81,110 @@ import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network ccc7f9bd02df797c247d61468b8591fb
 import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket e2e659f1c7cc333004207b8e0bae86f5
 import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket.Internal 8ddd08415e264edcd03ad47a04f53d8d
-import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket.Types 4069a95f9ee733839da5467ed0ac257c
 import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Concurrent.STM d9d67004f2499de74f3785f434493839
-9d635605267a642b314f725c1d2e3a66
+47e2ceae78c154bad65b594f4bb863e0
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    DirectoryServer.$trModule2
                    DirectoryServer.$trModule1) -}
-910c4fd7351e2bd0612a10f88b05d2c2
+d9031742406275400ddb989556c28c65
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "DirectoryServer"#) -}
-4e424e2eac881fa509e44093ec1183a1
+69d6a06c261a4ebdef4986cc3f8b4634
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv"#) -}
-de025acf86b4808db4210d09d8a7225c
+                   "FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK"#) -}
+33d4dce6db246aa389282b899eba30e2
   $w$sgo10 ::
     GHC.Prim.Int#
     -> a1
     -> Data.Map.Base.Map GHC.Types.Int a1
     -> Data.Map.Base.Map GHC.Types.Int a1
   {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
-6c2839c9532c39e4538d3042f4477a4f
+53d2e80d4806cb11417732441b32a7c2
+  $wcreateFileServer ::
+    GHC.Prim.TVar#
+      GHC.Prim.RealWorld
+      (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <S,U><L,U(U)><L,U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.TVar#
+                            GHC.Prim.RealWorld
+                            (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer))
+                   (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.atomically#
+                        @ ()
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readTVar#
+                                @ GHC.Prim.RealWorld
+                                @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+                                ww
+                                s of ds1 { (#,#) ipv ipv1 ->
+                         case GHC.Prim.newTVar#
+                                @ (Data.Map.Base.Map GHC.Types.Int File.File)
+                                @ GHC.Prim.RealWorld
+                                DirectoryServer.someFunc7
+                                ipv of ds { (#,#) ipv2 ipv3 ->
+                         case FileServer.$wstartServer w w1 ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                         case GHC.Prim.writeTVar#
+                                @ GHC.Prim.RealWorld
+                                @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+                                ww
+                                (case w of ww1 { GHC.Types.I# ww2 ->
+                                 DirectoryServer.$w$sgo10
+                                   @ FileServer.FileServer
+                                   ww2
+                                   (FileServer.FileServer
+                                      ww1
+                                      (GHC.CString.unpackAppendCString#
+                                         "../data/"#
+                                         (case GHC.Show.$wshowSignedInt
+                                                 0#
+                                                 ww2
+                                                 (GHC.Types.[]
+                                                    @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                          GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                                      (GHC.Conc.Sync.TVar
+                                         @ (Data.Map.Base.Map GHC.Types.Int File.File)
+                                         ipv3)
+                                      w1)
+                                   ipv1 })
+                                ipv4 of s2# { DEFAULT ->
+                         (# s2#, GHC.Tuple.() #) } } } })
+                        w2 of ds1 { (#,#) ipv ipv1 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   DirectoryServer.someFunc6
+                   GHC.Types.True
+                   ipv }) -}
+c3e24747814bfcc03340df08ff464804
   $wpoly_go10 ::
     GHC.Prim.Int#
     -> Data.Map.Base.Map GHC.Types.Int a -> GHC.Base.Maybe a
   {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
-2fdd41b7e2c7e3b2ff0ec85e198e4d78
+4e8dae2ceafea2555d89fe1d98feeea5
   $wstartServer ::
-    GHC.Types.Int
+    GHC.Prim.TVar#
+      GHC.Prim.RealWorld
+      (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 2, Strictness: <L,U(U)><S,U>, Inline: [0] -}
-a2ac0f517fa0cce8fd4118f0dbe6914e
+  {- Arity: 4, Strictness: <S,U><L,U(U)><L,U(U)><S,U>, Inline: [0] -}
+3ed538e39983cc060f14d5791b8f361f
   type DirectoryServer =
     GHC.Conc.Sync.TVar
       (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-37c8d10a87351c0caa0450c98e0b52a3
+555674ba6395d6499cbce5b35af393d4
   newDirectory :: GHC.Types.IO DirectoryServer.DirectoryServer
   {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -128,7 +193,7 @@ a2ac0f517fa0cce8fd4118f0dbe6914e
                 (Sym (GHC.Types.N:IO[0]
                           <GHC.Conc.Sync.TVar
                              (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)>_R)) -}
-38d6661846487a06a85a357d601c2185
+548dd2d6cf9d9119eec3ab9852e9e1d4
   newDirectory1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -146,14 +211,14 @@ a2ac0f517fa0cce8fd4118f0dbe6914e
                     GHC.Conc.Sync.TVar
                       @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
                       ipv1 #) }) -}
-08fe8a1297a029a3dc495590ac31e3e5
+343859845d1189fdb8f7b6024c1c9ec6
   someFunc :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 DirectoryServer.someFunc1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-efe471aedfe1e11fa639cdbe38738a95
+60d13db39afc23e685feb30514b42131
   someFunc1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -164,47 +229,16 @@ efe471aedfe1e11fa639cdbe38738a95
                         @ GHC.Prim.RealWorld
                         (Data.Map.Base.Tip @ GHC.Types.Int @ FileServer.FileServer)
                         s of ds { (#,#) ipv ipv1 ->
-                 case GHC.Prim.atomically#
-                        @ ()
-                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                         case GHC.Prim.readTVar#
-                                @ GHC.Prim.RealWorld
-                                @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-                                ipv1
-                                s1 of ds1 { (#,#) ipv2 ipv3 ->
-                         case GHC.Prim.newTVar#
-                                @ (Data.Map.Base.Map GHC.Types.Int File.File)
-                                @ GHC.Prim.RealWorld
-                                DirectoryServer.someFunc9
-                                ipv2 of ds2 { (#,#) ipv4 ipv5 ->
-                         case GHC.Prim.writeTVar#
-                                @ GHC.Prim.RealWorld
-                                @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-                                ipv1
-                                (DirectoryServer.$w$sgo10
-                                   @ FileServer.FileServer
-                                   0#
-                                   (FileServer.FileServer
-                                      DirectoryServer.someFunc_id
-                                      DirectoryServer.someFunc7
-                                      (GHC.Conc.Sync.TVar
-                                         @ (Data.Map.Base.Map GHC.Types.Int File.File)
-                                         ipv5)
-                                      DirectoryServer.someFunc6)
-                                   ipv3)
-                                ipv4 of s2# { DEFAULT ->
-                         (# s2#, GHC.Tuple.() #) } } })
-                        ipv of ds1 { (#,#) ipv2 ipv3 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
+                 case DirectoryServer.$wcreateFileServer
+                        ipv1
                         DirectoryServer.someFunc5
-                        GHC.Types.True
-                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                        DirectoryServer.someFunc5
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         DirectoryServer.someFunc4
                         GHC.Types.True
-                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
                  case GHC.Prim.atomically#
                         @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
                         (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
@@ -213,17 +247,17 @@ efe471aedfe1e11fa639cdbe38738a95
                            @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
                            ipv1
                            eta)
-                        ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
                  case DirectoryServer.$wpoly_go10
                         @ FileServer.FileServer
                         0#
-                        ipv9 of wild {
+                        ipv7 of wild {
                    GHC.Base.Nothing
                    -> GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         DirectoryServer.someFunc3
                         GHC.Types.True
-                        ipv8
+                        ipv6
                    GHC.Base.Just fserver
                    -> case fserver of ww { FileServer.FileServer ww1 ww2 ww3 ww4 ->
                       case ww3 of ww5 { GHC.Conc.Sync.TVar ww6 ->
@@ -232,61 +266,36 @@ efe471aedfe1e11fa639cdbe38738a95
                         ww6
                         DirectoryServer.someFunc2
                         Locking.Available
-                        ipv8 } } } } } } } }) -}
-a3aaf6f8c40a80fccd3f12d62e101837
+                        ipv6 } } } } } } }) -}
+ff7b72573a94e7ea9bf9ff0200fd355d
   someFunc2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "../data/test.txt"#) -}
-0c8d163d6c8d0f9bb7ddaea377aa3d68
+d505a4110af81c53f088ac7bfffb27c9
   someFunc3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "weird, file server not found"#) -}
-e55658124ac7a3cbc63f64cea21fec7a
+3e5ece192a4c3ce3ba123d6a473b4ee0
   someFunc4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    ">Directory Server\n"#) -}
-600f5e41322434971b8dcc86ef35b1e5
-  someFunc5 :: [GHC.Types.Char]
+ab714b6be7e0af7a8a890534cebaafd0
+  someFunc5 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+e90cd297c38e4e4d651bd2fff2838db8
+  someFunc6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "New File Server Created"#) -}
-c78afac2e39f363dcab5a5c7d47592a4
-  someFunc6 :: Network.Socket.Types.PortNumber
-  {- Unfolding: (case {__pkg_ccall network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk htons GHC.Prim.Word#
-                                                                                                -> GHC.Prim.State#
-                                                                                                     GHC.Prim.RealWorld
-                                                                                                -> (# GHC.Prim.State#
-                                                                                                        GHC.Prim.RealWorld,
-                                                                                                      GHC.Prim.Word# #)}
-                        0##
-                        GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
-                 (GHC.Word.W16# (GHC.Prim.narrow16Word# ds1))
-                   `cast`
-                 (Sym (Network.Socket.Types.N:PortNumber[0])) }) -}
-b9920571c3f7efb8b72416235abcd3e2
-  someFunc7 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackAppendCString#
-                   "../data/"#
-                   DirectoryServer.someFunc8) -}
-7295f7814b05788dab9c420831789c7a
-  someFunc8 :: [GHC.Types.Char]
-  {- Unfolding: (case GHC.Show.$wshowSignedInt
-                        0#
-                        0#
-                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
-                 GHC.Types.: @ GHC.Types.Char ww5 ww6 }) -}
-7887b71808ba93e911df117f4ddaac83
-  someFunc9 :: Data.Map.Base.Map GHC.Types.Int File.File
+01a187cc4f20f87122b2a93c10c76edd
+  someFunc7 :: Data.Map.Base.Map GHC.Types.Int File.File
   {- Unfolding: (FileServer.init' (GHC.Types.[] @ File.File)) -}
-0e412027af6b0a97f4872b4a70b067bd
-  someFunc_id :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-96cfd265c6e7ab26d1520027133654c3
+4b6c3376ad9b3ecf5b84963abfddd31b
   startServer ::
     DirectoryServer.DirectoryServer
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.IO ()
-  {- Arity: 5, Strictness: <L,A><L,U(U)><L,A><L,A><S,U>,
+  {- Arity: 5, Strictness: <S(S),1*U(U)><L,U(U)><L,U(U)><L,A><S,U>,
      Unfolding: InlineRule (0, True, True)
                 DirectoryServer.startServer1
                   `cast`
@@ -295,7 +304,7 @@ b9920571c3f7efb8b72416235abcd3e2
                  ->_R <GHC.Types.Int>_R
                  ->_R <GHC.Types.Int>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-a1293d84ec6e1740967cfe8b47440b1c
+38f197f228b83cdd9cc01f77b0462959
   startServer1 ::
     DirectoryServer.DirectoryServer
     -> GHC.Types.Int
@@ -303,15 +312,16 @@ a1293d84ec6e1740967cfe8b47440b1c
     -> GHC.Types.Int
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 5, Strictness: <L,A><L,U(U)><L,A><L,A><S,U>,
+  {- Arity: 5, Strictness: <S(S),1*U(U)><L,U(U)><L,U(U)><L,A><S,U>,
      Inline: INLINE[0],
-     Unfolding: InlineRule (5, True, True)
+     Unfolding: InlineRule (5, True, False)
                 (\ (w :: DirectoryServer.DirectoryServer)
                    (w1 :: GHC.Types.Int)
                    (w2 :: GHC.Types.Int)
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 DirectoryServer.$wstartServer w1 w4) -}
+                 case w of ww { GHC.Conc.Sync.TVar ww1 ->
+                 DirectoryServer.$wstartServer ww1 w1 w2 w4 }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

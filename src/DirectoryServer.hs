@@ -3,7 +3,7 @@
 module DirectoryServer
     ( someFunc , startServer , newDirectory ) where
 
-import FileServer
+import qualified FileServer as FS
 import File
 import qualified Data.Map as Map
 import Data.Map (Map)
@@ -22,7 +22,7 @@ someFunc = do
   showDS newDS
   testServer newDS
 
-type DirectoryServer = TVar (Map Int FileServer)
+type DirectoryServer = TVar (Map Int FS.FileServer)
 
 newDirectory :: IO DirectoryServer
 newDirectory = newTVarIO Map.empty
@@ -30,7 +30,7 @@ newDirectory = newTVarIO Map.empty
 showDS :: DirectoryServer -> IO ()
 showDS ds = putStrLn $ ">Directory Server\n"
 
-createFileServer :: DirectoryServer -> Int -> PortNumber -> IO ()
+createFileServer :: DirectoryServer -> Int -> Int -> IO ()
 createFileServer ds id portNum = do
   -- create and reply
   createFS >> putStrLn "New File Server Created" 
@@ -38,7 +38,8 @@ createFileServer ds id portNum = do
    createFS = atomically $ do
     serverDir <- readTVar ds
     let dirPath = ("../data/" ++ show id)
-    newServer <- newFileServer id dirPath [] portNum
+    newServer <- FS.newFileServer id dirPath [] portNum
+    unsafeIOToSTM $ FS.startServer newServer
     let newServerDir  = Map.insert id newServer serverDir
     writeTVar ds newServerDir
 
@@ -47,10 +48,11 @@ testServer ds = do
   fs <- atomically $ readTVar ds
   case Map.lookup 0 fs of
    Nothing      -> putStrLn "weird, file server not found"
-   Just fserver -> addFile fserver $ newFile "../data/test.txt"
+   Just fserver -> FS.addFile fserver $ newFile "../data/test.txt"
 
 startServer :: DirectoryServer -> Int -> Int -> Int -> IO ()
 startServer ds dsPort fsPort nFS = withSocketsDo $ do
+  createFileServer ds 1 fsPort
   sock <- listenOn $ portNum dsPort
   putStrLn $ "\t>Directory Server starting on " ++ show dsPort
   listen sock

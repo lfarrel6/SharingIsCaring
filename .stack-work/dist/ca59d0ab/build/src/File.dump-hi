@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-30 17:10:19.1770742 UTC
+2017-11-30 21:17:24.3937928 UTC
 
-interface FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:File 8002
-  interface hash: 8b9ac01d2775c39a673ec3f402468083
-  ABI hash: ab28cabb9f09ce37cd24ca90103d7357
-  export-list hash: a7a50674b698f8654485c9ec2cd5e781
+interface FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK:File 8002
+  interface hash: 1df76196174778d38b0d09734d3de708
+  ABI hash: 881a0a027669cbfcf8af6e3f25a7aba6
+  export-list hash: 3b15c228ea8e29014a36cfe41caa01d2
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b17205fb016d7ec64e27f697b667a002
   sig of: Nothing
@@ -25,16 +25,16 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
-import  -/  Locking 0c8227193825f0eacb49595eee0d2be4
-  exports: a5ae4bab3fdbc6d42b7d2b090a48f834
-  FileState 84aee55bf1c540a1f5efd1de2951a655
-  available fb00406b7aed95d598ae5fbeb8cee195
+import  -/  Locking 69d7c84bccd3deeae080810fc8d24a70
+  exports: eeaf9d5040d0ae996c2ee2f954a36b02
+  FileState 8582701fed041a182853ab1c3670c29b
+  available 12e62a16adab0acc120f7db7c5042c1e
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
 import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  filepath-1.4.1.1@filepath-1.4.1.1:System.FilePath a1833828b05bb217a8b2e2d074b495d5
-cbb9e33ef807bf2997e23462e404e226
+c5bb4f21e7505d72aa2273b97f696277
   $fShowFile :: GHC.Show.Show File.File
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -43,20 +43,20 @@ cbb9e33ef807bf2997e23462e404e226
                   File.$fShowFile_$cshowsPrec
                   File.$fShowFile_$cshow
                   File.$fShowFile_$cshowList -}
-d5ffbdf91cf184f1be83713a59ba7d5f
+831b84ec3f765157e1da6081b7cc7388
   $fShowFile1 :: [GHC.Types.Char]
   {- HasNoCafRefs,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-cbb9e33ef807bf2997e23462e404e226
+c5bb4f21e7505d72aa2273b97f696277
   $fShowFile_$cshow :: File.File -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,A)>, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: File.File) ->
                  case w of ww { File.File ww1 ww2 -> File.$w$cshow ww1 }) -}
-cbb9e33ef807bf2997e23462e404e226
+c5bb4f21e7505d72aa2273b97f696277
   $fShowFile_$cshowList :: [File.File] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
@@ -66,7 +66,7 @@ cbb9e33ef807bf2997e23462e404e226
                    (File.$fShowFile_$cshowsPrec GHC.Show.shows22)
                    ls
                    s) -}
-cbb9e33ef807bf2997e23462e404e226
+c5bb4f21e7505d72aa2273b97f696277
   $fShowFile_$cshowsPrec ::
     GHC.Types.Int -> File.File -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U(1*U,A)><L,1*U>,
@@ -77,45 +77,45 @@ cbb9e33ef807bf2997e23462e404e226
                    (w2 :: GHC.Base.String) ->
                  case w1 of ww { File.File ww1 ww2 ->
                  File.$w$cshowsPrec ww1 w2 }) -}
-c2650ba4cec15b037c112f630d650e12
+d78859539d11207a985f628013712052
   $s$dmshowList1 :: File.File -> GHC.Base.String -> [GHC.Types.Char]
   {- Arity: 2,
      Unfolding: (\ (w :: File.File) (w1 :: GHC.Base.String)[OneShot] ->
                  case w of ww { File.File ww1 ww2 -> File.$w$cshowsPrec ww1 w1 }) -}
-59adb827b07a648933890fffa6a9479e
+611aaefa6bca69a1a718beafbec46b9c
   $tc'File :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   6633446198335630078##
-                   7180882756092750899##
+                   145308063077851097##
+                   15839085442995132940##
                    File.$trModule
                    File.$tc'File1) -}
-d2a598ed5a0f194d17a523162b34cec2
+ebd81af9e4b7b61bf54035e11caf3360
   $tc'File1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'File"#) -}
-74626cb5608bde496e18aaeccb9ebc15
+1a9813fa56a8b51ca01a963274ba982e
   $tcFile :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   9058105516870978681##
-                   16109339796110504339##
+                   13749199786410174390##
+                   16984281530871457068##
                    File.$trModule
                    File.$trModule1) -}
-61a4c4527bdbc33ee547c38ed4c8157d
+c69465437e1021e67f495b21a36753d3
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module File.$trModule2 File.$trModule1) -}
-f0c66568f9602e15af360b5f86dc0058
+0522c34a21609348e70fc0280c39189e
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "File"#) -}
-132b352549fb92ef34dbc623be82efeb
+f001c3095373a19d194fe43c2602ce92
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv"#) -}
-f9791a574d9a35c47611ad3390cdd99d
+                   "FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK"#) -}
+531120e0b4d9e7734f1db4ca35520810
   $w$cshow :: GHC.IO.FilePath -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
      Unfolding: (\ (ww :: GHC.IO.FilePath) ->
@@ -125,7 +125,7 @@ f9791a574d9a35c47611ad3390cdd99d
                       @ GHC.Types.Char
                       GHC.Show.shows6
                       (GHC.Show.showLitString ww File.$fShowFile1))) -}
-43ce610ca51286225dd4a0fa1e909ca3
+a74727da779eb89900ff074a776ee10e
   $w$cshowsPrec ::
     GHC.IO.FilePath -> GHC.Base.String -> [GHC.Types.Char]
   {- Arity: 2, Strictness: <L,1*U><L,1*U>, Inline: [0],
@@ -139,28 +139,28 @@ f9791a574d9a35c47611ad3390cdd99d
                          GHC.Show.shows6
                          (GHC.Show.showLitString ww File.$fShowFile1))
                       w)) -}
-cbb9e33ef807bf2997e23462e404e226
+c5bb4f21e7505d72aa2273b97f696277
   data File
     = File {path :: GHC.IO.FilePath, state :: Locking.FileState}
-b7c513376f1f61611b9311445956d473
+de44a19204e4fb5ed62efdf1e9a80a6f
   getPath :: File.File -> GHC.Base.String
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (f :: File.File) ->
                  case f of wild { File.File ds ds1 -> ds }) -}
-586213bdbe8403f5b4055430b2431331
+5740426200b363f1f46ac425df884fe6
   newFile :: GHC.Base.String -> File.File
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (loc :: GHC.Base.String) -> File.File loc Locking.Available) -}
-005607cb29685d8dd10d00a8d2407f3d
+6f21c601f346d3f576dacced14cc0c85
   path :: File.File -> GHC.IO.FilePath
   RecSel Left File.File
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: File.File) ->
                  case ds of wild { File.File ds1 ds2 -> ds1 }) -}
-c09664a591f0fc33add070f71ca16912
+529e3fdea93365ebe6439de6e372f74f
   state :: File.File -> Locking.FileState
   RecSel Left File.File
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,

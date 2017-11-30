@@ -31,6 +31,7 @@ library
                      , stm
                      , hashable
                      , filepath
+                     , mtl
   default-language:    Haskell2010
 
 executable FileServerV2-exe
