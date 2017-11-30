@@ -10,18 +10,22 @@ import Data.Hashable
 import Network
 
 data FileServer = FileServer
-  { serverID    :: Int
-  , fileListing :: TVar (Map Int F.File)
+  { serverID      :: Int
+  , directoryAddr :: FilePath
+  , fileListing   :: TVar (Map Int F.File)
+  , port          :: PortNumber
   }
 
 instance Show FileServer where
   show fs@FileServer{..} = "[ServerID: " ++ show serverID ++ "]"
 
-newFileServer :: Int -> [F.File] -> STM FileServer
-newFileServer id files = do
+newFileServer :: Int -> FilePath -> [F.File] -> PortNumber -> STM FileServer
+newFileServer id dir files portNum = do
   fileList <- newTVar $ initFileList files
-  return FileServer { serverID    = id
-                    , fileListing = fileList
+  return FileServer { serverID      = id
+                    , directoryAddr = dir
+                    , fileListing   = fileList
+                    , port          = portNum
                     }
 
 initFileList :: [F.File] -> Map Int F.File
@@ -41,7 +45,7 @@ addFile fs@FileServer{..} f@F.File{..} = do
     files <- readTVar fileListing
     let fID = hash path
     case Map.lookup fID files of
-     Nothing -> do 
+     Nothing -> do
       --insert
       let newListing = Map.insert fID f files
       writeTVar fileListing newListing

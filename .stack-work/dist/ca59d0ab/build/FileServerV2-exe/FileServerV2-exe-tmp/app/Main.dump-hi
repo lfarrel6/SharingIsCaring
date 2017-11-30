@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-29 23:45:30.2782426 UTC
+2017-11-30 20:52:27.6603793 UTC
 
 interface main@main:Main 8002
-  interface hash: c3d59a26afa9fa3a73ac0ddb9998a660
-  ABI hash: 4b81374cd6dcc67537b41cd7dc0a889b
+  interface hash: ab19d31acfed178537e38e4047a80ad1
+  ABI hash: 7c4af423dfc945808fa1abfa795c67ca
   export-list hash: 8d980919b0a14b80e135bb48dc267840
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5d14d12aad2792642bae218a4995e627
@@ -52,8 +52,11 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
-import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:DirectoryServer d1a800e96c7f6b49330acdc8d6fc5e2f
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:Config 90d63117942eb9922816b23fbc53ba8a
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-F3xgtrBdu9hCz43igDbNnv:DirectoryServer 1da24bbcc237ff4d1daf8ea458f97f0a
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
@@ -67,23 +70,45 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-4925ccf34439a791c07af7dbad5162a8
+83755f1a35f14c8fb19f4ec741d3747f
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
-                DirectoryServer.someFunc1
-                  `cast`
-                (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-cdf4182d70e8d5ebd73cbdc8d88ecd90
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ca2cf8bff4949d9b8572d3a4755b1dfd
   main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Config.getConfig1 s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main2
+                        GHC.Types.True
+                        ipv
+                   GHC.Base.Just cfg
+                   -> case GHC.Prim.newTVar#
+                             @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+                             @ GHC.Prim.RealWorld
+                             (Data.Map.Base.Tip @ GHC.Types.Int @ FileServer.FileServer)
+                             ipv of ds { (#,#) ipv2 ipv3 ->
+                      DirectoryServer.$wstartServer
+                        (Config.directoryPort cfg)
+                        ipv2 } } }) -}
+8c08532d1143796200bf216fc447bb60
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Bad Parameters."#) -}
+32683747e6d471d1618b0354d72b013f
+  main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   DirectoryServer.someFunc1
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

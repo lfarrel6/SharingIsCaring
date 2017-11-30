@@ -1,0 +1,1 @@
+stack exec fileserverv2-exe $1 $2
