@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-11-30 21:17:24.3141473 UTC
+2017-12-01 16:02:50.7864188 UTC
 
-interface FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK:Locking 8002
-  interface hash: 26aa31c9f2f7b2e740071ddeca54253f
-  ABI hash: 69d7c84bccd3deeae080810fc8d24a70
-  export-list hash: eeaf9d5040d0ae996c2ee2f954a36b02
+interface FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:Locking 8002
+  interface hash: 55ceb18ce34f1f17eb51761806c283ee
+  ABI hash: dcd0e010ec3f74a5c675365daf8bc973
+  export-list hash: 46460c7f27595c12e7e943da9e794d05
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f8b847b675a91348479da0c1f8d4b9ba
   sig of: Nothing
@@ -27,7 +27,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-8582701fed041a182853ab1c3670c29b
+34dee828a4768e9bab27d89b51d1792d
   $fShowFileState :: GHC.Show.Show Locking.FileState
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -36,16 +36,16 @@ import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
                   Locking.$fShowFileState_$cshowsPrec
                   Locking.$fShowFileState_$cshow
                   Locking.$fShowFileState_$cshowList -}
-ff0682ac1e7c069c0754ac260bf1015b
+6446384957f631eb0c3c588ea6859677
   $fShowFileState1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Unavailable"#) -}
-221b27bd1309ea5ff6996232b196d252
+9907a4ff53ccb4b475b6c2af3b094858
   $fShowFileState2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ReadOnly"#) -}
-0909133cf852e3533c11730fd02f6e09
+a30aaf338336b4f8460f2274b159f782
   $fShowFileState3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Available"#) -}
-8582701fed041a182853ab1c3670c29b
+34dee828a4768e9bab27d89b51d1792d
   $fShowFileState_$cshow :: Locking.FileState -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -54,13 +54,13 @@ ff0682ac1e7c069c0754ac260bf1015b
                    Locking.Available -> Locking.$fShowFileState3
                    Locking.ReadOnly -> Locking.$fShowFileState2
                    Locking.Unavailable -> Locking.$fShowFileState1 }) -}
-8582701fed041a182853ab1c3670c29b
+34dee828a4768e9bab27d89b51d1792d
   $fShowFileState_$cshowList :: [Locking.FileState] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Locking.FileState
                    Locking.$w$cshowsPrec) -}
-8582701fed041a182853ab1c3670c29b
+34dee828a4768e9bab27d89b51d1792d
   $fShowFileState_$cshowsPrec ::
     GHC.Types.Int -> Locking.FileState -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
@@ -69,70 +69,70 @@ ff0682ac1e7c069c0754ac260bf1015b
                    (w1 :: Locking.FileState)
                    (w2 :: GHC.Base.String) ->
                  Locking.$w$cshowsPrec w1 w2) -}
-21fbadc6c018f4e7d7b101eea1eb5e4b
+4b0eaba6014913dbea8dda34477ce409
   $tc'Available :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   14279688047069857860##
-                   16023113845046319901##
+                   6581554090687209819##
+                   6062168849169790846##
                    Locking.$trModule
                    Locking.$tc'Available1) -}
-60f7f97d4ad1b41f3071ed6951f801f4
+d92899e27dce438af43934e4a7cfeb9e
   $tc'Available1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Available"#) -}
-8b6af4c6799a72f4e7acb5553f26504a
+f26847e432ee778e4701066f024ded96
   $tc'ReadOnly :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   15543221538675817292##
-                   13268552216148633256##
+                   5505118406380183491##
+                   13577530197639958254##
                    Locking.$trModule
                    Locking.$tc'ReadOnly1) -}
-fd746e903fcb6042bf348bdf911754d7
+756da62b97f395b75d9cdf71d15ff843
   $tc'ReadOnly1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'ReadOnly"#) -}
-6d4949a19d5a9a709619575d319dfd58
+13d889b38e26f936a9313ea6784e08be
   $tc'Unavailable :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10920202963472231865##
-                   17843543341528145777##
+                   17952840077271832831##
+                   803526869771899494##
                    Locking.$trModule
                    Locking.$tc'Unavailable1) -}
-95d08bde3c06e39b8d0cf9ff006e77ab
+57a8e2d7dde95a6db0447346cb0d391c
   $tc'Unavailable1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Unavailable"#) -}
-43ea633e456b66d23a9de680f3a217fd
+2b0695b0c7e773ec6163cc391e6cf7d6
   $tcFileState :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   6156842963047792518##
-                   15543334701175481986##
+                   384104435404570748##
+                   10153170429875613221##
                    Locking.$trModule
                    Locking.$tcFileState1) -}
-597eee3be318cdf007559d3688f460a3
+e507298abdafe72e5f6b00665abb371f
   $tcFileState1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "FileState"#) -}
-a0b0ad2a4068210be8745494821c31de
+41c706b1d9b4f6a82694590f8706bd8b
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Locking.$trModule2
                    Locking.$trModule1) -}
-77572f17032fe8072d65f8a6e39f61c9
+1aa0cea98d57c224a696bbbe9dbe6f18
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Locking"#) -}
-dd57f9e8609ef8d954a7607d45d14041
+29a145a458385eda5fc3595b4b26e003
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "FileServerV2-0.1.0.0-1Temc20BNmO6CbLDWXQFSK"#) -}
-8582701fed041a182853ab1c3670c29b
+                   "FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR"#) -}
+34dee828a4768e9bab27d89b51d1792d
   $w$cshowsPrec ::
     Locking.FileState -> GHC.Base.String -> GHC.Base.String
   {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
@@ -144,17 +144,17 @@ dd57f9e8609ef8d954a7607d45d14041
                    -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState2 w1
                    Locking.Unavailable
                    -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState1 w1 }) -}
-8582701fed041a182853ab1c3670c29b
+34dee828a4768e9bab27d89b51d1792d
   data FileState = Available | ReadOnly | Unavailable
-12e62a16adab0acc120f7db7c5042c1e
+05ce40027d533307e4f6ba9a07326b8f
   available :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.Available -}
-8bcdb84ed548b4e2afff20298ea0b506
+51e7b6791082a367dfe6e554c2f93acc
   readOnly :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.ReadOnly -}
-59868cbc8549e63346540c0a3d3130bc
+fb2d4725734a3c9fa668e7d2d7c1d5a9
   unavailable :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.Unavailable -}

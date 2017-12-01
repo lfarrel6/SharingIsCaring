@@ -13,6 +13,7 @@ import Control.Monad
 import Network
 import Network.Socket (close)
 import System.IO
+import System.Directory
 import GHC.Conc
 
 someFunc :: IO ()
@@ -33,15 +34,14 @@ showDS ds = putStrLn $ ">Directory Server\n"
 createFileServer :: DirectoryServer -> Int -> Int -> IO ()
 createFileServer ds id portNum = do
   -- create and reply
-  createFS >> putStrLn "New File Server Created" 
+  createFS >> putStrLn "New File Server Created"
   where
-   createFS = atomically $ do
-    serverDir <- readTVar ds
-    let dirPath = ("../data/" ++ show id)
-    newServer <- FS.newFileServer id dirPath [] portNum
-    unsafeIOToSTM $ FS.startServer newServer
+   createFS = do
+    serverDir <- atomically $ readTVar ds
+    newServer <- FS.buildFileServer id portNum
+    FS.startServer newServer
     let newServerDir  = Map.insert id newServer serverDir
-    writeTVar ds newServerDir
+    atomically $ writeTVar ds newServerDir
 
 testServer :: DirectoryServer -> IO ()
 testServer ds = do

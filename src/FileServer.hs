@@ -1,6 +1,6 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module FileServer ( FileServer , newFileServer , initFileList , addFile , startServer ) where
+module FileServer ( FileServer , buildFileServer , initFileList , addFile , startServer ) where
 
 import qualified File as F
 import qualified Data.Map as Map
@@ -9,6 +9,8 @@ import Control.Concurrent.STM
 import Data.Hashable
 import Network
 import System.IO
+import System.Directory
+import Data.Time
 
 data FileServer = FileServer
   { serverID      :: Int
@@ -20,21 +22,31 @@ data FileServer = FileServer
 instance Show FileServer where
   show fs@FileServer{..} = "[ServerID: " ++ show serverID ++ "]"
 
-newFileServer :: Int -> FilePath -> [F.File] -> Int -> STM FileServer
-newFileServer id dir files portNum = do
-  fileList <- newTVar $ initFileList files
+buildFileServer :: Int -> Int -> IO FileServer
+buildFileServer id portNum = do
+  fs <- atomically $ newFileServer id portNum
+  let dp = (directoryAddr fs)
+  createDirectoryIfMissing True dp
+  creationTime <- (fmap show getCurrentTime)
+  writeFile (dp++"/serverDOB.txt") creationTime
+  files <- listDirectory dp
+  let contents = initFileList $ map F.newFile files
+  atomically $ writeTVar (fileListing fs) contents
+  return fs
+
+newFileServer :: Int -> Int -> STM FileServer
+newFileServer id portNum = do
+  let dirPath = ("data/" ++ show id)
+  fl <- newTVar Map.empty
   return FileServer { serverID      = id
-                    , directoryAddr = dir
-                    , fileListing   = fileList
+                    , directoryAddr = dirPath
+                    , fileListing   = fl
                     , port          = portNum
                     }
 
 initFileList :: [F.File] -> Map Int F.File
-initFileList files = init' files
-
-init' :: [F.File] -> Map Int F.File
-init' []     = Map.empty
-init' (x:xs) = Map.insert (hash $ F.getPath x) x $ init' xs
+initFileList []                = Map.empty
+initFileList (f@F.File{..}:fs) = Map.insert (hash path) f $ initFileList fs
 
 addFile :: FileServer -> F.File -> IO ()
 addFile fs@FileServer{..} f@F.File{..} = do
@@ -61,6 +73,9 @@ startServer :: FileServer -> IO ()
 startServer fs@FileServer{..} = withSocketsDo $ do
   sock <- listenOn $ portNum port
   putStrLn $ "\t>[FileServer " ++ show serverID ++ "] listening on " ++ show port
+  fMap <- atomically $ readTVar fileListing
+  let files = Map.elems fMap
+  mapM_ (\x -> putStrLn $ show x) files
   listen sock
   where
    portNum n = PortNumber $ fromIntegral n

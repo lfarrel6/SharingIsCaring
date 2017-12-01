@@ -11,9 +11,9 @@ data File = File
   }
 
 instance Show File where
-  show f@File{..} = "File at: " ++ show path
+  show f@File{..} = "[" ++ show path ++ "]"
 
-newFile :: String -> File
+newFile :: FilePath -> File
 newFile loc = File { path  = loc
                    , state = L.available
                    }
