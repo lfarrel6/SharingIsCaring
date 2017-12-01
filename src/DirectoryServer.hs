@@ -29,10 +29,10 @@ newDirectory :: IO DirectoryServer
 newDirectory = newTVarIO Map.empty
 
 showDS :: DirectoryServer -> IO ()
-showDS ds = putStrLn $ ">Directory Server\n"
+showDS ds = putStrLn ">Directory Server\n"
 
 createFileServer :: DirectoryServer -> Int -> Int -> IO ()
-createFileServer ds id portNum = do
+createFileServer ds id portNum =
   -- create and reply
   createFS >> putStrLn "New File Server Created"
   where

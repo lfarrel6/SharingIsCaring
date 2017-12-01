@@ -25,9 +25,9 @@ instance Show FileServer where
 buildFileServer :: Int -> Int -> IO FileServer
 buildFileServer id portNum = do
   fs <- atomically $ newFileServer id portNum
-  let dp = (directoryAddr fs)
+  let dp = directoryAddr fs
   createDirectoryIfMissing True dp
-  creationTime <- (fmap show getCurrentTime)
+  creationTime <- fmap show getCurrentTime
   writeFile (dp++"/serverDOB.txt") creationTime
   files <- listDirectory dp
   let contents = initFileList $ map F.newFile files
@@ -36,7 +36,7 @@ buildFileServer id portNum = do
 
 newFileServer :: Int -> Int -> STM FileServer
 newFileServer id portNum = do
-  let dirPath = ("data/" ++ show id)
+  let dirPath = "data/" ++ show id
   fl <- newTVar Map.empty
   return FileServer { serverID      = id
                     , directoryAddr = dirPath
@@ -75,7 +75,7 @@ startServer fs@FileServer{..} = withSocketsDo $ do
   putStrLn $ "\t>[FileServer " ++ show serverID ++ "] listening on " ++ show port
   fMap <- atomically $ readTVar fileListing
   let files = Map.elems fMap
-  mapM_ (\x -> putStrLn $ show x) files
+  mapM_ print files
   listen sock
   where
    portNum n = PortNumber $ fromIntegral n
