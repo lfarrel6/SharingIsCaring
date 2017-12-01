@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-01 17:32:10.4102767 UTC
+2017-12-01 18:27:05.7501753 UTC
 
 interface main@main:Main 8002
-  interface hash: 335e8a8852c5a2115a621f61e83c9075
-  ABI hash: a00a990bee838a8838381311dbb6d455
+  interface hash: c911c13445edb55dd5b88f796d674a28
+  ABI hash: 3ef3e3a573a904a354fabc02b99b8525
   export-list hash: d929501e14f54a5d15fd090584e64382
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5d14d12aad2792642bae218a4995e627
@@ -57,7 +57,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
 import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:Config 6708c9469436b7ec121266d57919449f
-import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:DirectoryServer e3350c1585b0cb977cf1ddc1c9efce4f
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:DirectoryServer 481d5f7c1fe742c738916fa110de046e
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
@@ -74,12 +74,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-8132aa4a3eb59e9b92755676f2ecc5cd
+16c8bde3d617b9c196fb7267588e2bb6
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-a13d6b0798f3ff77b3893268d5cb8fc8
+203eea49e941395a4a2032340ad1d15a
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -107,7 +107,7 @@ a13d6b0798f3ff77b3893268d5cb8fc8
 8c08532d1143796200bf216fc447bb60
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Bad Parameters."#) -}
-aacd8f5c197c1fa23f04d5f6454116bf
+3c2941d9fa7eba04c92df4d3d0c6839b
   main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

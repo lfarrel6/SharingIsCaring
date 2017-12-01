@@ -21,7 +21,6 @@ someFunc = do
   newDS <- newDirectory
   createFileServer newDS 0 0
   showDS newDS
-  testServer newDS
 
 type DirectoryServer = TVar (Map Int FS.FileServer)
 
@@ -42,13 +41,6 @@ createFileServer ds id portNum =
     FS.startServer newServer
     let newServerDir  = Map.insert id newServer serverDir
     atomically $ writeTVar ds newServerDir
-
-testServer :: DirectoryServer -> IO ()
-testServer ds = do
-  fs <- atomically $ readTVar ds
-  case Map.lookup 0 fs of
-   Nothing      -> putStrLn "weird, file server not found"
-   Just fserver -> FS.addFile fserver $ newFile "../data/test.txt"
 
 startServer :: DirectoryServer -> Int -> Int -> Int -> IO ()
 startServer ds dsPort fsPort nFS = withSocketsDo $ do

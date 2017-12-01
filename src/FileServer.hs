@@ -17,10 +17,11 @@ data FileServer = FileServer
   , directoryAddr :: FilePath
   , fileListing   :: TVar (Map Int F.File)
   , port          :: Int
+  , fileCount     :: TVar Int
   }
 
 instance Show FileServer where
-  show fs@FileServer{..} = "[ServerID: " ++ show serverID ++ "]"
+  show fs@FileServer{..} = "[FileServer: " ++ show serverID ++ "]\n\t>[Port: "++ show port ++"]\n\t>[Directory: "++show directoryAddr ++ "]"
 
 buildFileServer :: Int -> Int -> IO FileServer
 buildFileServer id portNum = do
@@ -31,17 +32,21 @@ buildFileServer id portNum = do
   writeFile (dp++"/serverDOB.txt") creationTime
   files <- listDirectory dp
   let contents = initFileList $ map F.newFile files
+  let newFileCount = length files
   atomically $ writeTVar (fileListing fs) contents
+  atomically $ writeTVar (fileCount   fs) newFileCount
   return fs
 
 newFileServer :: Int -> Int -> STM FileServer
 newFileServer id portNum = do
   let dirPath = "data/" ++ show id
   fl <- newTVar Map.empty
+  fc <- newTVar 0
   return FileServer { serverID      = id
                     , directoryAddr = dirPath
                     , fileListing   = fl
                     , port          = portNum
+                    , fileCount     = fc
                     }
 
 initFileList :: [F.File] -> Map Int F.File
@@ -72,7 +77,7 @@ addFile fs@FileServer{..} f@F.File{..} = do
 startServer :: FileServer -> IO ()
 startServer fs@FileServer{..} = withSocketsDo $ do
   sock <- listenOn $ portNum port
-  putStrLn $ "\t>[FileServer " ++ show serverID ++ "] listening on " ++ show port
+  print fs
   fMap <- atomically $ readTVar fileListing
   let files = Map.elems fMap
   mapM_ print files
