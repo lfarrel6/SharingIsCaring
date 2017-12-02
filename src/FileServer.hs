@@ -2,7 +2,6 @@
 
 module FileServer ( FileServer , buildFileServer , initFileList , addFile , startServer ) where
 
-import qualified File as F
 import qualified Data.Map as Map
 import Data.Map (Map)
 import Control.Concurrent.STM
@@ -11,6 +10,10 @@ import Network
 import System.IO
 import System.Directory
 import Data.Time
+import Control.Monad
+
+import qualified File as F
+import Message
 
 data FileServer = FileServer
   { serverID      :: Int
@@ -18,6 +21,7 @@ data FileServer = FileServer
   , fileListing   :: TVar (Map Int F.File)
   , port          :: Int
   , fileCount     :: TVar Int
+  , msgChan       :: TChan Message
   }
 
 instance Show FileServer where
@@ -25,7 +29,7 @@ instance Show FileServer where
 
 buildFileServer :: Int -> Int -> IO FileServer
 buildFileServer id portNum = do
-  fs <- atomically $ newFileServer id portNum
+  fs <- newFileServer id portNum
   let dp = directoryAddr fs
   createDirectoryIfMissing True dp
   creationTime <- fmap show getCurrentTime
@@ -37,17 +41,22 @@ buildFileServer id portNum = do
   atomically $ writeTVar (fileCount   fs) newFileCount
   return fs
 
-newFileServer :: Int -> Int -> STM FileServer
+newFileServer :: Int -> Int -> IO FileServer
 newFileServer id portNum = do
   let dirPath = "data/" ++ show id
-  fl <- newTVar Map.empty
-  fc <- newTVar 0
+  fl    <- atomically $ getFileList
+  fc    <- atomically $ getFileCount
+  mchan <- newTChanIO
   return FileServer { serverID      = id
                     , directoryAddr = dirPath
                     , fileListing   = fl
                     , port          = portNum
                     , fileCount     = fc
+                    , msgChan       = mchan
                     }
+  where
+   getFileList  = newTVar Map.empty
+   getFileCount = newTVar 0
 
 initFileList :: [F.File] -> Map Int F.File
 initFileList []                = Map.empty
@@ -78,13 +87,16 @@ startServer :: FileServer -> IO ()
 startServer fs@FileServer{..} = withSocketsDo $ do
   sock <- listenOn $ portNum port
   print fs
-  fMap <- atomically $ readTVar fileListing
-  let files = Map.elems fMap
-  mapM_ print files
-  listen sock
+  --listen
   where
    portNum n = PortNumber $ fromIntegral n
-   listen s = do
-    (handle, host, _) <- accept s
-    hPutStrLn handle $ "You have reached [File Server " ++ show serverID ++ "]"
-    listen s
+   listen = join $ atomically $ do
+    msg <- readTChan msgChan
+    return $ do
+      continue <- handleMsg fs msg
+      when continue listen
+    --hPutStrLn handle $ "You have reached [File Server " ++ show serverID ++ "]"
+    --listen s
+
+handleMsg :: FileServer -> Message -> IO Bool
+handleMsg fs@FileServer{..} msg = return True

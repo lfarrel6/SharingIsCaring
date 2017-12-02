@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-01 18:27:05.3827267 UTC
+2017-12-02 17:26:35.5861903 UTC
 
 interface FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:DirectoryServer 8002
-  interface hash: db88a0f0a15f07de97e5a7bd70df62ba
-  ABI hash: 481d5f7c1fe742c738916fa110de046e
+  interface hash: bdc0f0bffe147c6917a18cdb0835b535
+  ABI hash: 8f42b6a19324c563fc4e734420a6ab85
   export-list hash: 2accfc4a4597055975148d96e43f4773
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b17205fb016d7ec64e27f697b667a002
@@ -15,7 +15,7 @@ exports:
   DirectoryServer.newDirectory
   DirectoryServer.someFunc
   DirectoryServer.startServer
-module dependencies: File FileServer Locking
+module dependencies: File FileServer Locking Message
 package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
                       array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
                       binary-0.8.3.0@binary-0.8.3.0
@@ -60,11 +60,14 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
 import  -/  File c19c20fc1faa76b189c1e12ba211df34
   exports: dc12cef16710dfe3d1e20033993e8018
-import  -/  FileServer 233ce600773d8fddaf66ee49ff6f044f
+import  -/  FileServer 6ef2af2ada7e5c5010c5d135fce61b5c
   exports: 57fd7e82988f97966dc8fde84ea5efb2
-  FileServer caadc90e4972cee62ac63fccd0697017
-  buildFileServer cf2b3de94774a31a5c506f6a5784cd39
-  startServer bb7d7564a24b925ff014bb8c25a42825
+  FileServer 957f0e54aa81a31471558c79077a0e17
+  buildFileServer 7af36a69e235bf0b9a140caed5f28fc0
+  startServer fb5aa930548ac08c067217432b9954b5
+import  -/  Message d95ac3a5cf5d068995de6a7e65480083
+  exports: 640232fef3e6b5a6ba6f3b9614fce448
+  Message 42969441060e8ba7b33c7237ef9b9b39
 import  -/  base-4.9.1.0:Control.Concurrent e3f6962e2eee72e46a7f524818b5ed3e
 import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
 import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
@@ -74,6 +77,7 @@ import  -/  base-4.9.1.0:GHC.Conc.Sync 18bcf7264dc8f03029975495d151af25
 import  -/  base-4.9.1.0:GHC.IO.Handle cb8bbcf28331624bf008e1abd21fcddd
 import  -/  base-4.9.1.0:GHC.IO.Handle.Text e0147bd867839fcc2c3f2eace90b4d47
 import  -/  base-4.9.1.0:GHC.IO.Handle.Types 638c6e55b150de2630213031097f67d4
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
 import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
@@ -86,6 +90,27 @@ import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network ccc7f
 import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket e2e659f1c7cc333004207b8e0bae86f5
 import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket.Internal 8ddd08415e264edcd03ad47a04f53d8d
 import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Concurrent.STM d9d67004f2499de74f3785f434493839
+import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Concurrent.STM.TChan 64612af800e1a2e6674a1b1a89b35a5e
+80e4dbc3ed9a085c5c49c90270feb902
+  $tc'DirectoryServer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8725318407909572826##
+                   14240610257915950321##
+                   DirectoryServer.$trModule
+                   DirectoryServer.$tc'DirectoryServer1) -}
+a4285874a329839d0ee5d6a42bd87f05
+  $tc'DirectoryServer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DirectoryServer"#) -}
+371b6553e4d33871ac777ba3dc6ca0d7
+  $tcDirectoryServer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10694513884255486585##
+                   10001444710350910484##
+                   DirectoryServer.$trModule
+                   DirectoryServer.$trModule1) -}
 d045c910ef5c5d922c60239769fe6dea
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -108,84 +133,146 @@ a111eee3aa99cc60b39d35c47351873e
     -> Data.Map.Base.Map GHC.Types.Int a1
     -> Data.Map.Base.Map GHC.Types.Int a1
   {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
-e33c2181175a9b9909d882874db84da2
-  $wcreateFileServer ::
-    GHC.Prim.TVar#
-      GHC.Prim.RealWorld
-      (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-    -> GHC.Types.Int
-    -> GHC.Types.Int
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 4, Strictness: <S,U><L,U(U)><L,U><S,U>, Inline: [0],
-     Unfolding: (\ (ww :: GHC.Prim.TVar#
-                            GHC.Prim.RealWorld
-                            (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer))
-                   (w :: GHC.Types.Int)
-                   (w1 :: GHC.Types.Int)
-                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case GHC.Prim.atomically#
-                        @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                         GHC.Prim.readTVar#
-                           @ GHC.Prim.RealWorld
-                           @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-                           ww
-                           eta)
-                        w2 of ds1 { (#,#) ipv ipv1 ->
-                 case FileServer.buildFileServer1
-                        w
-                        w1
-                        ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 case ipv3 of ww1 { FileServer.FileServer ww2 ww3 ww4 ww5 ww6 ->
-                 case FileServer.$wstartServer
-                        ww2
-                        ww3
-                        ww4
-                        ww5
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
-                 case GHC.Prim.atomically#
-                        @ ()
-                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                         case GHC.Prim.writeTVar#
-                                @ GHC.Prim.RealWorld
-                                @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-                                ww
-                                (case w of ww7 { GHC.Types.I# ww8 ->
-                                 DirectoryServer.$w$sgo10 @ FileServer.FileServer ww8 ww1 ipv1 })
-                                eta of s2# { DEFAULT ->
-                         (# s2#, GHC.Tuple.() #) })
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
-                 GHC.IO.Handle.Text.hPutStr2
-                   GHC.IO.Handle.FD.stdout
-                   DirectoryServer.someFunc4
-                   GHC.Types.True
-                   ipv6 } } } } }) -}
-0a73a2d9c57c44243166501abf188f93
+78ca538d98e698fe9e2c96a718b47d55
   $wstartServer ::
-    GHC.Prim.TVar#
-      GHC.Prim.RealWorld
-      (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+    DirectoryServer.DirectoryServer
     -> GHC.Types.Int
     -> GHC.Types.Int
+    -> GHC.Prim.Int#
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 4, Strictness: <S,U><L,U(U)><L,U><S,U>, Inline: [0] -}
-e542e1f76d2447c87ca9c2c24db347f3
-  type DirectoryServer =
-    GHC.Conc.Sync.TVar
-      (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
-74a326f8182e12581643b416857562e0
+  {- Arity: 5,
+     Strictness: <L,U(A,U(U),A,U(U))><L,U(U)><L,U(U)><S,1*U><S,U>,
+     Inline: [0] -}
+14d4710026c159bd6e9ec28449680253
+  data DirectoryServer
+    = DirectoryServer {fileToLocations :: GHC.Conc.Sync.TVar
+                                            (Data.Map.Base.Map
+                                               GHC.Types.Int [FileServer.FileServer]),
+                       allServers :: GHC.Conc.Sync.TVar
+                                       (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer),
+                       commsChan :: Control.Concurrent.STM.TChan.TChan Message.Message,
+                       nServers :: GHC.Conc.Sync.TVar GHC.Types.Int}
+d1fbf522445790ed3f49da2b6dc70822
+  allServers ::
+    DirectoryServer.DirectoryServer
+    -> GHC.Conc.Sync.TVar
+         (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+  RecSel Left DirectoryServer.DirectoryServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DirectoryServer.DirectoryServer) ->
+                 case ds of wild { DirectoryServer.DirectoryServer ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+56e1a47c644a8321b5ad617ac57d1cbf
+  commsChan ::
+    DirectoryServer.DirectoryServer
+    -> Control.Concurrent.STM.TChan.TChan Message.Message
+  RecSel Left DirectoryServer.DirectoryServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DirectoryServer.DirectoryServer) ->
+                 case ds of wild { DirectoryServer.DirectoryServer ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+3ac6dba42bc4890c1b7fda1f66f91825
+  fileToLocations ::
+    DirectoryServer.DirectoryServer
+    -> GHC.Conc.Sync.TVar
+         (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer])
+  RecSel Left DirectoryServer.DirectoryServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DirectoryServer.DirectoryServer) ->
+                 case ds of wild { DirectoryServer.DirectoryServer ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+37a17e835a048c29cf992128d6f80216
+  nServers ::
+    DirectoryServer.DirectoryServer -> GHC.Conc.Sync.TVar GHC.Types.Int
+  RecSel Left DirectoryServer.DirectoryServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DirectoryServer.DirectoryServer) ->
+                 case ds of wild { DirectoryServer.DirectoryServer ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+2e000074fa77a0cde660a6ac322db1fe
   newDirectory :: GHC.Types.IO DirectoryServer.DirectoryServer
   {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 DirectoryServer.newDirectory1
                   `cast`
-                (Sym (GHC.Types.N:IO[0]
-                          <GHC.Conc.Sync.TVar
-                             (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)>_R)) -}
-459da7c79784e9fde984079172c5a10c
+                (Sym (GHC.Types.N:IO[0] <DirectoryServer.DirectoryServer>_R)) -}
+9ce2be81150ef752e44f64e28d2b3481
   newDirectory1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          DirectoryServer.DirectoryServer #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar
+                             (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer]))
+                        DirectoryServer.newDirectory4
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar
+                             (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer))
+                        DirectoryServer.newDirectory3
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.newTVar#
+                        @ (Control.Concurrent.STM.TChan.TList Message.Message)
+                        @ GHC.Prim.RealWorld
+                        (Control.Concurrent.STM.TChan.TNil @ Message.Message)
+                        ipv2 of ds { (#,#) ipv4 ipv5 ->
+                 let {
+                   hole :: GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message)
+                     {- Strictness: m -}
+                   = GHC.Conc.Sync.TVar
+                       @ (Control.Concurrent.STM.TChan.TList Message.Message)
+                       ipv5
+                 } in
+                 case GHC.Prim.newTVar#
+                        @ (GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message))
+                        @ GHC.Prim.RealWorld
+                        hole
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.newTVar#
+                        @ (GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message))
+                        @ GHC.Prim.RealWorld
+                        hole
+                        ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar GHC.Types.Int)
+                        DirectoryServer.newDirectory2
+                        ipv8 of ds5 { (#,#) ipv10 ipv11 ->
+                 (# ipv10,
+                    DirectoryServer.DirectoryServer
+                      ipv1
+                      ipv3
+                      (Control.Concurrent.STM.TChan.TChan @ Message.Message ipv7 ipv9)
+                      ipv11 #) } } } } } }) -}
+e9d539691aa9e9a79c71f3292aab5642
+  newDirectory2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Conc.Sync.TVar GHC.Types.Int #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1# :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newTVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        (GHC.Types.I# 0#)
+                        s1# of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Conc.Sync.TVar @ GHC.Types.Int ipv1 #) }) -}
+26e3f38c0cc48d9a02dcb7b8fa2f3bb3
+  newDirectory3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           GHC.Conc.Sync.TVar
@@ -202,53 +289,94 @@ e542e1f76d2447c87ca9c2c24db347f3
                     GHC.Conc.Sync.TVar
                       @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
                       ipv1 #) }) -}
-9020aca8832a63779000cd9862b750f5
+4fe8528bd929397221e555dd9b0ec91c
+  newDirectory4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Conc.Sync.TVar
+            (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer]) #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1# :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newTVar#
+                        @ (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer])
+                        @ GHC.Prim.RealWorld
+                        (Data.Map.Base.Tip @ GHC.Types.Int @ [FileServer.FileServer])
+                        s1# of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Conc.Sync.TVar
+                      @ (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer])
+                      ipv1 #) }) -}
+14369ea8cdde4e88a9d8ad4ee404b8b5
   someFunc :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 DirectoryServer.someFunc1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-a317c0b7e019c87b36cadae85dd9d346
+8c352535d403e4b702c2e210e4c866b5
   someFunc1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar
+                             (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer]))
+                        DirectoryServer.newDirectory4
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar
+                             (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer))
+                        DirectoryServer.newDirectory3
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case GHC.Prim.newTVar#
-                        @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+                        @ (Control.Concurrent.STM.TChan.TList Message.Message)
                         @ GHC.Prim.RealWorld
-                        (Data.Map.Base.Tip @ GHC.Types.Int @ FileServer.FileServer)
-                        s of ds { (#,#) ipv ipv1 ->
-                 case DirectoryServer.$wcreateFileServer
-                        ipv1
-                        DirectoryServer.someFunc3
-                        DirectoryServer.someFunc3
-                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                        (Control.Concurrent.STM.TChan.TNil @ Message.Message)
+                        ipv2 of ds { (#,#) ipv4 ipv5 ->
+                 let {
+                   hole :: GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message)
+                     {- Strictness: m -}
+                   = GHC.Conc.Sync.TVar
+                       @ (Control.Concurrent.STM.TChan.TList Message.Message)
+                       ipv5
+                 } in
+                 case GHC.Prim.newTVar#
+                        @ (GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message))
+                        @ GHC.Prim.RealWorld
+                        hole
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.newTVar#
+                        @ (GHC.Conc.Sync.TVar
+                             (Control.Concurrent.STM.TChan.TList Message.Message))
+                        @ GHC.Prim.RealWorld
+                        hole
+                        ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar GHC.Types.Int)
+                        DirectoryServer.newDirectory2
+                        ipv8 of ds5 { (#,#) ipv10 ipv11 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
                    DirectoryServer.someFunc2
                    GHC.Types.True
-                   ipv2 } }) -}
+                   ipv10 } } } } } }) -}
 e7af103a9131541c77cc9ce698146f7d
   someFunc2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    ">Directory Server\n"#) -}
-1c977d57c30b28ac33cd112e644b802b
-  someFunc3 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
-ccd89f8c0910b38536e7702c315b4709
-  someFunc4 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "New File Server Created"#) -}
-062e00c93a52daf5f19431332a13c115
+63c74d59deb2e0129df64b944b8ca46b
   startServer ::
     DirectoryServer.DirectoryServer
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.Int
     -> GHC.Types.IO ()
-  {- Arity: 5, Strictness: <S(S),U(U)><L,U(U)><L,U><L,A><S,U>,
+  {- Arity: 5,
+     Strictness: <L,U(A,U(U),A,U(U))><L,U(U)><L,U(U)><S(S),1*U(1*U)><S,U>,
      Unfolding: InlineRule (0, True, True)
                 DirectoryServer.startServer1
                   `cast`
@@ -257,7 +385,7 @@ ccd89f8c0910b38536e7702c315b4709
                  ->_R <GHC.Types.Int>_R
                  ->_R <GHC.Types.Int>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-f87b72f634878af3990285a621100d67
+3a5197472a9cf8b5bece34ab8cf839c1
   startServer1 ::
     DirectoryServer.DirectoryServer
     -> GHC.Types.Int
@@ -265,7 +393,8 @@ f87b72f634878af3990285a621100d67
     -> GHC.Types.Int
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 5, Strictness: <S(S),U(U)><L,U(U)><L,U><L,A><S,U>,
+  {- Arity: 5,
+     Strictness: <L,U(A,U(U),A,U(U))><L,U(U)><L,U(U)><S(S),1*U(1*U)><S,U>,
      Inline: INLINE[0],
      Unfolding: InlineRule (5, True, False)
                 (\ (w :: DirectoryServer.DirectoryServer)
@@ -273,8 +402,8 @@ f87b72f634878af3990285a621100d67
                    (w2 :: GHC.Types.Int)
                    (w3 :: GHC.Types.Int)
                    (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case w of ww { GHC.Conc.Sync.TVar ww1 ->
-                 DirectoryServer.$wstartServer ww1 w1 w2 w4 }) -}
+                 case w3 of ww { GHC.Types.I# ww1 ->
+                 DirectoryServer.$wstartServer w w1 w2 ww1 w4 }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

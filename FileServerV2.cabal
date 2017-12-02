@@ -24,6 +24,7 @@ library
                      , File
                      , Locking
                      , Config
+                     , Message
   build-depends:       base >= 4.7 && < 5
                      , containers
                      , network

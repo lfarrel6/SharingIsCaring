@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-01 18:27:05.7501753 UTC
+2017-12-02 16:45:01.9389933 UTC
 
 interface main@main:Main 8002
-  interface hash: c911c13445edb55dd5b88f796d674a28
-  ABI hash: 3ef3e3a573a904a354fabc02b99b8525
+  interface hash: 5693c414139d7b1d5baa1a3d416a1ed2
+  ABI hash: 313fd57814195f1d6e1479893e7b6e95
   export-list hash: d929501e14f54a5d15fd090584e64382
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5d14d12aad2792642bae218a4995e627
@@ -57,7 +57,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
 import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:Config 6708c9469436b7ec121266d57919449f
-import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:DirectoryServer 481d5f7c1fe742c738916fa110de046e
+import  -/  FileServerV2-0.1.0.0@FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:DirectoryServer 8f42b6a19324c563fc4e734420a6ab85
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
@@ -74,12 +74,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-16c8bde3d617b9c196fb7267588e2bb6
+81b8f7acd422464f38f99d98d9bd55a4
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-203eea49e941395a4a2032340ad1d15a
+25e34b24d70ce939cfde16ba3b4e8ba6
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -94,20 +94,61 @@ d6831ef04cb9301b090dfae6f7bb7ec7
                         GHC.Types.True
                         ipv
                    GHC.Base.Just cfg
-                   -> case GHC.Prim.newTVar#
-                             @ (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer)
+                   -> case GHC.Prim.atomically#
+                             @ (GHC.Conc.Sync.TVar
+                                  (Data.Map.Base.Map GHC.Types.Int [FileServer.FileServer]))
+                             DirectoryServer.newDirectory4
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.atomically#
+                             @ (GHC.Conc.Sync.TVar
+                                  (Data.Map.Base.Map GHC.Types.Int FileServer.FileServer))
+                             DirectoryServer.newDirectory3
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.newTVar#
+                             @ (Control.Concurrent.STM.TChan.TList Message.Message)
                              @ GHC.Prim.RealWorld
-                             (Data.Map.Base.Tip @ GHC.Types.Int @ FileServer.FileServer)
-                             ipv of ds { (#,#) ipv2 ipv3 ->
+                             (Control.Concurrent.STM.TChan.TNil @ Message.Message)
+                             ipv4 of ds { (#,#) ipv6 ipv7 ->
+                      let {
+                        hole :: GHC.Conc.Sync.TVar
+                                  (Control.Concurrent.STM.TChan.TList Message.Message)
+                          {- Strictness: m -}
+                        = GHC.Conc.Sync.TVar
+                            @ (Control.Concurrent.STM.TChan.TList Message.Message)
+                            ipv7
+                      } in
+                      case GHC.Prim.newTVar#
+                             @ (GHC.Conc.Sync.TVar
+                                  (Control.Concurrent.STM.TChan.TList Message.Message))
+                             @ GHC.Prim.RealWorld
+                             hole
+                             ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                      case GHC.Prim.newTVar#
+                             @ (GHC.Conc.Sync.TVar
+                                  (Control.Concurrent.STM.TChan.TList Message.Message))
+                             @ GHC.Prim.RealWorld
+                             hole
+                             ipv8 of ds5 { (#,#) ipv10 ipv11 ->
+                      case GHC.Prim.atomically#
+                             @ (GHC.Conc.Sync.TVar GHC.Types.Int)
+                             DirectoryServer.newDirectory2
+                             ipv10 of ds6 { (#,#) ipv12 ipv13 ->
+                      case cfg of wild1 { Config.Config ds7 ds8 ds9 ->
+                      case ds9 of ww { GHC.Types.I# ww1 ->
                       DirectoryServer.$wstartServer
-                        ipv3
-                        (Config.directoryPort cfg)
-                        (Config.startPort cfg)
-                        ipv2 } } }) -}
+                        (DirectoryServer.DirectoryServer
+                           ipv3
+                           ipv5
+                           (Control.Concurrent.STM.TChan.TChan @ Message.Message ipv9 ipv11)
+                           ipv13)
+                        ds7
+                        ds8
+                        ww1
+                        ipv12 } } } } } } } } } }) -}
 8c08532d1143796200bf216fc447bb60
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Bad Parameters."#) -}
-3c2941d9fa7eba04c92df4d3d0c6839b
+ded4f8e2de74709e94e24aefd23e0891
   main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
