@@ -7,6 +7,20 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 
+/* package aeson-1.1.2.0 */
+#define VERSION_aeson "1.1.2.0"
+#define MIN_VERSION_aeson(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  1 || \
+  (major1) == 1 && (major2) == 1 && (minor) <= 2)
+
+/* package aeson-compat-0.3.6 */
+#define VERSION_aeson_compat "0.3.6"
+#define MIN_VERSION_aeson_compat(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 6)
+
 /* package async-2.1.1.1 */
 #define VERSION_async "2.1.1.1"
 #define MIN_VERSION_async(major1,major2,minor) (\
@@ -20,6 +34,13 @@
   (major1) <  4 || \
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
+
+/* package base-compat-0.9.3 */
+#define VERSION_base_compat "0.9.3"
+#define MIN_VERSION_base_compat(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  9 || \
+  (major1) == 0 && (major2) == 9 && (minor) <= 3)
 
 /* package containers-0.5.7.1 */
 #define VERSION_containers "0.5.7.1"
@@ -63,6 +84,13 @@
   (major1) == 2 && (major2) <  6 || \
   (major1) == 2 && (major2) == 6 && (minor) <= 3)
 
+/* package servant-server-0.11.0.1 */
+#define VERSION_servant_server "0.11.0.1"
+#define MIN_VERSION_servant_server(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  11 || \
+  (major1) == 0 && (major2) == 11 && (minor) <= 0)
+
 /* package stm-2.4.4.1 */
 #define VERSION_stm "2.4.4.1"
 #define MIN_VERSION_stm(major1,major2,minor) (\
@@ -76,6 +104,69 @@
   (major1) <  1 || \
   (major1) == 1 && (major2) <  6 || \
   (major1) == 1 && (major2) == 6 && (minor) <= 0)
+
+/* package attoparsec-0.13.1.0 */
+#define VERSION_attoparsec "0.13.1.0"
+#define MIN_VERSION_attoparsec(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  13 || \
+  (major1) == 0 && (major2) == 13 && (minor) <= 1)
+
+/* package blaze-html-0.9.0.1 */
+#define VERSION_blaze_html "0.9.0.1"
+#define MIN_VERSION_blaze_html(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  9 || \
+  (major1) == 0 && (major2) == 9 && (minor) <= 0)
+
+/* package blaze-markup-0.8.0.0 */
+#define VERSION_blaze_markup "0.8.0.0"
+#define MIN_VERSION_blaze_markup(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  8 || \
+  (major1) == 0 && (major2) == 8 && (minor) <= 0)
+
+/* package bytestring-0.10.8.1 */
+#define VERSION_bytestring "0.10.8.1"
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 8)
+
+/* package http-media-0.6.4 */
+#define VERSION_http_media "0.6.4"
+#define MIN_VERSION_http_media(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  6 || \
+  (major1) == 0 && (major2) == 6 && (minor) <= 4)
+
+/* package lucid-2.9.9 */
+#define VERSION_lucid "2.9.9"
+#define MIN_VERSION_lucid(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  9 || \
+  (major1) == 2 && (major2) == 9 && (minor) <= 9)
+
+/* package string-conversions-0.4.0.1 */
+#define VERSION_string_conversions "0.4.0.1"
+#define MIN_VERSION_string_conversions(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  4 || \
+  (major1) == 0 && (major2) == 4 && (minor) <= 0)
+
+/* package wai-3.2.1.1 */
+#define VERSION_wai "3.2.1.1"
+#define MIN_VERSION_wai(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
+
+/* package warp-3.2.13 */
+#define VERSION_warp "3.2.13"
+#define MIN_VERSION_warp(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 13)
 
 /* tool alex-3.2.1 */
 #define TOOL_VERSION_alex "3.2.1"
@@ -147,7 +238,7 @@
   (major1) == 2 && (major2) <  25 || \
   (major1) == 2 && (major2) == 25 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR"
+#define CURRENT_COMPONENT_ID "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"
 
-#define CURRENT_PACKAGE_KEY "FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR"
+#define CURRENT_PACKAGE_KEY "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"
 

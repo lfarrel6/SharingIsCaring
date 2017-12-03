@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-01 17:52:14.590269 UTC
+2017-12-03 16:55:27.8084627 UTC
 
-interface FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:Locking 8002
-  interface hash: 55ceb18ce34f1f17eb51761806c283ee
-  ABI hash: dcd0e010ec3f74a5c675365daf8bc973
-  export-list hash: 46460c7f27595c12e7e943da9e794d05
+interface FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh:Locking [family instance module] 8002
+  interface hash: 114856431a7b647512b7a4ab35a6b51d
+  ABI hash: 468f4a792359dcf47924d66a25e100ae
+  export-list hash: 313d6bc2410de71dda8f982e1962c859
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: f8b847b675a91348479da0c1f8d4b9ba
+  flag hash: c90290120d199b02ec07da5b09849bb8
   sig of: Nothing
   used TH splices: False
   where
@@ -17,17 +17,395 @@ exports:
   Locking.unavailable
   Locking.FileState
 module dependencies:
-package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
                       integer-gmp-1.0.0.1
-orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
-family instance modules: base-4.9.1.0:Control.Applicative
-                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
-                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
-                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
-                         base-4.9.1.0:GHC.TypeLits
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types 28377cc79570fe4253ad6113f2450a93
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types.ToJSON f36660aaef3410ced418ccb283e21448
+import  -/  base-4.9.1.0:GHC.Generics 87e8d511f978e043d53db008cc403901
 import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-34dee828a4768e9bab27d89b51d1792d
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fGenericFileState :: GHC.Generics.Generic Locking.FileState
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Locking.FileState
+                  Locking.$fGenericFileState_$cfrom
+                  Locking.$fGenericFileState_$cto -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fGenericFileState1 ::
+    Locking.FileState
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             GHC.Generics.U1)
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: Locking.FileState) ->
+                 case x1 of wild {
+                   Locking.Available -> Locking.$fGenericFileState6 @ x
+                   Locking.ReadOnly -> Locking.$fGenericFileState4 @ x
+                   Locking.Unavailable -> Locking.$fGenericFileState2 @ x }) -}
+5ad7344799d72dc5632e21afc7063632
+  $fGenericFileState2 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (Locking.$fGenericFileState3 @ x)) -}
+d5a70cfd340027068e3abab3010163a4
+  $fGenericFileState3 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+a9e99cf6293b7a55684e0e6c90da3e5f
+  $fGenericFileState4 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (Locking.$fGenericFileState5 @ x)) -}
+6d7a0fc720fc589d193bf769dbc17954
+  $fGenericFileState5 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+fd2c94843bffa601a79bc2837df6f370
+  $fGenericFileState6 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "Available" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fGenericFileState_$cfrom ::
+    Locking.FileState -> GHC.Generics.Rep Locking.FileState x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Locking.$fGenericFileState1
+                  `cast`
+                (forall (x :: <GHC.Types.*>_N).
+                 <Locking.FileState>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "FileState"
+                                       "Locking"
+                                       "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"
+                                       'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                       GHC.Generics.U1
+                                     GHC.Generics.:+: (GHC.Generics.M1
+                                                         GHC.Generics.C
+                                                         ('GHC.Generics.MetaCons
+                                                            "ReadOnly"
+                                                            'GHC.Generics.PrefixI
+                                                            'GHC.Types.False)
+                                                         GHC.Generics.U1
+                                                       GHC.Generics.:+: GHC.Generics.M1
+                                                                          GHC.Generics.C
+                                                                          ('GHC.Generics.MetaCons
+                                                                             "Unavailable"
+                                                                             'GHC.Generics.PrefixI
+                                                                             'GHC.Types.False)
+                                                                          GHC.Generics.U1)>_R))
+                          (Sub (Sym (Locking.Rep_FileState[0]))) <x>_N) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fGenericFileState_$cto ::
+    GHC.Generics.Rep Locking.FileState x -> Locking.FileState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep Locking.FileState x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Locking.Rep_FileState[0]))
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "FileState"
+                                   "Locking"
+                                   "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"
+                                   'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.C
+                                   ('GHC.Generics.MetaCons
+                                      "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                   GHC.Generics.U1
+                                 GHC.Generics.:+: (GHC.Generics.M1
+                                                     GHC.Generics.C
+                                                     ('GHC.Generics.MetaCons
+                                                        "ReadOnly"
+                                                        'GHC.Generics.PrefixI
+                                                        'GHC.Types.False)
+                                                     GHC.Generics.U1
+                                                   GHC.Generics.:+: GHC.Generics.M1
+                                                                      GHC.Generics.C
+                                                                      ('GHC.Generics.MetaCons
+                                                                         "Unavailable"
+                                                                         'GHC.Generics.PrefixI
+                                                                         'GHC.Types.False)
+                                                                      GHC.Generics.U1)>_R) <x>_N) of wild {
+                   GHC.Generics.L1 ds1
+                   -> case ds1 of tpl { DEFAULT -> Locking.Available }
+                   GHC.Generics.R1 ds1
+                   -> case ds1 of wild1 {
+                        GHC.Generics.L1 ds2
+                        -> case ds2 of tpl { DEFAULT -> Locking.ReadOnly }
+                        GHC.Generics.R1 ds2
+                        -> case ds2 of tpl { DEFAULT -> Locking.Unavailable } } }) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   $fShowFileState :: GHC.Show.Show Locking.FileState
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -36,16 +414,16 @@ import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
                   Locking.$fShowFileState_$cshowsPrec
                   Locking.$fShowFileState_$cshow
                   Locking.$fShowFileState_$cshowList -}
-6446384957f631eb0c3c588ea6859677
+1b1967d36e92397ff5f80e220376c03e
   $fShowFileState1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Unavailable"#) -}
-9907a4ff53ccb4b475b6c2af3b094858
+ed335410ac0cd3c669f0efe564bbf510
   $fShowFileState2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "ReadOnly"#) -}
-a30aaf338336b4f8460f2274b159f782
+4956b4ad18562428d05d647d1d54ee78
   $fShowFileState3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Available"#) -}
-34dee828a4768e9bab27d89b51d1792d
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   $fShowFileState_$cshow :: Locking.FileState -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -54,13 +432,13 @@ a30aaf338336b4f8460f2274b159f782
                    Locking.Available -> Locking.$fShowFileState3
                    Locking.ReadOnly -> Locking.$fShowFileState2
                    Locking.Unavailable -> Locking.$fShowFileState1 }) -}
-34dee828a4768e9bab27d89b51d1792d
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   $fShowFileState_$cshowList :: [Locking.FileState] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Locking.FileState
                    Locking.$w$cshowsPrec) -}
-34dee828a4768e9bab27d89b51d1792d
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   $fShowFileState_$cshowsPrec ::
     GHC.Types.Int -> Locking.FileState -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
@@ -69,70 +447,266 @@ a30aaf338336b4f8460f2274b159f782
                    (w1 :: Locking.FileState)
                    (w2 :: GHC.Base.String) ->
                  Locking.$w$cshowsPrec w1 w2) -}
-4b0eaba6014913dbea8dda34477ce409
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState ::
+    Data.Aeson.Types.ToJSON.ToJSON Locking.FileState
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Locking.FileState
+                  Locking.$fToJSONFileState_$ctoJSON
+                  Locking.$fToJSONFileState_$ctoEncoding
+                  Locking.$fToJSONFileState_$ctoJSONList
+                  Locking.$fToJSONFileState_$ctoEncodingList -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState1 ::
+    Locking.FileState
+    -> Data.Tagged.Tagged
+         Data.Aeson.Types.Generic.True Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m3,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Locking.FileState) ->
+                 case x of wild {
+                   Locking.Available
+                   -> Locking.$fToJSONFileState_g
+                        (Locking.$fGenericFileState6 @ GHC.Prim.Any)
+                   Locking.ReadOnly
+                   -> Locking.$fToJSONFileState_g
+                        (Locking.$fGenericFileState4 @ GHC.Prim.Any)
+                   Locking.Unavailable
+                   -> Locking.$fToJSONFileState_g
+                        (Locking.$fGenericFileState2 @ GHC.Prim.Any) }) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState_$ctoEncoding ::
+    Locking.FileState -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: Locking.FileState) ->
+                 Data.Aeson.Encoding.Internal.value
+                   (Locking.$fToJSONFileState_$ctoJSON eta)) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState_$ctoEncodingList ::
+    [Locking.FileState] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: [Locking.FileState]) ->
+                 case eta of wild {
+                   [] -> Data.Aeson.Encoding.Internal.emptyArray_
+                   : x xs
+                   -> (Data.ByteString.Builder.Internal.append
+                         (Data.Aeson.Encoding.Internal.openBracket
+                            @ Data.Aeson.Types.Internal.Value)
+                           `cast`
+                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                              <Data.Aeson.Types.Internal.Value>_P)
+                         (Data.ByteString.Builder.Internal.append
+                            (Data.Aeson.Encoding.Internal.value
+                               (Locking.$fToJSONFileState_$ctoJSON x))
+                              `cast`
+                            (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                 <Data.Aeson.Types.Internal.Value>_P)
+                            (Data.ByteString.Builder.Internal.append
+                               (GHC.Base.foldr
+                                  @ Locking.FileState
+                                  @ (Data.Aeson.Encoding.Internal.Encoding'
+                                       Data.Aeson.Types.Internal.Value)
+                                  (\ (v :: Locking.FileState)
+                                     (vs :: Data.Aeson.Encoding.Internal.Encoding'
+                                              Data.Aeson.Types.Internal.Value)[OneShot] ->
+                                   Data.ByteString.Builder.Internal.append
+                                     (Data.Aeson.Encoding.Internal.comma
+                                        @ Data.Aeson.Types.Internal.Value)
+                                       `cast`
+                                     (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                          <Data.Aeson.Types.Internal.Value>_P)
+                                     (Data.ByteString.Builder.Internal.append
+                                        (Data.Aeson.Encoding.Internal.value
+                                           (Locking.$fToJSONFileState_$ctoJSON v))
+                                          `cast`
+                                        (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                             <Data.Aeson.Types.Internal.Value>_P)
+                                        vs
+                                          `cast`
+                                        (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                             <Data.Aeson.Types.Internal.Value>_P)))
+                                    `cast`
+                                  (<Locking.FileState>_R
+                                   ->_R <Data.Aeson.Encoding.Internal.Encoding'
+                                           Data.Aeson.Types.Internal.Value>_R
+                                   ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                 <Data.Aeson.Types.Internal.Value>_P))
+                                  (Data.Aeson.Encoding.Internal.empty
+                                     @ Data.Aeson.Types.Internal.Value)
+                                  xs)
+                                 `cast`
+                               (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                    <Data.Aeson.Types.Internal.Value>_P)
+                               (Data.Aeson.Encoding.Internal.closeBracket
+                                  @ Data.Aeson.Types.Internal.Value)
+                                 `cast`
+                               (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                    <Data.Aeson.Types.Internal.Value>_P))))
+                        `cast`
+                      (Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                <Data.Aeson.Types.Internal.Value>_P)) }) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState_$ctoJSON ::
+    Locking.FileState -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m3,
+     Unfolding: InlineRule (0, True, True)
+                Locking.$fToJSONFileState1
+                  `cast`
+                (<Locking.FileState>_R
+                 ->_R Data.Tagged.N:Tagged[0]
+                          <*>_N
+                          <Data.Aeson.Types.Generic.True>_P
+                          <Data.Aeson.Types.Internal.Value>_R) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  $fToJSONFileState_$ctoJSONList ::
+    [Locking.FileState] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: [Locking.FileState]) ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ Data.Aeson.Types.Internal.Value
+                        (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ Data.Aeson.Types.Internal.Value
+                           (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                           (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                              @ Data.Vector.Fusion.Util.Id
+                              @ Data.Aeson.Types.Internal.Value
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              Data.Vector.Fusion.Bundle.Size.Unknown
+                              (GHC.Base.build
+                                 @ Data.Aeson.Types.Internal.Value
+                                 (\ @ b1
+                                    (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                    (n :: b1)[OneShot] ->
+                                  GHC.Base.foldr
+                                    @ Locking.FileState
+                                    @ b1
+                                    (GHC.Base.mapFB
+                                       @ Data.Aeson.Types.Internal.Value
+                                       @ b1
+                                       @ Locking.FileState
+                                       c
+                                       Locking.$fToJSONFileState_$ctoJSON)
+                                    n
+                                    eta)))) of dt1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 Data.Aeson.Types.Internal.Array dt1 }) -}
+a907982c2a42757271ae457b5f350544
+  $fToJSONFileState_g ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.C1
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.C1
+                          ('GHC.Generics.MetaCons
+                             "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      GHC.Prim.Any
+    -> Data.Tagged.Tagged
+         Data.Aeson.Types.Generic.True Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m3, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: (GHC.Generics.:+:)
+                           (GHC.Generics.M1
+                              GHC.Generics.C
+                              ('GHC.Generics.MetaCons
+                                 "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                              GHC.Generics.U1)
+                           (GHC.Generics.C1
+                              ('GHC.Generics.MetaCons
+                                 "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                              GHC.Generics.U1
+                            GHC.Generics.:+: GHC.Generics.C1
+                                               ('GHC.Generics.MetaCons
+                                                  "Unavailable"
+                                                  'GHC.Generics.PrefixI
+                                                  'GHC.Types.False)
+                                               GHC.Generics.U1)
+                           GHC.Prim.Any) ->
+                 case Locking.$wg w of ww { Unit# ww1 ->
+                 (Data.Aeson.Types.Internal.String ww1)
+                   `cast`
+                 (Sym (Data.Tagged.N:Tagged[0]
+                           <*>_N
+                           <Data.Aeson.Types.Generic.True>_P
+                           <Data.Aeson.Types.Internal.Value>_R)) }) -}
+3154030446c0411d16074687dc7add97
   $tc'Available :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   6581554090687209819##
-                   6062168849169790846##
+                   509350624440639332##
+                   5013945257179833343##
                    Locking.$trModule
                    Locking.$tc'Available1) -}
-d92899e27dce438af43934e4a7cfeb9e
+a35331c83a1a958da089119f38f0d2e0
   $tc'Available1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Available"#) -}
-f26847e432ee778e4701066f024ded96
+69053ba99b990e75a1058f69699c79f1
   $tc'ReadOnly :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5505118406380183491##
-                   13577530197639958254##
+                   7865169965501780016##
+                   8209372284318222196##
                    Locking.$trModule
                    Locking.$tc'ReadOnly1) -}
-756da62b97f395b75d9cdf71d15ff843
+5989b2676bc1a670717b13e3479fe9e7
   $tc'ReadOnly1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'ReadOnly"#) -}
-13d889b38e26f936a9313ea6784e08be
+d896fa90cc4951ddac9e6e41ce3683bc
   $tc'Unavailable :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   17952840077271832831##
-                   803526869771899494##
+                   975254509001839353##
+                   12042558484861592205##
                    Locking.$trModule
                    Locking.$tc'Unavailable1) -}
-57a8e2d7dde95a6db0447346cb0d391c
+3b6ea8562fa0f28e8e9eb940f245c50f
   $tc'Unavailable1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Unavailable"#) -}
-2b0695b0c7e773ec6163cc391e6cf7d6
+109f7814aaac8b3b82fbfff1b531d264
   $tcFileState :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   384104435404570748##
-                   10153170429875613221##
+                   9260202205973592218##
+                   9200787625580954504##
                    Locking.$trModule
                    Locking.$tcFileState1) -}
-e507298abdafe72e5f6b00665abb371f
+a1c858cc81a123ec2738e6442aa0cf04
   $tcFileState1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "FileState"#) -}
-41c706b1d9b4f6a82694590f8706bd8b
+2d48b6cc51ec5b80f5aa554ab0f921c2
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Locking.$trModule2
                    Locking.$trModule1) -}
-1aa0cea98d57c224a696bbbe9dbe6f18
+58eabfcbb2e015f95f53e5332c428ec9
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Locking"#) -}
-29a145a458385eda5fc3595b4b26e003
+6b7b998eafdb4bddff56f9920e380aae
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR"#) -}
-34dee828a4768e9bab27d89b51d1792d
+                   "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"#) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   $w$cshowsPrec ::
     Locking.FileState -> GHC.Base.String -> GHC.Base.String
   {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
@@ -144,27 +718,115 @@ e507298abdafe72e5f6b00665abb371f
                    -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState2 w1
                    Locking.Unavailable
                    -> GHC.Base.++ @ GHC.Types.Char Locking.$fShowFileState1 w1 }) -}
-34dee828a4768e9bab27d89b51d1792d
+b348f00bfbfed2ea15ba699f98962b75
+  $wg ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.C1
+         ('GHC.Generics.MetaCons
+            "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.C1
+                          ('GHC.Generics.MetaCons
+                             "Unavailable" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      GHC.Prim.Any
+    -> (# Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: (GHC.Generics.:+:)
+                           (GHC.Generics.M1
+                              GHC.Generics.C
+                              ('GHC.Generics.MetaCons
+                                 "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                              GHC.Generics.U1)
+                           (GHC.Generics.C1
+                              ('GHC.Generics.MetaCons
+                                 "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                              GHC.Generics.U1
+                            GHC.Generics.:+: GHC.Generics.C1
+                                               ('GHC.Generics.MetaCons
+                                                  "Unavailable"
+                                                  'GHC.Generics.PrefixI
+                                                  'GHC.Types.False)
+                                               GHC.Generics.U1)
+                           GHC.Prim.Any) ->
+                 case case w of wild {
+                        GHC.Generics.L1 x -> Locking.$fShowFileState3
+                        GHC.Generics.R1 x
+                        -> case x of wild1 {
+                             GHC.Generics.L1 x1 -> Locking.$fShowFileState2
+                             GHC.Generics.R1 x1
+                             -> Locking.$fShowFileState1 } } of dt1 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds7 { (#,#) ipv ipv1 ->
+                         Data.Aeson.Types.ToJSON.$wouter5
+                           ipv1
+                           4#
+                           dt1
+                           0#
+                           ipv }) of ds7 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt2 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 (# dt2 #) } } }) -}
+667a41e26eb9c5dfdbe0e6ea9597d3dc
   data FileState = Available | ReadOnly | Unavailable
-05ce40027d533307e4f6ba9a07326b8f
+667a41e26eb9c5dfdbe0e6ea9597d3dc
+  axiom Rep_FileState::
+      GHC.Generics.Rep Locking.FileState
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "FileState"
+               "Locking"
+               "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Available" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               GHC.Generics.U1
+             GHC.Generics.:+: (GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "ReadOnly" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                 GHC.Generics.U1
+                               GHC.Generics.:+: GHC.Generics.C1
+                                                  ('GHC.Generics.MetaCons
+                                                     "Unavailable"
+                                                     'GHC.Generics.PrefixI
+                                                     'GHC.Types.False)
+                                                  GHC.Generics.U1))
+eaabd1be155d1b7250e9759adc03f8f1
   available :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.Available -}
-51e7b6791082a367dfe6e554c2f93acc
+c8ce5c67fed2d09e16862c7b9ab6748f
   readOnly :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.ReadOnly -}
-fb2d4725734a3c9fa668e7d2d7c1d5a9
+29100df78fab000795951131715705b5
   unavailable :: Locking.FileState
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True) Locking.Unavailable -}
-instance [safe] GHC.Show.Show [Locking.FileState]
+instance GHC.Generics.Generic [Locking.FileState]
+  = Locking.$fGenericFileState
+instance GHC.Show.Show [Locking.FileState]
   = Locking.$fShowFileState
+instance Data.Aeson.Types.ToJSON.ToJSON [Locking.FileState]
+  = Locking.$fToJSONFileState
+family instance GHC.Generics.Rep [Locking.FileState]
+  = Locking.Rep_FileState
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
 parallel variables:
 parallel tycons:
-trusted: safe
+trusted: none
 require own pkg trusted: False
 

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-01 16:02:51.305817 UTC
+2017-12-03 16:55:28.5126807 UTC
 
-interface FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR:Config 8002
-  interface hash: 0847dba36eee1b6d9d947eb9cfdb365a
-  ABI hash: 6708c9469436b7ec121266d57919449f
-  export-list hash: cf84a67656da30aeb579745358c9e514
+interface FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh:Config 8002
+  interface hash: add2bca9b6328de511fc51e01e49b577
+  ABI hash: c2c83290ae6253381ccea021db969e06
+  export-list hash: 3c9f822784f7abb2a04ca4bfc4910a57
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f8b847b675a91348479da0c1f8d4b9ba
   sig of: Nothing
@@ -29,61 +29,61 @@ import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-f04bcbabe82742f579b35d97c60ca774
+9f3f9e792a159a271d4df70b9b8569ea
   $tc'Config :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3623434298881816228##
-                   3107997537789380993##
+                   5106878418738719912##
+                   2398205129480922357##
                    Config.$trModule
                    Config.$tc'Config1) -}
-4a930970ed2214ee72ca34265e4281c1
+7ea7704d6547365148fa96fcf1533110
   $tc'Config1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Config"#) -}
-8427360bdc05f139ce8fec63b45d34d2
+c8602a3f00bb88ae94e25c302342c6ea
   $tcConfig :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   12256885912496322365##
-                   994432314466972681##
+                   15907956227177098015##
+                   5921882184199633185##
                    Config.$trModule
                    Config.$trModule1) -}
-d9f4b87979db5ebf6c88d8f6f62e7867
+0fd8a89c439949febe2d6dbfbd62ee37
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Config.$trModule2
                    Config.$trModule1) -}
-5f6a714f28f73e3a835ed7595606d3b8
+d86d84e129c1e5065f8757a4e43481b8
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Config"#) -}
-d4d081c56423a31de7fcd77b06f12477
+bd150fdfbbed9b07981b768945bce01c
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "FileServerV2-0.1.0.0-6BZsKY1l9t1iy3IKeXKwR"#) -}
-ec3eace59a4768618c8948a7f27c9219
+                   "FileServerV2-0.1.0.0-4Ug4buDbmyn7TJXR6FeHHh"#) -}
+dce0c0d9082ca9e545e3f643f9a3c786
   data Config
     = Config {directoryPort :: GHC.Types.Int,
               startPort :: GHC.Types.Int,
               nServers :: GHC.Types.Int}
-13e14f48b349c58da90f85710cc7dc95
+d570c941d4df3951cb663176184da5d3
   directoryPort :: Config.Config -> GHC.Types.Int
   RecSel Left Config.Config
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Config.Config) ->
                  case ds of wild { Config.Config ds1 ds2 ds3 -> ds1 }) -}
-43787f0abe19054c1fd3a3ab06290955
+625c7b932ee749b36fab8e908d206f6c
   getConfig :: GHC.Types.IO (GHC.Base.Maybe Config.Config)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Config.getConfig1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe Config.Config>_R)) -}
-23eb7f8c7b3abebbcdad89b849391992
+8fdc2b79097e8bd8fe02d2c46f128ae9
   getConfig1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -110,7 +110,7 @@ ec3eace59a4768618c8948a7f27c9219
                                      GHC.Base.Maybe Config.Config #)
                            of {}
                         : ds2 xs -> Config.getConfig2 xs ipv } } }) -}
-59ce613b70c98c13ee2165e39b20c608
+7aeb12e8cc1d2d09a676f050979356f9
   getConfig2 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -205,7 +205,7 @@ ec3eace59a4768618c8948a7f27c9219
                                                      : ipv2 ipv3 -> Config.getConfig6 } })) #) }
                                   : ipv ipv1
                                   -> (# eta, GHC.Base.Nothing @ Config.Config #) } } } }) -}
-fc27787e8a836d768d27010d144bfc8d
+9bf4d61d419ef44e465d9f6b5e7ba1ce
   getConfig3 :: GHC.Types.Int
   {- Unfolding: (case Text.Read.readEither6
                         @ GHC.Types.Int
@@ -231,29 +231,29 @@ fc27787e8a836d768d27010d144bfc8d
                              (Sym (GHC.Classes.N:IP[0]
                                        <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                              Text.Read.readEither2 } }) -}
-7c5ac19f7e0cc7fe3dfcd5c40bb0a52a
+d7567a98c91ce3c67bf6d29943860134
   getConfig4 :: [(GHC.Types.Int, GHC.Base.String)]
   {- Unfolding: (Text.ParserCombinators.ReadP.run
                    @ GHC.Types.Int
                    Config.getConfig5
                    Config.getConfig_ns) -}
-381a9225b5b0e756edd5db4e790313c9
+5a86bf8ad91623721626f8612640c5a5
   getConfig5 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
   {- Unfolding: (GHC.Read.$fReadInt3
                    GHC.Read.$fReadInt_$sconvertInt
                    Text.ParserCombinators.ReadPrec.minPrec
                    @ GHC.Types.Int
                    (Text.Read.readEither5 @ GHC.Types.Int)) -}
-ef8327d53810303343a3ba20aa839549
+56b8c05930e71af65e0ee1a9c28c6fb4
   getConfig6 :: GHC.Types.Int
   {- Strictness: x -}
-05a8abd209ef526c5c4085ed2966850e
+af20953995eab6c613bb92fbfc3800b1
   getConfig7 :: GHC.Types.Int
   {- Strictness: x -}
-e91c37c235f795ea89a556c1a7ddad2c
+4ea311952a04ae3387ad3a777a238199
   getConfig8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# " Server(s)"#) -}
-99e06ecf38bfe588c6fddb4beb916653
+bc6f69cfb52494839f179f3b78739aa5
   getConfig_confirmationString ::
     [GHC.Types.Char]
     -> [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
@@ -277,17 +277,17 @@ e91c37c235f795ea89a556c1a7ddad2c
                                "+\n\
                                \\t>"#
                                (GHC.Base.++ @ GHC.Types.Char ns Config.getConfig8)))))) -}
-af5920161e7f9f543443285058bec28d
+10ba6d8ea8efed7c44680be61e6f9362
   getConfig_ns :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "1"#) -}
-bad494f14a5ad42565c488cf9e375c8b
+4f3eb1862a714bd0e3583bc0147bdce1
   nServers :: Config.Config -> GHC.Types.Int
   RecSel Left Config.Config
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U))>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Config.Config) ->
                  case ds of wild { Config.Config ds1 ds2 ds3 -> ds3 }) -}
-13bd035e26a1ade572212e481578fbcf
+345593d7fdf5334647a8d3d00ddc556f
   startPort :: Config.Config -> GHC.Types.Int
   RecSel Left Config.Config
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>m,

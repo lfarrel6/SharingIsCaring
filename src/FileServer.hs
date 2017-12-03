@@ -1,6 +1,6 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module FileServer ( FileServer , buildFileServer , initFileList , addFile , startServer ) where
+module FileServer ( FileServer , buildFileServer , initFileList , addFile , startServer , getFiles , getFile ) where
 
 import qualified Data.Map as Map
 import Data.Map (Map)
@@ -11,6 +11,8 @@ import System.IO
 import System.Directory
 import Data.Time
 import Control.Monad
+import Control.Monad.IO.Class
+import Servant
 
 import qualified File as F
 import Message
@@ -18,7 +20,7 @@ import Message
 data FileServer = FileServer
   { serverID      :: Int
   , directoryAddr :: FilePath
-  , fileListing   :: TVar (Map Int F.File)
+  , fileListing   :: TVar (Map Int F.File) --mapping of hashes to files
   , port          :: Int
   , fileCount     :: TVar Int
   , msgChan       :: TChan Message
@@ -100,3 +102,13 @@ startServer fs@FileServer{..} = withSocketsDo $ do
 
 handleMsg :: FileServer -> Message -> IO Bool
 handleMsg fs@FileServer{..} msg = return True
+
+getFiles :: FileServer -> Handler [F.File]
+getFiles fs@FileServer{..} = do
+  files <- liftIO $ atomically $ readTVar fileListing
+  return $ Map.elems files
+
+getFile :: FileServer -> Int -> IO (Maybe F.File)
+getFile fs@FileServer{..} requested = do
+ files <- atomically $ readTVar fileListing
+ return $ Map.lookup requested files
