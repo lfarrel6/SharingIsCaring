@@ -1,8 +1,11 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module Types (File) where
+module Types (File(..)) where
 
-data File = File {
-  name    :: String
-, content :: String
-}
+import Data.Text
+
+data File = File
+   { name    :: Text
+   , content :: Text
+   }
+  deriving Show

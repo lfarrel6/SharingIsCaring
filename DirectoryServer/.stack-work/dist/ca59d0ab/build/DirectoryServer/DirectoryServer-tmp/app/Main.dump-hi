@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-14 19:11:20.4611949 UTC
+2017-12-14 21:39:59.1045889 UTC
 
 interface main@main:Main 8002
-  interface hash: 219604a222ae886833a65d9e909d6ecd
-  ABI hash: ed9e5ab17a80f7269bcc8e3a65821972
-  export-list hash: b4b6b5508af5739bedb3f291cf19fbde
+  interface hash: ff1c05e5ced55b3199dd9cd36ec32315
+  ABI hash: 66a508b93f6383a27826c7068bc8539c
+  export-list hash: 7981be03fb644153d66502d18439c82e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 3e486ccc12587d59eef428c80cfae6cc
   sig of: Nothing
@@ -14,7 +14,7 @@ interface main@main:Main 8002
 exports:
   Main.main
 module dependencies:
-package dependencies: DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki
+package dependencies: DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2
                       Win32-2.3.1.1@Win32-2.3.1.1
                       aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
                       aeson-compat-0.3.6@aeson-compat-0.3.6-3jcbNvweiFI2p0UZCMZBcC
@@ -159,7 +159,7 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
-family instance modules: DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki:Database
+family instance modules: DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2:Database
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
@@ -229,7 +229,7 @@ family instance modules: DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-C9EeH2L
                          yesod-core-1.4.37.2@yesod-core-1.4.37.2-CLXhFyk8jtCShHPkOpIE7:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37.2@yesod-core-1.4.37.2-CLXhFyk8jtCShHPkOpIE7:Yesod.Core.Types
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki:Database 44529ea7ec8bcc11398f46ad05950cdf
+import  -/  DirectoryServer-0.1.0.0@DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2:Database 8a5a492396dcdbb8990e49e5e797aba3
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 d6831ef04cb9301b090dfae6f7bb7ec7
@@ -244,10 +244,10 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-e925c2f26d72a947640e6460b99a8b3f
+8ea4c0a503491fe803ecd86ba72a821c
   main :: GHC.Types.IO ()
   {- Unfolding: InlineRule (0, True, True) Database.runDatabase -}
-8c22b2ffa93e4dfe6c251b78987e7146
+d82f8b9f3a0d2bc5a80dcd31e4d35f1f
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

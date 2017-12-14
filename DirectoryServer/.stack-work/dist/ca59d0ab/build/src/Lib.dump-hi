@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-14 17:19:46.7488693 UTC
+2017-12-14 21:33:18.4170767 UTC
 
-interface DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki:Lib 8002
-  interface hash: 94b45e14dc01a00c3d102e5f93e79f16
-  ABI hash: 26efd1f4b5503ab653f0123f5428de37
-  export-list hash: 17424c9570b8d1cbcd4d4520b96aaa2b
+interface DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2:Lib 8002
+  interface hash: 44ce04ad7c4b9902267bfaa0f3f46585
+  ABI hash: e980d9e480b753b4faebee630ca81fc2
+  export-list hash: 219dedaac7030223e2b5f2f8af790adf
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f8b847b675a91348479da0c1f8d4b9ba
   sig of: Nothing
@@ -25,25 +25,25 @@ family instance modules: base-4.9.1.0:Control.Applicative
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-11855458b1150f53cf7cb33cd6ac64cd
+401569d99324bc57581c9ed71eb2509e
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
-975c08919b79f00bf0c3f94cfeede239
+a9029079ebeae110f794871193462d10
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Lib"#) -}
-a7a3877d86e3cd6c1dc96320beb2b150
+3cfce108249ab549c7efdb12e3364fe6
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki"#) -}
-ba3289004fd348df592faf3ef36314ab
+                   "DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"#) -}
+534099c15f102274ae8793d1c5cdfe2c
   someFunc :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-876c4d1c8b0aa934cc1e67b7f111ea94
+26017ffb6be15b33a444fc1265db714f
   someFunc1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

@@ -1,0 +1,2467 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-14 21:39:58.1414453 UTC
+
+interface DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2:Config 8002
+  interface hash: d5e556783b19d2c44647e9e48acccdce
+  ABI hash: d838517144a04a0b91db866d21e9f2fb
+  export-list hash: 121d126b6285052c27914e549b50784c
+  orphan hash: d47ce61b2268d64bfd9d24080c0b8a98
+  flag hash: b719784fb3f1a5d25de4691ed8c6b44c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Config.connStr
+  Config.makePool
+  Config.openConnectionCount
+  Config.App
+  Config.AppT{Config.AppT runApp}
+  Config.Config{Config.Config configEnv configPool}
+  Config.Environment{Config.Development Config.Test}
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-5krMHmbflz8EYj7W9e0kqT
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-1D5OUKQ7UrJ7IpOe0di4Un
+                      conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i
+                      conduit-extra-1.1.17@conduit-extra-1.1.17-FrTamKwpf3F9ta0nNY68aV
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cryptonite-0.23@cryptonite-0.23-49rV2wu97anC98UHoy23eG
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      easy-file-0.2.1@easy-file-0.2.1-5ig8rCGsBnD1LYczMQvq1o
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-EzPG6cXTz5mFruQq6OdJ4C
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o
+                      http-date-0.0.6.1@http-date-0.0.6.1-AkYFHBFn90lGSerD29arC9
+                      http-media-0.6.4@http-media-0.6.4-L2HKUvjwG4m4RLl78rlCa
+                      http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-Ei0JSPdt7KOCD2HIA5jFqV
+                      memory-0.14.10@memory-0.14.10-7xcdDSbUSfw8bjCpT4TVFU
+                      microlens-0.4.8.1@microlens-0.4.8.1-BVhsezHoPw9Ez18LAXVtpM
+                      microlens-th-0.4.1.1@microlens-th-0.4.1.1-DWxGvZm1QBXHYYQf0fHp0m
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-6b3z22GcDYZLEl2kkfCUAB
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l
+                      monad-logger-0.3.25.1@monad-logger-0.3.25.1-Acu7e5Lm0EW7nai3Q4YYa6
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      natural-transformation-0.4@natural-transformation-0.4-1wekIVD0YQa62debXjfFg3
+                      network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5
+                      persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9
+                      persistent-sqlite-2.6.3@persistent-sqlite-2.6.3-CKZsgL0y489A7pNsTZDfdf
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-GmoeVeJ8L5Y51jMJ5dPk3U
+                      resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5
+                      servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      string-conversions-0.4.0.1@string-conversions-0.4.0.1-HK2T4drDKhqGigpJdBBdRG
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-4J6CourUSTG17Ll1LWtjiq
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vault-0.3.0.7@vault-0.3.0.7-FSJCPczyPWW8DwvwP76qt4
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+                      wai-3.2.1.1@wai-3.2.1.1-9FGPcqW2iUN5VP944fCq2b
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-H3uaMNyFHAfGbmzGMEFL9Z
+                      word8-0.1.3@word8-0.1.3-9o1uWQQ6KysJq8GGsVHHit
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Block
+         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UArray.Base
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket
+         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Orphan.PersistUnique
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Block.Base
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.BoxedArray
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Monad
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.MutableBuilder
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Nat
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.NonEmpty
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Numerical.Subtractive
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.ASCII7
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.UTF16
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.UTF32
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Types.AsciiString
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Types.OffsetSize
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UArray.Base
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UTF8.Base
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Conduit
+                         conduit-1.2.12.1@conduit-1.2.12.1-CTYKTJmwFo81r4LrAKDD8i:Data.Conduit.Internal.Pipe
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Array.Bitmap
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Buildable
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Element
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Keyed
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Mutable
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o:Web.Internal.FormUrlEncoded
+                         microlens-0.4.8.1@microlens-0.4.8.1-BVhsezHoPw9Ez18LAXVtpM:Lens.Micro.Internal
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control
+                         monad-logger-0.3.25.1@monad-logger-0.3.25.1-Acu7e5Lm0EW7nai3Q4YYa6:Control.Monad.Logger
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph:Network.URI
+                         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Class.PersistConfig
+                         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Types.Internal
+                         persistent-sqlite-2.6.3@persistent-sqlite-2.6.3-CKZsgL0y489A7pNsTZDfdf:Database.Persist.Sqlite
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.ContentTypes
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.IsSecure
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.Verbs
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.Utils.Links
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.BasicAuth
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.Handler
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.RoutingApplication
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh:URI.ByteString.Types
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  base-4.9.1.0:Control.Exception 292fff19f09f7eea1a1573871191d564
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 3f1875e753ac8c44dae64dc062ea742e
+import  -/  base-4.9.1.0:Data.Monoid 57d0116342e60080b20e7d5f9e1248f9
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Char8 53131bf786c5438dfe07ccfe89b878d8
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  monad-logger-0.3.25.1@monad-logger-0.3.25.1-Acu7e5Lm0EW7nai3Q4YYa6:Control.Monad.Logger abb68c935ec85cbbb89526144cab0e6d
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Error.Class 42587c00b02060cdee621c33364802f4
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Except 3bb0e2598193c1ba00c9723945e93004
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Reader 0a25f5000d6974b16ed96a739eacaeb6
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Reader.Class 5140264c9cba1fa2b0fb5d3c5a865837
+import  -/  persistent-2.7.1@persistent-2.7.1-6CfUe6vWLUv5kFt6Nwpyf9:Database.Persist.Sql.Types e9262f22645abe9dc0628bf9184cb7b0
+import  -/  persistent-sqlite-2.6.3@persistent-sqlite-2.6.3-CKZsgL0y489A7pNsTZDfdf:Database.Persist.Sqlite 1b385fbd61e137a16a1298cc1fb36335
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant 90701b1784f0fa8869730796ce8f4d71
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.ServantErr 807c6e1df9f1cdefef47bdf933e0ed50
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e2213faa3c3f5680c74ec6dedf8
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class 953c05e2bceca1b256a90a052f7c1b62
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Except e4ff792e69757afb1f468d23f65818d0
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Maybe 34d1522a74b7aa48c00f00444cf8a285
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader ea13c8a815ea11d13acee6e9122cc7d2
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT ::
+    GHC.Base.Monad m => GHC.Base.Applicative (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m).
+                  @ (Config.AppT m)
+                  (Config.$fApplicativeAppT_$cp1Applicative @ m $dMonad)
+                  (Config.$fApplicativeAppT_$cpure @ m $dMonad)
+                  (Config.$fApplicativeAppT_$c<*> @ m $dMonad)
+                  (Config.$fApplicativeAppT_$c*> @ m $dMonad)
+                  (Config.$fApplicativeAppT_$c<* @ m $dMonad) -}
+332e66758aa15b51e037fd7f1f83be5d
+  $fApplicativeAppT1 ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(1*C1(U),A),A,A,A,A),C(C1(U)),A,C(U),A)><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   @ b
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             Config.Config
+                             (Control.Monad.Trans.Except.ExceptT
+                                Servant.Server.Internal.ServantErr.ServantErr m)
+                             a)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              Config.Config
+                              (Control.Monad.Trans.Except.ExceptT
+                                 Servant.Server.Internal.ServantErr.ServantErr m)
+                              b) ->
+                 let {
+                   f1 :: m (Data.Either.Either
+                              Servant.Server.Internal.ServantErr.ServantErr a)
+                         -> m (Data.Either.Either
+                                 Servant.Server.Internal.ServantErr.ServantErr (b -> a))
+                   = GHC.Base.fmap
+                       @ m
+                       (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr (b -> a))
+                       (Config.$fApplicativeAppT2 @ b @ a)
+                 } in
+                 (\ (r1 :: Config.Config) ->
+                  Control.Monad.Trans.Except.$w$c<*>
+                    @ m
+                    @ Servant.Server.Internal.ServantErr.ServantErr
+                    $dMonad
+                    @ b
+                    @ a
+                    (f1
+                       (eta
+                          `cast`
+                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Config.Config>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Servant.Server.Internal.ServantErr.ServantErr m>_R
+                             <a>_N)
+                          r1)
+                         `cast`
+                       (Control.Monad.Trans.Except.N:ExceptT[0]
+                            <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))
+                      `cast`
+                    (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Servant.Server.Internal.ServantErr.ServantErr>_N
+                              <m>_R
+                              <b -> a>_N))
+                    (eta1
+                       `cast`
+                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                          <*>_N
+                          <Config.Config>_R
+                          <Control.Monad.Trans.Except.ExceptT
+                             Servant.Server.Internal.ServantErr.ServantErr m>_R
+                          <b>_N)
+                       r1))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N
+                           <Config.Config>_R
+                           <Control.Monad.Trans.Except.ExceptT
+                              Servant.Server.Internal.ServantErr.ServantErr m>_R
+                           <a>_N))) -}
+bbcfa66c95b10f35a3711b10f336adce
+  $fApplicativeAppT2 ::
+    Data.Either.Either Servant.Server.Internal.ServantErr.ServantErr a
+    -> Data.Either.Either
+         Servant.Server.Internal.ServantErr.ServantErr (b -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ b
+                   @ a
+                   (ds1 :: Data.Either.Either
+                             Servant.Server.Internal.ServantErr.ServantErr a) ->
+                 case ds1 of wild {
+                   Data.Either.Left x
+                   -> Data.Either.Left
+                        @ Servant.Server.Internal.ServantErr.ServantErr
+                        @ (b -> a)
+                        x
+                   Data.Either.Right y
+                   -> Data.Either.Right
+                        @ Servant.Server.Internal.ServantErr.ServantErr
+                        @ (b -> a)
+                        (\ (ds :: b) -> y) }) -}
+b3bdeab96a61ca0ff1f61b18134d6ee3
+  $fApplicativeAppT3 ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(1*C1(U),A),A,A,A,A),C(C1(U)),A,C(U),A)><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   @ b
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             Config.Config
+                             (Control.Monad.Trans.Except.ExceptT
+                                Servant.Server.Internal.ServantErr.ServantErr m)
+                             a)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              Config.Config
+                              (Control.Monad.Trans.Except.ExceptT
+                                 Servant.Server.Internal.ServantErr.ServantErr m)
+                              b) ->
+                 let {
+                   f1 :: m (Data.Either.Either
+                              Servant.Server.Internal.ServantErr.ServantErr a)
+                         -> m (Data.Either.Either
+                                 Servant.Server.Internal.ServantErr.ServantErr (b -> b))
+                   = GHC.Base.fmap
+                       @ m
+                       (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr (b -> b))
+                       (Config.$fApplicativeAppT4 @ b @ a)
+                 } in
+                 (\ (r1 :: Config.Config) ->
+                  Control.Monad.Trans.Except.$w$c<*>
+                    @ m
+                    @ Servant.Server.Internal.ServantErr.ServantErr
+                    $dMonad
+                    @ b
+                    @ b
+                    (f1
+                       (eta
+                          `cast`
+                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Config.Config>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Servant.Server.Internal.ServantErr.ServantErr m>_R
+                             <a>_N)
+                          r1)
+                         `cast`
+                       (Control.Monad.Trans.Except.N:ExceptT[0]
+                            <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))
+                      `cast`
+                    (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Servant.Server.Internal.ServantErr.ServantErr>_N
+                              <m>_R
+                              <b -> b>_N))
+                    (eta1
+                       `cast`
+                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                          <*>_N
+                          <Config.Config>_R
+                          <Control.Monad.Trans.Except.ExceptT
+                             Servant.Server.Internal.ServantErr.ServantErr m>_R
+                          <b>_N)
+                       r1))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N
+                           <Config.Config>_R
+                           <Control.Monad.Trans.Except.ExceptT
+                              Servant.Server.Internal.ServantErr.ServantErr m>_R
+                           <b>_N))) -}
+981a6ea73f50bd594c791311c108d9b8
+  $fApplicativeAppT4 ::
+    Data.Either.Either Servant.Server.Internal.ServantErr.ServantErr a
+    -> Data.Either.Either
+         Servant.Server.Internal.ServantErr.ServantErr (b -> b)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ b
+                   @ a
+                   (ds1 :: Data.Either.Either
+                             Servant.Server.Internal.ServantErr.ServantErr a) ->
+                 case ds1 of wild {
+                   Data.Either.Left x
+                   -> Data.Either.Left
+                        @ Servant.Server.Internal.ServantErr.ServantErr
+                        @ (b -> b)
+                        x
+                   Data.Either.Right y -> Config.$fApplicativeAppT5 @ b }) -}
+328f7796ffe1e689640ed5bc9147cbee
+  $fApplicativeAppT5 ::
+    Data.Either.Either
+      Servant.Server.Internal.ServantErr.ServantErr (b -> b)
+  {- HasNoCafRefs,
+     Unfolding: (\ @ b ->
+                 Data.Either.Right
+                   @ Servant.Server.Internal.ServantErr.ServantErr
+                   @ (b -> b)
+                   (Config.$fApplicativeAppT6 @ b)) -}
+9511e6132d7acbd5e88077f27acf1777
+  $fApplicativeAppT6 :: b -> b
+  {- Arity: 1, HasNoCafRefs, Unfolding: (\ @ b (eta :: b) -> eta) -}
+448a03cb22c8b94802f9e0f7583271fa
+  $fApplicativeAppT7 ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),A)>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   @ b ->
+                 Control.Monad.Trans.Reader.$fApplicativeReaderT_$c<*>
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ Config.Config
+                   (Control.Monad.Trans.Except.$fApplicativeExceptT
+                      @ m
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      $dMonad)
+                   @ a
+                   @ b) -}
+1961ddbc64b7a49a584e023f2a2a5b5e
+  $fApplicativeAppT8 ::
+    GHC.Base.Monad m =>
+    forall a.
+    a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) @ a (eta :: a) ->
+                 let {
+                   m1 :: m (Data.Either.Either
+                              Servant.Server.Internal.ServantErr.ServantErr a)
+                   = GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       (Data.Either.Right
+                          @ Servant.Server.Internal.ServantErr.ServantErr
+                          @ a
+                          eta)
+                 } in
+                 (\ (eta1 :: Config.Config) -> m1)
+                   `cast`
+                 (Trans
+                      (<Config.Config>_R
+                       ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                     <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))
+                      (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <*>_N
+                                <Config.Config>_R
+                                <Control.Monad.Trans.Except.ExceptT
+                                   Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                <a>_N)))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT_$c*> ::
+    GHC.Base.Monad m =>
+    forall a b. Config.AppT m a -> Config.AppT m b -> Config.AppT m b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(1*C1(U),A),A,A,A,A),C(C1(U)),A,C(U),A)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fApplicativeAppT3
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT_$c<* ::
+    GHC.Base.Monad m =>
+    forall a b. Config.AppT m a -> Config.AppT m b -> Config.AppT m a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(1*C1(U),A),A,A,A,A),C(C1(U)),A,C(U),A)><L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fApplicativeAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT_$c<*> ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Config.AppT m (a -> b) -> Config.AppT m a -> Config.AppT m b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),A)>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fApplicativeAppT7
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a -> b>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT_$cp1Applicative ::
+    GHC.Base.Monad m => GHC.Base.Functor (Config.AppT m)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(1*U(C(U),A),A,A,A,A),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) ->
+                 Config.$fFunctorAppT
+                   @ m
+                   (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fApplicativeAppT_$cpure ::
+    GHC.Base.Monad m => forall a. a -> Config.AppT m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fApplicativeAppT8
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <a>_R ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fEqEnvironment :: GHC.Classes.Eq Config.Environment
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Config.Environment
+                  Config.$fEqEnvironment_$c==
+                  Config.$fEqEnvironment_$c/= -}
+145d813ca3a211db19e3ffde0eee073a
+  $fEqEnvironment_$c/= ::
+    Config.Environment -> Config.Environment -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Config.Environment) (b :: Config.Environment) ->
+                 case a of wild {
+                   Config.Development
+                   -> case b of wild1 {
+                        Config.Development -> GHC.Types.False
+                        Config.Test -> GHC.Types.True }
+                   Config.Test
+                   -> case b of wild1 {
+                        Config.Development -> GHC.Types.True
+                        Config.Test -> GHC.Types.False } }) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fEqEnvironment_$c== ::
+    Config.Environment -> Config.Environment -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Config.Environment) (ds1 :: Config.Environment) ->
+                 case ds of wild {
+                   Config.Development
+                   -> case ds1 of wild1 {
+                        Config.Development -> GHC.Types.True
+                        Config.Test -> GHC.Types.False }
+                   Config.Test
+                   -> case ds1 of wild1 {
+                        Config.Development -> GHC.Types.False
+                        Config.Test -> GHC.Types.True } }) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fFunctorAppT ::
+    GHC.Base.Functor m => GHC.Base.Functor (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *) ($dFunctor :: GHC.Base.Functor m).
+                  @ (Config.AppT m)
+                  (Config.$fFunctorAppT_$cfmap @ m $dFunctor)
+                  (Config.$fFunctorAppT_$c<$ @ m $dFunctor) -}
+49a2bdd29053ef058c27a48f6b67c11f
+  $fFunctorAppT1 ::
+    GHC.Base.Functor m =>
+    forall a b.
+    a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor m)
+                   @ a
+                   @ b
+                   (eta :: a) ->
+                 Control.Monad.Trans.Reader.mapReaderT
+                   @ *
+                   @ *
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ b
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ a
+                   @ Config.Config
+                   (let {
+                      f1 :: m (Data.Either.Either
+                                 Servant.Server.Internal.ServantErr.ServantErr b)
+                            -> m (Data.Either.Either
+                                    Servant.Server.Internal.ServantErr.ServantErr a)
+                      = let {
+                          lvl10 :: Data.Either.Either
+                                     Servant.Server.Internal.ServantErr.ServantErr a
+                          = Data.Either.Right
+                              @ Servant.Server.Internal.ServantErr.ServantErr
+                              @ a
+                              eta
+                        } in
+                        GHC.Base.fmap
+                          @ m
+                          $dFunctor
+                          @ (Data.Either.Either
+                               Servant.Server.Internal.ServantErr.ServantErr b)
+                          @ (Data.Either.Either
+                               Servant.Server.Internal.ServantErr.ServantErr a)
+                          (\ (ds1 :: Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr b) ->
+                           case ds1 of wild {
+                             Data.Either.Left x
+                             -> Data.Either.Left
+                                  @ Servant.Server.Internal.ServantErr.ServantErr
+                                  @ a
+                                  x
+                             Data.Either.Right y -> lvl10 })
+                    } in
+                    (\ (x :: Control.Monad.Trans.Except.ExceptT
+                               Servant.Server.Internal.ServantErr.ServantErr m b) ->
+                     f1
+                       x `cast`
+                       (Control.Monad.Trans.Except.N:ExceptT[0]
+                            <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <b>_N))
+                      `cast`
+                    (<Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m b>_R
+                     ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                   <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                   <m>_R
+                                   <a>_N)))) -}
+d99ab440e90b514c154c500a1e40258d
+  $fFunctorAppT2 ::
+    GHC.Base.Functor m =>
+    forall a b.
+    (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *) ($dFunctor :: GHC.Base.Functor m) @ a @ b ->
+                 Control.Monad.Trans.Reader.$fFunctorReaderT_$cfmap
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ Config.Config
+                   (Control.Monad.Trans.Except.$fFunctorExceptT
+                      @ m
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      $dFunctor)
+                   @ a
+                   @ b) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fFunctorAppT_$c<$ ::
+    GHC.Base.Functor m =>
+    forall a b. a -> Config.AppT m b -> Config.AppT m a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fFunctorAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Functor m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <a>_R
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fFunctorAppT_$cfmap ::
+    GHC.Base.Functor m =>
+    forall a b. (a -> b) -> Config.AppT m a -> Config.AppT m b
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(U),A)>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fFunctorAppT2
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Functor m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <a -> b>_R
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadAppT :: GHC.Base.Monad m => GHC.Base.Monad (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m).
+                  @ (Config.AppT m)
+                  (Config.$fApplicativeAppT @ m $dMonad)
+                  (Config.$fMonadAppT_$c>>= @ m $dMonad)
+                  (Config.$fMonadAppT_$c>> @ m $dMonad)
+                  (Config.$fMonadAppT_$creturn @ m $dMonad)
+                  (Config.$fMonadAppT_$cfail @ m $dMonad) -}
+a3b964c94f80d43d91f1dcc4206e44b4
+  $fMonadAppT1 ::
+    GHC.Base.Monad m =>
+    forall a.
+    GHC.Base.String
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) @ a ->
+                 Control.Monad.Trans.Reader.$fMonadReaderT_$cfail
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ Config.Config
+                   (Control.Monad.Trans.Except.$fMonadExceptT
+                      @ m
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      $dMonad)
+                   @ a) -}
+0799a5e8fc4488415000f9d1a03d3ab3
+  $fMonadAppT2 ::
+    GHC.Base.Monad m =>
+    forall a.
+    a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) @ a (eta :: a) ->
+                 let {
+                   m1 :: m (Data.Either.Either
+                              Servant.Server.Internal.ServantErr.ServantErr a)
+                   = GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       (Data.Either.Right
+                          @ Servant.Server.Internal.ServantErr.ServantErr
+                          @ a
+                          eta)
+                 } in
+                 (\ (eta1 :: Config.Config) -> m1)
+                   `cast`
+                 (Trans
+                      (<Config.Config>_R
+                       ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                     <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))
+                      (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <*>_N
+                                <Config.Config>_R
+                                <Control.Monad.Trans.Except.ExceptT
+                                   Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                <a>_N)))) -}
+b925e997f8f182025a8a243567524652
+  $fMonadAppT3 ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) @ a @ b ->
+                 Control.Monad.Trans.Reader.$fMonadReaderT_$c>>
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ Config.Config
+                   (Control.Monad.Trans.Except.$fMonadExceptT
+                      @ m
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      $dMonad)
+                   @ a
+                   @ b) -}
+317c9b69da5465b4f138f8f766a96bf6
+  $fMonadAppT4 ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      a
+    -> (a
+        -> Control.Monad.Trans.Reader.ReaderT
+             Config.Config
+             (Control.Monad.Trans.Except.ExceptT
+                Servant.Server.Internal.ServantErr.ServantErr m)
+             b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m) @ a @ b ->
+                 Control.Monad.Trans.Reader.$fMonadReaderT_$c>>=
+                   @ (Control.Monad.Trans.Except.ExceptT
+                        Servant.Server.Internal.ServantErr.ServantErr m)
+                   @ Config.Config
+                   (Control.Monad.Trans.Except.$fMonadExceptT
+                      @ m
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      $dMonad)
+                   @ a
+                   @ b) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadAppT_$c>> ::
+    GHC.Base.Monad m =>
+    forall a b. Config.AppT m a -> Config.AppT m b -> Config.AppT m b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadAppT3
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadAppT_$c>>= ::
+    GHC.Base.Monad m =>
+    forall a b.
+    Config.AppT m a -> (a -> Config.AppT m b) -> Config.AppT m b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadAppT4
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R (<a>_R ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N)
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <b>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadAppT_$cfail ::
+    GHC.Base.Monad m => forall a. GHC.Base.String -> Config.AppT m a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <[GHC.Types.Char]>_R ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadAppT_$creturn ::
+    GHC.Base.Monad m => forall a. a -> Config.AppT m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadAppT2
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <a>_R ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadErrorAppT ::
+    GHC.Base.Monad m =>
+    Control.Monad.Error.Class.MonadError
+      Servant.Server.Internal.ServantErr.ServantErr (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m).
+                  @ Servant.Server.Internal.ServantErr.ServantErr
+                  @ (Config.AppT m)
+                  (Config.$fMonadAppT @ m $dMonad)
+                  (Config.$fMonadErrorAppT_$cthrowError @ m $dMonad)
+                  (Config.$fMonadErrorAppT_$ccatchError @ m $dMonad) -}
+d03a3e2bacd1633121978d132e6d6040
+  $fMonadErrorAppT1 ::
+    GHC.Base.Monad m =>
+    forall a.
+    Control.Monad.Trans.Reader.ReaderT
+      Config.Config
+      (Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m)
+      a
+    -> (Servant.Server.Internal.ServantErr.ServantErr
+        -> Control.Monad.Trans.Reader.ReaderT
+             Config.Config
+             (Control.Monad.Trans.Except.ExceptT
+                Servant.Server.Internal.ServantErr.ServantErr m)
+             a)
+    -> Config.Config
+    -> m (Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             Config.Config
+                             (Control.Monad.Trans.Except.ExceptT
+                                Servant.Server.Internal.ServantErr.ServantErr m)
+                             a)
+                   (eta1 :: Servant.Server.Internal.ServantErr.ServantErr
+                            -> Control.Monad.Trans.Reader.ReaderT
+                                 Config.Config
+                                 (Control.Monad.Trans.Except.ExceptT
+                                    Servant.Server.Internal.ServantErr.ServantErr m)
+                                 a)
+                   (eta2 :: Config.Config) ->
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (Data.Either.Either
+                        Servant.Server.Internal.ServantErr.ServantErr a)
+                   @ (Data.Either.Either
+                        Servant.Server.Internal.ServantErr.ServantErr a)
+                   (eta
+                      `cast`
+                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                         <*>_N
+                         <Config.Config>_R
+                         <Control.Monad.Trans.Except.ExceptT
+                            Servant.Server.Internal.ServantErr.ServantErr m>_R
+                         <a>_N)
+                      eta2)
+                     `cast`
+                   (Control.Monad.Trans.Except.N:ExceptT[0]
+                        <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N)
+                   (\ (a1 :: Data.Either.Either
+                               Servant.Server.Internal.ServantErr.ServantErr a) ->
+                    case a1 of wild {
+                      Data.Either.Left l
+                      -> ((eta1 l)
+                            `cast`
+                          (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N
+                               <Config.Config>_R
+                               <Control.Monad.Trans.Except.ExceptT
+                                  Servant.Server.Internal.ServantErr.ServantErr m>_R
+                               <a>_N)
+                            eta2)
+                           `cast`
+                         (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N)
+                      Data.Either.Right r
+                      -> GHC.Base.return
+                           @ m
+                           $dMonad
+                           @ (Data.Either.Either
+                                Servant.Server.Internal.ServantErr.ServantErr a)
+                           wild })) -}
+f1633a8c9f3fda518ec78304f896776b
+  $fMonadErrorAppT2 ::
+    GHC.Base.Monad m =>
+    forall a.
+    Servant.Server.Internal.ServantErr.ServantErr
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   (eta :: Servant.Server.Internal.ServantErr.ServantErr) ->
+                 let {
+                   eta1 :: m (Data.Either.Either
+                                Servant.Server.Internal.ServantErr.ServantErr a)
+                   = GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       (Data.Either.Left
+                          @ Servant.Server.Internal.ServantErr.ServantErr
+                          @ a
+                          eta)
+                 } in
+                 (\ (eta2 :: Config.Config) -> eta1)
+                   `cast`
+                 (Trans
+                      (<Config.Config>_R
+                       ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                     <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))
+                      (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <*>_N
+                                <Config.Config>_R
+                                <Control.Monad.Trans.Except.ExceptT
+                                   Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                <a>_N)))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadErrorAppT_$ccatchError ::
+    GHC.Base.Monad m =>
+    forall a.
+    Config.AppT m a
+    -> (Servant.Server.Internal.ServantErr.ServantErr
+        -> Config.AppT m a)
+    -> Config.AppT m a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadErrorAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R (<Servant.Server.Internal.ServantErr.ServantErr>_R
+                            ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N)
+                      ->_R Trans
+                               (<Config.Config>_R
+                                ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                              <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                              <m>_R
+                                              <a>_N))
+                               (Trans
+                                    (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                              <*>_N
+                                              <Config.Config>_R
+                                              <Control.Monad.Trans.Except.ExceptT
+                                                 Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                              <a>_N))
+                                    (Sym (Config.N:AppT[0] <m>_R) <a>_N))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadErrorAppT_$cthrowError ::
+    GHC.Base.Monad m =>
+    forall a.
+    Servant.Server.Internal.ServantErr.ServantErr -> Config.AppT m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadErrorAppT2
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <Servant.Server.Internal.ServantErr.ServantErr>_R
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadIOAppT ::
+    Control.Monad.IO.Class.MonadIO m =>
+    Control.Monad.IO.Class.MonadIO (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(U(U,U),U,U,U,U),U,U,U,U),C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *)
+                      ($dMonadIO :: Control.Monad.IO.Class.MonadIO m).
+                  @ (Config.AppT m)
+                  (Config.$fMonadIOAppT_$cp1MonadIO @ m $dMonadIO)
+                  (Config.$fMonadIOAppT_$cliftIO @ m $dMonadIO) -}
+30bb76fa42c7e870a30796c9d6ac6677
+  $fMonadIOAppT1 ::
+    Control.Monad.IO.Class.MonadIO m =>
+    forall a.
+    GHC.Types.IO a
+    -> Config.Config
+    -> Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,1*C1(U))><L,U>,
+     Unfolding: (\ @ (m :: * -> *)
+                   ($dMonadIO :: Control.Monad.IO.Class.MonadIO m)
+                   @ a
+                   (eta :: GHC.Types.IO a) ->
+                 let {
+                   x :: m (Data.Either.Either
+                             Servant.Server.Internal.ServantErr.ServantErr a)
+                   = let {
+                       $dMonad :: GHC.Base.Monad m
+                       = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                     } in
+                     GHC.Base.>>=
+                       @ m
+                       $dMonad
+                       @ a
+                       @ (Data.Either.Either
+                            Servant.Server.Internal.ServantErr.ServantErr a)
+                       (Control.Monad.IO.Class.liftIO @ m $dMonadIO @ a eta)
+                       (\ (x1 :: a) ->
+                        GHC.Base.return
+                          @ m
+                          $dMonad
+                          @ (Data.Either.Either
+                               Servant.Server.Internal.ServantErr.ServantErr a)
+                          (Data.Either.Right
+                             @ Servant.Server.Internal.ServantErr.ServantErr
+                             @ a
+                             x1))
+                 } in
+                 (\ (ds :: Config.Config) -> x)
+                   `cast`
+                 (<Config.Config>_R
+                  ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Servant.Server.Internal.ServantErr.ServantErr>_N <m>_R <a>_N))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadIOAppT_$cliftIO ::
+    Control.Monad.IO.Class.MonadIO m =>
+    forall a. GHC.Types.IO a -> Config.AppT m a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,1*C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadIOAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <Control.Monad.IO.Class.MonadIO m>_R
+                 ->_R forall (a :: <*>_N).
+                      <GHC.Types.IO a>_R
+                      ->_R Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Config.Config>_R
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                         <a>_N))
+                               (Sym (Config.N:AppT[0] <m>_R) <a>_N)) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadIOAppT_$cp1MonadIO ::
+    Control.Monad.IO.Class.MonadIO m => GHC.Base.Monad (Config.AppT m)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U)),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (m :: * -> *)
+                   ($dMonadIO :: Control.Monad.IO.Class.MonadIO m) ->
+                 Config.$fMonadAppT
+                   @ m
+                   (Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO)) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadReaderAppT ::
+    GHC.Base.Monad m =>
+    Control.Monad.Reader.Class.MonadReader
+      Config.Config (Config.AppT m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(U),A),A,A,A,A),C(C1(U)),A,C(U),C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (m :: * -> *) ($dMonad :: GHC.Base.Monad m).
+                  @ Config.Config
+                  @ (Config.AppT m)
+                  (Config.$fMonadAppT @ m $dMonad)
+                  (Config.$fMonadReaderAppT_$cask @ m $dMonad)
+                  (Config.$fMonadReaderAppT_$clocal @ m $dMonad)
+                  (Config.$fMonadReaderAppT_$creader @ m $dMonad) -}
+d70a5f71b4eb8d64b06cf4a4c308db85
+  $fMonadReaderAppT1 ::
+    GHC.Base.Monad m =>
+    forall a.
+    (Config.Config -> a)
+    -> Config.Config
+    -> m (Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(S)L),1*U(A,A,A,1*C1(U),A)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   (eta :: Config.Config -> a)
+                   (eta1 :: Config.Config) ->
+                 GHC.Base.return
+                   @ m
+                   $dMonad
+                   @ (Data.Either.Either
+                        Servant.Server.Internal.ServantErr.ServantErr a)
+                   (Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ a
+                      (eta eta1))) -}
+a11131cec2492b54cc16d61284cc7b52
+  $fMonadReaderAppT2 ::
+    GHC.Base.Monad m =>
+    forall a.
+    (Config.Config -> Config.Config)
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+    -> Config.Config
+    -> Control.Monad.Trans.Except.ExceptT
+         Servant.Server.Internal.ServantErr.ServantErr m a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*C1(U)><C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   @ a
+                   (eta :: Config.Config -> Config.Config)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              Config.Config
+                              (Control.Monad.Trans.Except.ExceptT
+                                 Servant.Server.Internal.ServantErr.ServantErr m)
+                              a)
+                   (eta2 :: Config.Config) ->
+                 eta1
+                   `cast`
+                 (Control.Monad.Trans.Reader.N:ReaderT[0]
+                      <*>_N
+                      <Config.Config>_R
+                      <Control.Monad.Trans.Except.ExceptT
+                         Servant.Server.Internal.ServantErr.ServantErr m>_R
+                      <a>_N)
+                   (eta eta2)) -}
+5d2f8d9e5fce40e4284ed46912795e97
+  $fMonadReaderAppT3 ::
+    GHC.Base.Monad m =>
+    Config.Config
+    -> m (Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr Config.Config)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(A,A,A,C(U),A)>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ (m :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: Config.Config) ->
+                 Control.Monad.Trans.Except.$fMonadExceptT1
+                   @ m
+                   @ Servant.Server.Internal.ServantErr.ServantErr
+                   $dMonad
+                   @ Config.Config
+                   eta) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadReaderAppT_$cask ::
+    GHC.Base.Monad m => Config.AppT m Config.Config
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(A,A,A,C(U),A)>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadReaderAppT3
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R Trans
+                          (<Config.Config>_R
+                           ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <m>_R
+                                         <Config.Config>_N))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Config.Config>_R
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                         <Config.Config>_N))
+                               (Sym (Config.N:AppT[0] <m>_R) <Config.Config>_N))) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadReaderAppT_$clocal ::
+    GHC.Base.Monad m =>
+    forall a.
+    (Config.Config -> Config.Config)
+    -> Config.AppT m a -> Config.AppT m a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><L,1*C1(U)><C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadReaderAppT2
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <Config.Config -> Config.Config>_R
+                      ->_R Sym (Config.N:AppT[0] <m>_R) <a>_N
+                      ->_R Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Config.Config>_R
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                         <a>_N))
+                               (Sym (Config.N:AppT[0] <m>_R) <a>_N)) -}
+765eabfdb6eef613f0e0b8597b52753b
+  $fMonadReaderAppT_$creader ::
+    GHC.Base.Monad m =>
+    forall a. (Config.Config -> a) -> Config.AppT m a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(S)L),1*U(A,A,A,1*C1(U),A)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fMonadReaderAppT1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R forall (a :: <*>_N).
+                      <Config.Config -> a>_R
+                      ->_R Trans
+                               (<Config.Config>_R
+                                ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                              <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                              <m>_R
+                                              <a>_N))
+                               (Trans
+                                    (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                              <*>_N
+                                              <Config.Config>_R
+                                              <Control.Monad.Trans.Except.ExceptT
+                                                 Servant.Server.Internal.ServantErr.ServantErr m>_R
+                                              <a>_N))
+                                    (Sym (Config.N:AppT[0] <m>_R) <a>_N))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment :: GHC.Read.Read Config.Environment
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Config.Environment
+                  Config.$fReadEnvironment_$creadsPrec
+                  Config.$fReadEnvironment_$creadList
+                  Config.$fReadEnvironment_$creadPrec
+                  Config.$fReadEnvironment_$creadListPrec -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([Config.Environment] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [Config.Environment]
+                            -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.list1
+                   @ Config.Environment
+                   Config.$fReadEnvironment2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Config.Environment>_R))
+                   eta
+                   @ b
+                   eta1) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment10 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Config.Environment -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Config.Environment -> Text.ParserCombinators.ReadP.P b) ->
+                 eta Config.Development) -}
+0821877ab6a8279633135172c9e81a6a
+  $fReadEnvironment11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Development"#) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment12 ::
+    Text.ParserCombinators.ReadP.P [Config.Environment]
+  {- Unfolding: (GHC.Read.list1
+                   @ Config.Environment
+                   Config.$fReadEnvironment2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Config.Environment>_R))
+                   GHC.Read.$fRead()5
+                   @ [Config.Environment]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Config.Environment])) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Config.Environment
+  {- Arity: 1,
+     Unfolding: (GHC.Read.parens1
+                   @ Config.Environment
+                   Config.$fReadEnvironment3
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Config.Environment>_R))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Config.Environment
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 GHC.Read.choose2
+                   @ Config.Environment
+                   Config.$fReadEnvironment4
+                   eta) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment4 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)
+                   Config.$fReadEnvironment9
+                   Config.$fReadEnvironment5) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment5 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)
+                   Config.$fReadEnvironment6
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment6 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)
+  {- Strictness: m,
+     Unfolding: ((Config.$fReadEnvironment8,
+                  Config.$fReadEnvironment7
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <Config.Environment>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Config.Environment>_R))))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment7 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Config.Environment -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Config.Environment -> Text.ParserCombinators.ReadP.P b) ->
+                 eta Config.Test) -}
+3fa57bcfde24b73aac6be34ab7a73e52
+  $fReadEnvironment8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Test"#) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment9 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment)
+  {- Strictness: m,
+     Unfolding: ((Config.$fReadEnvironment11,
+                  Config.$fReadEnvironment10
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <Config.Environment>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Config.Environment>_R))))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [Config.Environment]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [Config.Environment]
+                   Config.$fReadEnvironment12) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [Config.Environment]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fReadEnvironment1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[Config.Environment]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[Config.Environment]>_R))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec Config.Environment
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Config.$fReadEnvironment2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <Config.Environment>_R)) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fReadEnvironment_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS Config.Environment
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ Config.Environment
+                   ((GHC.Read.parens1
+                       @ Config.Environment
+                       Config.$fReadEnvironment3
+                         `cast`
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Config.Environment>_R))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <Config.Environment>_R)
+                      @ Config.Environment
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ Config.Environment))) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fShowEnvironment :: GHC.Show.Show Config.Environment
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Config.Environment
+                  Config.$fShowEnvironment_$cshowsPrec
+                  Config.$fShowEnvironment_$cshow
+                  Config.$fShowEnvironment_$cshowList -}
+145d813ca3a211db19e3ffde0eee073a
+  $fShowEnvironment1 :: Config.Environment -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Config.Environment) (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Config.Development
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Config.$fReadEnvironment11)
+                        eta
+                   Config.Test
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Config.$fReadEnvironment8)
+                        eta }) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fShowEnvironment_$cshow :: Config.Environment -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Config.Environment) ->
+                 case x of wild {
+                   Config.Development -> Config.$fReadEnvironment11
+                   Config.Test -> Config.$fReadEnvironment8 }) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fShowEnvironment_$cshowList ::
+    [Config.Environment] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Config.Environment
+                   Config.$fShowEnvironment1) -}
+145d813ca3a211db19e3ffde0eee073a
+  $fShowEnvironment_$cshowsPrec ::
+    GHC.Types.Int -> Config.Environment -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Config.Environment)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   Config.Development
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Config.$fReadEnvironment11)
+                        eta
+                   Config.Test
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Config.$fReadEnvironment8)
+                        eta }) -}
+c255f51245e17e4bd559956bfe7b4320
+  $s$fApplicativeLoggingT ::
+    GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Config.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative
+                  (\ @ a
+                     (eta :: a)
+                     (eta1 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ()) ->
+                   GHC.Base.const
+                     @ (GHC.Types.IO a)
+                     @ (Language.Haskell.TH.Syntax.Loc
+                        -> Control.Monad.Logger.LogSource
+                        -> Control.Monad.Logger.LogLevel
+                        -> System.Log.FastLogger.LogStr.LogStr
+                        -> GHC.Types.IO ())
+                     (GHC.Base.returnIO @ a eta)
+                     eta1)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                 <GHC.Types.IO>_R <a>_N))
+                  Config.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+                  (Control.Monad.Logger.$fApplicativeLoggingT_$c*>
+                     @ GHC.Types.IO
+                     Config.$s$fApplicativeLoggingT_$dApplicative)
+                  (Control.Monad.Logger.$fApplicativeLoggingT_$c<*
+                     @ GHC.Types.IO
+                     Config.$s$fApplicativeLoggingT_$dApplicative) -}
+ffcfbea9f4e434acebf36bf43a2ac18a
+  $s$fApplicativeLoggingT_$dApplicative ::
+    GHC.Base.Applicative GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fApplicativeIO -}
+486eb9c20c1c47a549624de3ad05d577
+  $s$fApplicativeLoggingT_$dFunctor :: GHC.Base.Functor GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fFunctorIO -}
+fd4efd9245a29c100eccf134feda3ff2
+  $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*> ::
+    Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (loggerF :: Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b))
+                   (loggerA :: Control.Monad.Logger.LoggingT GHC.Types.IO a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ ((Language.Haskell.TH.Syntax.Loc
+                       -> Control.Monad.Logger.LogSource
+                       -> Control.Monad.Logger.LogLevel
+                       -> System.Log.FastLogger.LogStr.LogStr
+                       -> GHC.Types.IO ())
+                      -> GHC.Types.IO b)
+                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                   (\ (tpl :: (Language.Haskell.TH.Syntax.Loc
+                               -> Control.Monad.Logger.LogSource
+                               -> Control.Monad.Logger.LogLevel
+                               -> System.Log.FastLogger.LogStr.LogStr
+                               -> GHC.Types.IO ())
+                              -> GHC.Types.IO b) ->
+                    tpl)
+                     `cast`
+                   (<(Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ())
+                     -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                  <GHC.Types.IO>_R <b>_N))
+                   (\ (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                   -> Control.Monad.Logger.LogSource
+                                   -> Control.Monad.Logger.LogLevel
+                                   -> System.Log.FastLogger.LogStr.LogStr
+                                   -> GHC.Types.IO ()) ->
+                    GHC.Base.$fApplicativeIO_$sap
+                      @ a
+                      @ b
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ (a -> b)
+                         loggerF
+                         loggerFn)
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ a
+                         loggerA
+                         loggerFn))) -}
+fc2b492d7d5c06b46647e3416749298d
+  $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative ::
+    GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Config.$s$fApplicativeLoggingT_$s$fFunctorLoggingT -}
+7b1478e01dadaa836ef5a61611d602c9
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT ::
+    GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Config.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+                  (Control.Monad.Logger.$fFunctorLoggingT_$c<$
+                     @ GHC.Types.IO
+                     Config.$s$fApplicativeLoggingT_$dFunctor) -}
+e963ac39a37655244816ab8c5caec42a
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> b)
+                   (logger :: Control.Monad.Logger.LoggingT GHC.Types.IO a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ ((Language.Haskell.TH.Syntax.Loc
+                       -> Control.Monad.Logger.LogSource
+                       -> Control.Monad.Logger.LogLevel
+                       -> System.Log.FastLogger.LogStr.LogStr
+                       -> GHC.Types.IO ())
+                      -> GHC.Types.IO b)
+                   @ (Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                   (\ (tpl :: (Language.Haskell.TH.Syntax.Loc
+                               -> Control.Monad.Logger.LogSource
+                               -> Control.Monad.Logger.LogLevel
+                               -> System.Log.FastLogger.LogStr.LogStr
+                               -> GHC.Types.IO ())
+                              -> GHC.Types.IO b) ->
+                    tpl)
+                     `cast`
+                   (<(Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ())
+                     -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                  <GHC.Types.IO>_R <b>_N))
+                   (\ (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                   -> Control.Monad.Logger.LogSource
+                                   -> Control.Monad.Logger.LogLevel
+                                   -> System.Log.FastLogger.LogStr.LogStr
+                                   -> GHC.Types.IO ()) ->
+                    GHC.Base.$
+                      @ 'GHC.Types.PtrRepLifted
+                      @ (GHC.Types.IO a)
+                      @ (GHC.Types.IO b)
+                      (GHC.Base.$fFunctorIO_$cfmap @ a @ b f)
+                      (Control.Monad.Logger.runLoggingT
+                         @ GHC.Types.IO
+                         @ a
+                         logger
+                         loggerFn))) -}
+38138b70ab999c0412045aebf8b11d83
+  $s$fMonadBaseControlbLoggingT ::
+    Control.Monad.Trans.Control.MonadBaseControl
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl
+                  (Control.Monad.Logger.$fMonadBaseControlbLoggingT_$cliftBaseWith
+                     @ GHC.Types.IO
+                     @ GHC.Types.IO
+                     Control.Monad.Trans.Control.$fMonadBaseControlIOIO)
+                  (Control.Monad.Logger.$fMonadBaseControlbLoggingT_$crestoreM
+                     @ GHC.Types.IO
+                     @ GHC.Types.IO
+                     Control.Monad.Trans.Control.$fMonadBaseControlIOIO) -}
+4411a20e0f3bdc0687e96968e7d0afb0
+  $s$fMonadBaseControlbLoggingT_$dMonad ::
+    GHC.Base.Monad GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fMonadIO -}
+7dd71d427f0a2222f76cb8b288cbe253
+  $s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl ::
+    Control.Monad.Base.MonadBase
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Config.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT -}
+1a558347a4a2a5bda933d01213326810
+  $s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT ::
+    Control.Monad.Base.MonadBase
+      GHC.Types.IO (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  GHC.Base.$fApplicativeIO
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+                  GHC.Base.$fMonadIO
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO -}
+81dd8d8cbdba2645f103934f1f0ba697
+  $s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO ::
+    GHC.Types.IO a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Language.Haskell.TH.Syntax.Loc
+                           -> Control.Monad.Logger.LogSource
+                           -> Control.Monad.Logger.LogLevel
+                           -> System.Log.FastLogger.LogStr.LogStr
+                           -> GHC.Types.IO ()) ->
+                  eta1)
+                   `cast`
+                 (Sym (Control.Monad.Logger.N:LoggingT[0]
+                           <GHC.Types.IO>_R <a>_N))) -}
+068caf86f777fd6965b9add2419bb91a
+  $s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger ::
+    GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT -}
+5919406c273946ae145b198880073578
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT ::
+    GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+                  (Control.Monad.Logger.$fMonadLoggingT_$c>>=
+                     @ GHC.Types.IO
+                     Config.$s$fMonadBaseControlbLoggingT_$dMonad)
+                  (Control.Monad.Logger.$fMonadLoggingT_$c>>
+                     @ GHC.Types.IO
+                     Config.$s$fMonadBaseControlbLoggingT_$dMonad)
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail -}
+39d888be921c8d99bb9f1d45dfa25e37
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail ::
+    GHC.Base.String -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: GHC.Base.String) ->
+                 Control.Monad.Logger.$fMonadLoggingT1
+                   @ GHC.Types.IO
+                   @ a
+                   Config.$s$fMonadBaseControlbLoggingT_$dMonad
+                   eta) -}
+05aa8e451c2945416ec4e0d946226d13
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad ::
+    GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Config.$s$fApplicativeLoggingT -}
+11a8835114ed892c4442c0376750f36f
+  $s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn ::
+    a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a
+                   (eta :: a)
+                   (eta1 :: Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ())
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ()>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Control.Monad.Logger.N:LoggingT[0]
+                                    <GHC.Types.IO>_R <a>_N))) -}
+048d7980f1825b80adeeb1db9014243b
+  $s$fMonadLoggerLoggingT ::
+    Control.Monad.Logger.MonadLogger
+      (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Config.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+                  (Control.Monad.Logger.$fMonadLoggerLoggingT_$cmonadLoggerLog
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO) -}
+8beed6349bf158f9d609ef1440167471
+  $tc'AppT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16434496308696280078##
+                   10460360699041250375##
+                   Config.$trModule
+                   Config.$tc'AppT1) -}
+9ba77eabeaae517f58f64615bf27d55f
+  $tc'AppT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AppT"#) -}
+0c630a3bab5104e11b1ffd0b5bf938ac
+  $tc'Config :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7293296076686178300##
+                   10962839127282595513##
+                   Config.$trModule
+                   Config.$tc'Config1) -}
+0c6ac338fd8e6f184c914630bb163d5f
+  $tc'Config1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Config"#) -}
+a0c49b3c490f5fdeafeb3c326534f7cb
+  $tc'Development :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12002890527230404275##
+                   5506599915031941624##
+                   Config.$trModule
+                   Config.$tc'Development1) -}
+e2fd459d207f7e8d93c6d1fd72e3a590
+  $tc'Development1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Development"#) -}
+87ccd4b738a1b11f5db8801d7a9e2b1e
+  $tc'Test :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17709414195208290321##
+                   12633694709648447022##
+                   Config.$trModule
+                   Config.$tc'Test1) -}
+7b8c25bbf1b7a36f1ff89aabdff47173
+  $tc'Test1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Test"#) -}
+b0191535013a7e36133f4b5687f6ca50
+  $tcAppT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1072417188023378486##
+                   4573507869234079158##
+                   Config.$trModule
+                   Config.$tcAppT1) -}
+9f47ff8a17c3f1eb401161b581d29bd5
+  $tcAppT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AppT"#) -}
+6e403beead37fffab80745ec5371de4d
+  $tcConfig :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4783944312799671945##
+                   5221296183601239266##
+                   Config.$trModule
+                   Config.$trModule1) -}
+ff26dea1035f7d802e548900b65f93af
+  $tcEnvironment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17166687228002066672##
+                   2781052205696829117##
+                   Config.$trModule
+                   Config.$tcEnvironment1) -}
+7d3c27182715ff2cc7ae26c44279d9f9
+  $tcEnvironment1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Environment"#) -}
+9ae07d4ce5b1acaff51e0bde2b6ab201
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Config.$trModule2
+                   Config.$trModule1) -}
+60bf0b9cbdc8a550e0460d3562168b7b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Config"#) -}
+7fc49439977acce814c869de27b0f4b4
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"#) -}
+32bc56c52631fbccd1b46f67c87a2d5f
+  type App = Config.AppT GHC.Types.IO :: * -> *
+765eabfdb6eef613f0e0b8597b52753b
+  type role AppT representational nominal
+  newtype AppT (m :: * -> *) a
+    = AppT {runApp :: Control.Monad.Trans.Reader.ReaderT
+                        Config.Config
+                        (Control.Monad.Trans.Except.ExceptT
+                           Servant.Server.Internal.ServantErr.ServantErr m)
+                        a}
+51f1178227a4f09a6558ae5f92673336
+  data Config
+    = Config {configPool :: Database.Persist.Sql.Types.ConnectionPool,
+              configEnv :: Config.Environment}
+145d813ca3a211db19e3ffde0eee073a
+  data Environment = Development | Test
+61ff8ec1f50d8c535a7dff7362f2c232
+  configEnv :: Config.Config -> Config.Environment
+  RecSel Left Config.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Config.Config) ->
+                 case ds of wild { Config.Config ds1 ds2 -> ds2 }) -}
+d98c8e8d9a40a245becbe9a6fde1761b
+  configPool ::
+    Config.Config -> Database.Persist.Sql.Types.ConnectionPool
+  RecSel Left Config.Config
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U(U,U,U,U,U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Config.Config) ->
+                 case ds of wild { Config.Config ds1 ds2 -> ds1 }) -}
+2243a6ce733cc635e31e3e25e31cb893
+  connStr :: Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(LLS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (pre :: Data.Text.Internal.Text) ->
+                 Data.Text.Internal.Fusion.unstream
+                   (Data.Text.Internal.Fusion.Common.append
+                      (Data.Text.Internal.Fusion.stream pre)
+                      (Data.Text.Internal.Fusion.stream Config.connStr1))) -}
+91bf5d8b3d95f7938296450b1413638e
+  connStr1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# ".fileserver"#) -}
+b20dab4b8269c873681bd2d3b3facbc0
+  makePool ::
+    Config.Environment
+    -> GHC.Types.IO Database.Persist.Sql.Types.ConnectionPool
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.makePool1
+                  `cast`
+                (<Config.Environment>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Database.Persist.Sql.Types.ConnectionPool>_R)) -}
+bb0193b704ea34eac9bae65ddec792fe
+  makePool1 ::
+    Config.Environment
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Database.Persist.Sql.Types.ConnectionPool #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (ds :: Config.Environment)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ds of wild {
+                   Config.Development
+                   -> case ((Database.Persist.Sql.Run.askLogFunc
+                               @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                               Config.$s$fMonadBaseControlbLoggingT
+                               Config.$s$fMonadLoggerLoggingT)
+                              `cast`
+                            (Control.Monad.Logger.N:LoggingT[0]
+                                 <GHC.Types.IO>_R <Database.Persist.Sql.Types.Internal.LogFunc>_N)
+                              Control.Monad.Logger.runStderrLoggingT1
+                                `cast`
+                              (<Language.Haskell.TH.Syntax.Loc>_R
+                               ->_R <Control.Monad.Logger.LogSource>_R
+                               ->_R <Control.Monad.Logger.LogLevel>_R
+                               ->_R <System.Log.FastLogger.LogStr.LogStr>_R
+                               ->_R Sym (GHC.Types.N:IO[0] <()>_R)))
+                             `cast`
+                           (GHC.Types.N:IO[0] <Database.Persist.Sql.Types.Internal.LogFunc>_R)
+                             eta of ds1 { (#,#) ipv ipv1 ->
+                      Data.Pool.$wcreatePool
+                        @ Database.Persist.Sql.Types.Internal.SqlBackend
+                        (\ (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case Database.Persist.Sqlite.$wconStringToInfo
+                                Config.makePool7 of ww { (#,,#) ww1 ww2 ww3 ->
+                         case ww1 of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                         Database.Persist.Sqlite.$wopen'
+                           @ Database.Persist.Sql.Types.Internal.SqlBackend
+                           Config.makePool5
+                             `cast`
+                           (GHC.Classes.(%,%)
+                              <Database.Persist.Class.PersistStore.IsPersistBackend
+                                 Database.Persist.Sql.Types.Internal.SqlBackend>_N
+                              ((Data.Type.Equality.~)
+                                 <*>_N
+                                 (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0]))
+                                 <Database.Persist.Sql.Types.Internal.SqlBackend>_N)_N)_R
+                           ww5
+                           ww6
+                           ww7
+                           ww2
+                           ww3
+                           ipv1
+                           w3 } })
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R))
+                        Config.makePool4
+                          `cast`
+                        (<Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        1#
+                        Database.Persist.Sql.Run.createSqlPool1
+                          `cast`
+                        (Trans
+                             (Sym (Data.Fixed.N:Fixed[0] <Data.Fixed.E12>_P))
+                             (Sym (Data.Time.Clock.UTC.N:NominalDiffTime[0])))
+                        10#
+                        ipv }
+                   Config.Test
+                   -> case ((Database.Persist.Sql.Run.askLogFunc
+                               @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                               Config.$s$fMonadBaseControlbLoggingT
+                               Config.$s$fMonadLoggerLoggingT)
+                              `cast`
+                            (Control.Monad.Logger.N:LoggingT[0]
+                                 <GHC.Types.IO>_R <Database.Persist.Sql.Types.Internal.LogFunc>_N)
+                              Control.Monad.Logger.runStderrLoggingT1
+                                `cast`
+                              (<Language.Haskell.TH.Syntax.Loc>_R
+                               ->_R <Control.Monad.Logger.LogSource>_R
+                               ->_R <Control.Monad.Logger.LogLevel>_R
+                               ->_R <System.Log.FastLogger.LogStr.LogStr>_R
+                               ->_R Sym (GHC.Types.N:IO[0] <()>_R)))
+                             `cast`
+                           (GHC.Types.N:IO[0] <Database.Persist.Sql.Types.Internal.LogFunc>_R)
+                             eta of ds1 { (#,#) ipv ipv1 ->
+                      Data.Pool.$wcreatePool
+                        @ Database.Persist.Sql.Types.Internal.SqlBackend
+                        (\ (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case Database.Persist.Sqlite.$wconStringToInfo
+                                Config.makePool2 of ww { (#,,#) ww1 ww2 ww3 ->
+                         case ww1 of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                         Database.Persist.Sqlite.$wopen'
+                           @ Database.Persist.Sql.Types.Internal.SqlBackend
+                           Config.makePool5
+                             `cast`
+                           (GHC.Classes.(%,%)
+                              <Database.Persist.Class.PersistStore.IsPersistBackend
+                                 Database.Persist.Sql.Types.Internal.SqlBackend>_N
+                              ((Data.Type.Equality.~)
+                                 <*>_N
+                                 (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0]))
+                                 <Database.Persist.Sql.Types.Internal.SqlBackend>_N)_N)_R
+                           ww5
+                           ww6
+                           ww7
+                           ww2
+                           ww3
+                           ipv1
+                           w3 } })
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R))
+                        Config.makePool4
+                          `cast`
+                        (<Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        1#
+                        Database.Persist.Sql.Run.createSqlPool1
+                          `cast`
+                        (Trans
+                             (Sym (Data.Fixed.N:Fixed[0] <Data.Fixed.E12>_P))
+                             (Sym (Data.Time.Clock.UTC.N:NominalDiffTime[0])))
+                        10#
+                        ipv } }) -}
+5f85a59539278c5d7cc4d7c0800c1a19
+  makePool2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.append
+                   Config.makePool3
+                   Config.connStr1) -}
+5c9ba9f62781a252fadb0de09fa35f88
+  makePool3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "test"#) -}
+ccb78e33742427fad7c62bafc0955931
+  makePool4 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (Database.Persist.Sql.Run.close'1
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   Config.makePool5
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistStore.IsPersistBackend
+                         Database.Persist.Sql.Types.Internal.SqlBackend>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0]))
+                         <Database.Persist.Sql.Types.Internal.SqlBackend>_N)_N)_R) -}
+d14a2696756a6934cab7c38f8c0e21b8
+  makePool5 ::
+    (Database.Persist.Class.PersistStore.IsPersistBackend
+       Database.Persist.Sql.Types.Internal.SqlBackend,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Database.Persist.Sql.Types.Internal.$fIsPersistBackendSqlBackend,
+                  Config.makePool6
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+da4013ae78cc15dd3f053d56c4c76cce
+  makePool6 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+13740c505564815a61df8f8dab652b41
+  makePool7 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.append
+                   Config.makePool8
+                   Config.connStr1) -}
+360d78cb115ff52c2a069b42c77da454
+  makePool8 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "dev"#) -}
+4991531606f288d042638cb2096a1b78
+  openConnectionCount :: Config.Environment -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Config.Environment) -> Config.openConnectionCount1) -}
+c935e56534f9b3208ebe062244170405
+  openConnectionCount1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+098b3180580f99b0fb3f0ebabd18173b
+  runApp ::
+    Config.AppT m a
+    -> Control.Monad.Trans.Reader.ReaderT
+         Config.Config
+         (Control.Monad.Trans.Except.ExceptT
+            Servant.Server.Internal.ServantErr.ServantErr m)
+         a
+  RecSel Left Config.AppT
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.runApp1
+                  `cast`
+                (forall (m :: <* -> *>_N) (a :: <*>_N).
+                 <Config.AppT m a>_R ->_R Config.N:AppT[0] <m>_R <a>_N) -}
+d74c03f1d6c93c0c145dd23082becaef
+  runApp1 :: Config.AppT m a -> Config.AppT m a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ (m :: * -> *) @ a (ds :: Config.AppT m a) -> ds) -}
+instance GHC.Base.Applicative [Config.AppT]
+  = Config.$fApplicativeAppT
+instance GHC.Classes.Eq [Config.Environment]
+  = Config.$fEqEnvironment
+instance GHC.Base.Functor [Config.AppT] = Config.$fFunctorAppT
+instance GHC.Base.Monad [Config.AppT] = Config.$fMonadAppT
+instance Control.Monad.Error.Class.MonadError [Servant.Server.Internal.ServantErr.ServantErr,
+                                               Config.AppT]
+  = Config.$fMonadErrorAppT
+instance Control.Monad.IO.Class.MonadIO [Config.AppT]
+  = Config.$fMonadIOAppT
+instance Control.Monad.Reader.Class.MonadReader [Config.Config,
+                                                 Config.AppT]
+  = Config.$fMonadReaderAppT
+instance GHC.Read.Read [Config.Environment]
+  = Config.$fReadEnvironment
+instance GHC.Show.Show [Config.Environment]
+  = Config.$fShowEnvironment
+"SPEC/Config $fApplicativeLoggingT @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT @ GHC.Types.IO
+                                             $dApplicative
+  = Config.$s$fApplicativeLoggingT
+"SPEC/Config $fApplicativeLoggingT_$c<*> @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                   GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT_$c<*> @ GHC.Types.IO
+                                                   $dApplicative
+  = Config.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+"SPEC/Config $fApplicativeLoggingT_$cp1Applicative @ IO" [ALWAYS] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT_$cp1Applicative @ GHC.Types.IO
+                                                             $dApplicative
+  = Config.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$cp1Applicative
+"SPEC/Config $fFunctorLoggingT @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                     GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT @ GHC.Types.IO $dFunctor
+  = Config.$s$fApplicativeLoggingT_$s$fFunctorLoggingT
+"SPEC/Config $fFunctorLoggingT_$cfmap @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                            GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT_$cfmap @ GHC.Types.IO
+                                                $dFunctor
+  = Config.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+"SPEC/Config $fMonadBaseControlbLoggingT @ IO @ IO" [ALWAYS] forall ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                                                                             GHC.Types.IO
+                                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBaseControlbLoggingT @ GHC.Types.IO
+                                                   @ GHC.Types.IO
+                                                   $dMonadBaseControl
+  = Config.$s$fMonadBaseControlbLoggingT
+"SPEC/Config $fMonadBaseControlbLoggingT_$cp1MonadBaseControl @ IO @ IO" [ALWAYS] forall ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                                                                                                  GHC.Types.IO
+                                                                                                                  GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBaseControlbLoggingT_$cp1MonadBaseControl @ GHC.Types.IO
+                                                                        @ GHC.Types.IO
+                                                                        $dMonadBaseControl
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadBaseControlbLoggingT_$cp1MonadBaseControl
+"SPEC/Config $fMonadBasebLoggingT @ IO @ IO" [ALWAYS] forall ($dMonadBase :: Control.Monad.Base.MonadBase
+                                                                               GHC.Types.IO
+                                                                               GHC.Types.IO)
+  Control.Monad.Logger.$fMonadBasebLoggingT @ GHC.Types.IO
+                                            @ GHC.Types.IO
+                                            $dMonadBase
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadBasebLoggingT
+"SPEC/Config $fMonadIOLoggingT_$cliftIO @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                              GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIOLoggingT_$cliftIO @ GHC.Types.IO
+                                                  $dMonadIO
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cliftIO
+"SPEC/Config $fMonadIOLoggingT_$cp1MonadLogger @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                     GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIOLoggingT_$cp1MonadLogger @ GHC.Types.IO
+                                                         $dMonadIO
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadIOLoggingT_$cp1MonadLogger
+"SPEC/Config $fMonadLoggerLoggingT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                         GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggerLoggingT @ GHC.Types.IO $dMonadIO
+  = Config.$s$fMonadLoggerLoggingT
+"SPEC/Config $fMonadLoggingT @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                 GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT @ GHC.Types.IO $dMonad
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT
+"SPEC/Config $fMonadLoggingT_$cfail @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                        GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$cfail @ GHC.Types.IO $dMonad
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cfail
+"SPEC/Config $fMonadLoggingT_$cp1Monad @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                           GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$cp1Monad @ GHC.Types.IO
+                                                 $dMonad
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$cp1Monad
+"SPEC/Config $fMonadLoggingT_$creturn @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                          GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$creturn @ GHC.Types.IO
+                                                $dMonad
+  = Config.$s$fMonadBaseControlbLoggingT_$s$fMonadLoggingT_$creturn
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

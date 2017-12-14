@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\bin"
-libdir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2\\DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki"
+libdir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2\\DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"
 dynlibdir  = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2"
 datadir    = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\share\\x86_64-windows-ghc-8.0.2\\DirectoryServer-0.1.0.0"
 libexecdir = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\libexec"

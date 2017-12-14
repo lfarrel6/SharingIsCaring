@@ -1,0 +1,221 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-14 21:33:18.3062198 UTC
+
+interface DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2:Types 8002
+  interface hash: 8377826f1443cda5281fd0f84683a953
+  ABI hash: afb4d1a21caeafba56aee01e69d8b325
+  export-list hash: 07d6c3a3368a1bbe042eb10fec2a4201
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b17205fb016d7ec64e27f697b667a002
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Types.File{Types.File content name}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00*
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text 60ee6e2213faa3c3f5680c74ec6dedf8
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 95940720afdbe18ada37ea3a0ad8c1a0
+6114267125e969fa8ace9a0279a85726
+  $fShowFile :: GHC.Show.Show Types.File
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.File
+                  Types.$fShowFile_$cshowsPrec
+                  Types.$fShowFile_$cshow
+                  Types.$fShowFile_$cshowList -}
+6114267125e969fa8ace9a0279a85726
+  $fShowFile1 :: Types.File -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Types.File) (w1 :: GHC.Base.String) ->
+                 case w of ww { Types.File ww1 ww2 ->
+                 Types.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
+d5ee08aa090ad72547a90f22be55d244
+  $fShowFile2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "File {"#) -}
+1f6f511a00cf5a4fa57529e9c1bf8dee
+  $fShowFile3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+866718fb1b6348afe26a9276b910a849
+  $fShowFile4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "content = "#) -}
+cce03bc0f41d2699cc38bea1e0bd9d14
+  $fShowFile5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+c97e678d034026aebb6a42b462362ac2
+  $fShowFile6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "name = "#) -}
+6114267125e969fa8ace9a0279a85726
+  $fShowFile_$cshow :: Types.File -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U,U,U),1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Types.File) ->
+                 Types.$fShowFile_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6114267125e969fa8ace9a0279a85726
+  $fShowFile_$cshowList :: [Types.File] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Types.File Types.$fShowFile1) -}
+6114267125e969fa8ace9a0279a85726
+  $fShowFile_$cshowsPrec ::
+    GHC.Types.Int -> Types.File -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U(U,U,U),1*U(U,U,U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Types.File)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Types.File ww3 ww4 ->
+                 Types.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+c2096de561c4098d176deb36f6926e42
+  $tc'File :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4021467683723628790##
+                   18286512356157821347##
+                   Types.$trModule
+                   Types.$tc'File1) -}
+f5f2c5ac5956d788628bad33955ac126
+  $tc'File1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'File"#) -}
+006af2219435d00bf7848086a609c784
+  $tcFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11222803580233203681##
+                   6972093264992581001##
+                   Types.$trModule
+                   Types.$tcFile1) -}
+91563dfc611e01b70010d86b7e393522
+  $tcFile1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "File"#) -}
+01cb40760abb63f4a52049912bcce643
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Types.$trModule2 Types.$trModule1) -}
+2ecdb01fdca83c627cbeff4d62b58c9d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Types"#) -}
+2d44bd422fa3d4942b5ce321f2f5489a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"#) -}
+cbf8ffaf196a11efc4a4d32fa4b597f2
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Data.Text.Internal.Text)
+                   (ww2 :: Data.Text.Internal.Text)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Types.$fShowFile6
+                       (case Data.Text.Show.$w$cshowsPrec
+                               ww1
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  Types.$fShowFile5
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     Types.$fShowFile4
+                                     (case Data.Text.Show.$w$cshowsPrec
+                                             ww2
+                                             (GHC.Base.++
+                                                @ GHC.Types.Char
+                                                Types.$fShowFile3
+                                                x) of ww3 { (#,#) ww4 ww5 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww4
+                                        ww5 }))) of ww3 { (#,#) ww4 ww5 ->
+                        GHC.Types.: @ GHC.Types.Char ww4 ww5 })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++ @ GHC.Types.Char Types.$fShowFile2 (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Types.$fShowFile2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w))) }) -}
+6114267125e969fa8ace9a0279a85726
+  data File
+    = File {name :: Data.Text.Internal.Text,
+            content :: Data.Text.Internal.Text}
+91700d5467dda512cff5349bb59a3f59
+  content :: Types.File -> Data.Text.Internal.Text
+  RecSel Left Types.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Types.File) ->
+                 case ds of wild { Types.File ds1 ds2 -> ds2 }) -}
+37b62558609c140c14b789c1de59a025
+  name :: Types.File -> Data.Text.Internal.Text
+  RecSel Left Types.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Types.File) ->
+                 case ds of wild { Types.File ds1 ds2 -> ds1 }) -}
+instance [safe] GHC.Show.Show [Types.File] = Types.$fShowFile
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

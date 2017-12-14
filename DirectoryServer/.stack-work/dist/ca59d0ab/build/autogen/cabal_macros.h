@@ -14,6 +14,13 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package bytestring-0.10.8.1 */
+#define VERSION_bytestring "0.10.8.1"
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 8)
+
 /* package monad-logger-0.3.25.1 */
 #define VERSION_monad_logger "0.3.25.1"
 #define MIN_VERSION_monad_logger(major1,major2,minor) (\
@@ -63,6 +70,13 @@
   (major1) == 1 && (major2) <  1 || \
   (major1) == 1 && (major2) == 1 && (minor) <= 9)
 
+/* package servant-server-0.11.0.1 */
+#define VERSION_servant_server "0.11.0.1"
+#define MIN_VERSION_servant_server(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  11 || \
+  (major1) == 0 && (major2) == 11 && (minor) <= 0)
+
 /* package text-1.2.2.2 */
 #define VERSION_text "1.2.2.2"
 #define MIN_VERSION_text(major1,major2,minor) (\
@@ -77,12 +91,40 @@
   (major1) == 1 && (major2) <  6 || \
   (major1) == 1 && (major2) == 6 && (minor) <= 0)
 
+/* package transformers-0.5.2.0 */
+#define VERSION_transformers "0.5.2.0"
+#define MIN_VERSION_transformers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 2)
+
+/* package wai-3.2.1.1 */
+#define VERSION_wai "3.2.1.1"
+#define MIN_VERSION_wai(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
+
+/* package wai-extra-3.0.20.2 */
+#define VERSION_wai_extra "3.0.20.2"
+#define MIN_VERSION_wai_extra(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  0 || \
+  (major1) == 3 && (major2) == 0 && (minor) <= 20)
+
 /* package yesod-1.4.5 */
 #define VERSION_yesod "1.4.5"
 #define MIN_VERSION_yesod(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  4 || \
   (major1) == 1 && (major2) == 4 && (minor) <= 5)
+
+/* package yesod-form-1.4.16 */
+#define VERSION_yesod_form "1.4.16"
+#define MIN_VERSION_yesod_form(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  4 || \
+  (major1) == 1 && (major2) == 4 && (minor) <= 16)
 
 /* tool alex-3.2.1 */
 #define TOOL_VERSION_alex "3.2.1"
@@ -154,7 +196,7 @@
   (major1) == 2 && (major2) <  25 || \
   (major1) == 2 && (major2) == 25 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki"
+#define CURRENT_COMPONENT_ID "DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"
 
-#define CURRENT_PACKAGE_KEY "DirectoryServer-0.1.0.0-C9EeH2LCCKA8njgaRDq5ki"
+#define CURRENT_PACKAGE_KEY "DirectoryServer-0.1.0.0-GGjLyrMJzlZ266JlofVYF2"
 
