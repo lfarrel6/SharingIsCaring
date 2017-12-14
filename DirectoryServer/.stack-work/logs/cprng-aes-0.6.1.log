@@ -1,0 +1,19 @@
+Configuring cprng-aes-0.6.1...
+Building cprng-aes-0.6.1...
+Preprocessing library cprng-aes-0.6.1...
+[1 of 2] Compiling Crypto.Random.AESCtr.Internal ( Crypto\Random\AESCtr\Internal.hs, .stack-work\dist\ca59d0ab\build\Crypto\Random\AESCtr\Internal.o )
+[2 of 2] Compiling Crypto.Random.AESCtr ( Crypto\Random\AESCtr.hs, .stack-work\dist\ca59d0ab\build\Crypto\Random\AESCtr.o )
+
+Crypto\Random\AESCtr.hs:31:1: warning: [-Wunused-imports]
+    The import of `.&.' from module `Data.Bits' is redundant
+Installing library in
+C:\sr\snapshots\658faa8e\lib\x86_64-windows-ghc-8.0.2\cprng-aes-0.6.1-JjiIVv21fgMEPrf4JqbOwW
+Registering cprng-aes-0.6.1...
+Cabal-simple_Z6RU0evB_1.24.2.0_ghc-8.0.2.exe:
+'C:\Users\Rory\AppData\Local\Programs\stack\x86_64-windows\ghc-8.0.2\bin\ghc-pkg.EXE'
+exited with an error:
+cprng-aes-0.6.1: Warning: haddock-interfaces:
+C:\sr\snapshots\658faa8e\doc\cprng-aes-0.6.1\cprng-aes.haddock doesn't exist
+or isn't a file
+ghc-pkg.EXE: C:\sr\snapshots\658faa8e\pkgdb\package.cache: you don't have
+permission to modify this file

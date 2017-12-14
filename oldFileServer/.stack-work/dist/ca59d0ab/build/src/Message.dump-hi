@@ -1,0 +1,767 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-14 16:47:12.7764737 UTC
+
+interface FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk:Message 8002
+  interface hash: 910c17e9c0677252585ffaedb40ff3e6
+  ABI hash: 093d6ae46d76657fb768c5629882f82a
+  export-list hash: 0e95cd72d1878e0dabd9cc5878a1ead4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f8b847b675a91348479da0c1f8d4b9ba
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Message.deleteF
+  Message.existsF
+  Message.finish
+  Message.hello
+  Message.readF
+  Message.stateF
+  Message.writeF
+  Message.Message
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.Read 823163de9fa29f31f251382abc171b2b
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:Text.ParserCombinators.ReadPrec 5cc8ec62ab8aeda628247695b64f5e42
+import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
+import  -/  base-4.9.1.0:Text.Read.Lex a861691fe58d2d0a125f55a5ebadf631
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage :: GHC.Read.Read Message.Message
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Message.Message
+                  Message.$fReadMessage_$creadsPrec
+                  Message.$fReadMessage_$creadList
+                  Message.$fReadMessage_$creadPrec
+                  Message.$fReadMessage_$creadListPrec -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([Message.Message] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [Message.Message] -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.list1
+                   @ Message.Message
+                   Message.$fReadMessage2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Message.Message>_R))
+                   eta
+                   @ b
+                   eta1) -}
+98c7ee583d172c6c29bf587b502a7f75
+  $fReadMessage10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Delete"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage11 ::
+    (Message.Message -> Text.ParserCombinators.ReadP.P b1)
+    -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 1,
+     Unfolding: (\ @ b1
+                   (k1 :: Message.Message -> Text.ParserCombinators.ReadP.P b1) ->
+                 let {
+                   lvl81 :: Text.ParserCombinators.ReadP.P b1
+                   = let {
+                       lvl82 :: Text.ParserCombinators.ReadP.P b1
+                       = GHC.Read.$fReadChar2
+                           Message.$fReadMessage6
+                           @ b1
+                           (\ (a1 :: GHC.IO.FilePath) -> k1 (Message.Write a1))
+                     } in
+                     Text.Read.Lex.expect2
+                       @ b1
+                       (\ (a1 :: Text.Read.Lex.Lexeme) ->
+                        case a1 of wild {
+                          DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b1
+                          Text.Read.Lex.Ident a2
+                          -> case GHC.Base.eqString a2 Message.$fReadMessage12 of wild1 {
+                               GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
+                               GHC.Types.True -> lvl82 } })
+                 } in
+                 let {
+                   k :: () -> Text.ParserCombinators.ReadP.P b1
+                     {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl81) -}
+                   = \ (w4 :: ()) -> lvl81
+                 } in
+                 Text.ParserCombinators.ReadP.Look
+                   @ b1
+                   (\ (a :: GHC.Base.String) ->
+                    (Text.ParserCombinators.ReadP.skipSpaces_skip a)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
+                      @ b1
+                      k)) -}
+9fd1b325214b9b404eab9ba622ee8e7f
+  $fReadMessage12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Write"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage13 ::
+    (Message.Message -> Text.ParserCombinators.ReadP.P b1)
+    -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 1,
+     Unfolding: (\ @ b1
+                   (k1 :: Message.Message -> Text.ParserCombinators.ReadP.P b1) ->
+                 let {
+                   lvl81 :: Text.ParserCombinators.ReadP.P b1
+                   = let {
+                       lvl82 :: Text.ParserCombinators.ReadP.P b1
+                       = GHC.Read.$fReadChar2
+                           Message.$fReadMessage6
+                           @ b1
+                           (\ (a1 :: GHC.IO.FilePath) -> k1 (Message.Read a1))
+                     } in
+                     Text.Read.Lex.expect2
+                       @ b1
+                       (\ (a1 :: Text.Read.Lex.Lexeme) ->
+                        case a1 of wild {
+                          DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b1
+                          Text.Read.Lex.Ident a2
+                          -> case GHC.Base.eqString a2 Message.$fReadMessage14 of wild1 {
+                               GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
+                               GHC.Types.True -> lvl82 } })
+                 } in
+                 let {
+                   k :: () -> Text.ParserCombinators.ReadP.P b1
+                     {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl81) -}
+                   = \ (w4 :: ()) -> lvl81
+                 } in
+                 Text.ParserCombinators.ReadP.Look
+                   @ b1
+                   (\ (a :: GHC.Base.String) ->
+                    (Text.ParserCombinators.ReadP.skipSpaces_skip a)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
+                      @ b1
+                      k)) -}
+52ad0b9f3689db72b1e280064f809bd2
+  $fReadMessage14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Read"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage15 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)
+                   Message.$fReadMessage20
+                   Message.$fReadMessage16) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage16 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)
+                   Message.$fReadMessage17
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec Message.Message))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage17 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)
+  {- Strictness: m,
+     Unfolding: ((Message.$fReadMessage19,
+                  Message.$fReadMessage18
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <Message.Message>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Message.Message>_R))))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage18 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Message.Message -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Message.Message -> Text.ParserCombinators.ReadP.P b) ->
+                 eta Message.Finish) -}
+fad18170f025dedb35ef05cb011e63ff
+  $fReadMessage19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Finish"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Message.Message
+  {- Arity: 1,
+     Unfolding: (GHC.Read.parens1
+                   @ Message.Message
+                   Message.$fReadMessage3
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Message.Message>_R))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage20 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Message.Message)
+  {- Strictness: m,
+     Unfolding: ((Message.$fReadMessage22,
+                  Message.$fReadMessage21
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <Message.Message>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Message.Message>_R))))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage21 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Message.Message -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Message.Message -> Text.ParserCombinators.ReadP.P b) ->
+                 eta Message.Hello) -}
+dc882a2367dfa26736d562dde6db3646
+  $fReadMessage22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hello"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage23 :: Text.ParserCombinators.ReadP.P [Message.Message]
+  {- Unfolding: (GHC.Read.list1
+                   @ Message.Message
+                   Message.$fReadMessage2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Message.Message>_R))
+                   GHC.Read.$fRead()5
+                   @ [Message.Message]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Message.Message])) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Message.Message
+  {- Arity: 1, Strictness: <L,U(U)>,
+     Unfolding: (\ (n :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 let {
+                   ds2 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = GHC.Read.choose2 @ Message.Message Message.$fReadMessage15 n
+                 } in
+                 let {
+                   ds1 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = case n of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 10#) of wild2 {
+                       GHC.Types.False
+                       -> (Text.ParserCombinators.ReadP.pfail1 @ Message.Message)
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R))
+                       GHC.Types.True
+                       -> Message.$fReadMessage13
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <Message.Message>_R)) } }
+                 } in
+                 let {
+                   ds3 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = case n of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 10#) of wild2 {
+                       GHC.Types.False
+                       -> (Text.ParserCombinators.ReadP.pfail1 @ Message.Message)
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R))
+                       GHC.Types.True
+                       -> Message.$fReadMessage11
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <Message.Message>_R)) } }
+                 } in
+                 let {
+                   ds4 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = case n of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 10#) of wild2 {
+                       GHC.Types.False
+                       -> (Text.ParserCombinators.ReadP.pfail1 @ Message.Message)
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R))
+                       GHC.Types.True
+                       -> Message.$fReadMessage9
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <Message.Message>_R)) } }
+                 } in
+                 let {
+                   ds5 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = case n of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 10#) of wild2 {
+                       GHC.Types.False
+                       -> (Text.ParserCombinators.ReadP.pfail1 @ Message.Message)
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R))
+                       GHC.Types.True
+                       -> Message.$fReadMessage7
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <Message.Message>_R)) } }
+                 } in
+                 let {
+                   ds6 :: Text.ParserCombinators.ReadP.ReadP Message.Message
+                   = case n of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 10#) of wild2 {
+                       GHC.Types.False
+                       -> (Text.ParserCombinators.ReadP.pfail1 @ Message.Message)
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R))
+                       GHC.Types.True
+                       -> Message.$fReadMessage4
+                            `cast`
+                          (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <Message.Message>_R)) } }
+                 } in
+                 (\ @ b
+                    (k :: Message.Message -> Text.ParserCombinators.ReadP.P b) ->
+                  Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                    @ b
+                    (ds2
+                       `cast`
+                     (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                       @ b
+                       k)
+                    (Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                       @ b
+                       (ds1
+                          `cast`
+                        (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                          @ b
+                          k)
+                       (Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                          @ b
+                          (ds3
+                             `cast`
+                           (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                             @ b
+                             k)
+                          (Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                             @ b
+                             (ds4
+                                `cast`
+                              (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                                @ b
+                                k)
+                             (Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                                @ b
+                                (ds5
+                                   `cast`
+                                 (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                                   @ b
+                                   k)
+                                (ds6
+                                   `cast`
+                                 (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                                   @ b
+                                   k))))))
+                   `cast`
+                 (Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                           <Message.Message>_R))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage4 ::
+    (Message.Message -> Text.ParserCombinators.ReadP.P b1)
+    -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 1,
+     Unfolding: (\ @ b1
+                   (k1 :: Message.Message -> Text.ParserCombinators.ReadP.P b1) ->
+                 let {
+                   lvl81 :: Text.ParserCombinators.ReadP.P b1
+                   = let {
+                       lvl82 :: Text.ParserCombinators.ReadP.P b1
+                       = GHC.Read.$fReadChar2
+                           Message.$fReadMessage6
+                           @ b1
+                           (\ (a1 :: GHC.IO.FilePath) -> k1 (Message.State a1))
+                     } in
+                     Text.Read.Lex.expect2
+                       @ b1
+                       (\ (a1 :: Text.Read.Lex.Lexeme) ->
+                        case a1 of wild {
+                          DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b1
+                          Text.Read.Lex.Ident a2
+                          -> case GHC.Base.eqString a2 Message.$fReadMessage5 of wild1 {
+                               GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
+                               GHC.Types.True -> lvl82 } })
+                 } in
+                 let {
+                   k :: () -> Text.ParserCombinators.ReadP.P b1
+                     {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl81) -}
+                   = \ (w4 :: ()) -> lvl81
+                 } in
+                 Text.ParserCombinators.ReadP.Look
+                   @ b1
+                   (\ (a :: GHC.Base.String) ->
+                    (Text.ParserCombinators.ReadP.skipSpaces_skip a)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
+                      @ b1
+                      k)) -}
+2249624de5da6bc0324f753fb8c0a494
+  $fReadMessage5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "State"#) -}
+f326435461a3cb8444dd859201f8fa38
+  $fReadMessage6 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage7 ::
+    (Message.Message -> Text.ParserCombinators.ReadP.P b1)
+    -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 1,
+     Unfolding: (\ @ b1
+                   (k1 :: Message.Message -> Text.ParserCombinators.ReadP.P b1) ->
+                 let {
+                   lvl81 :: Text.ParserCombinators.ReadP.P b1
+                   = let {
+                       lvl82 :: Text.ParserCombinators.ReadP.P b1
+                       = GHC.Read.$fReadChar2
+                           Message.$fReadMessage6
+                           @ b1
+                           (\ (a1 :: GHC.IO.FilePath) -> k1 (Message.Exists a1))
+                     } in
+                     Text.Read.Lex.expect2
+                       @ b1
+                       (\ (a1 :: Text.Read.Lex.Lexeme) ->
+                        case a1 of wild {
+                          DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b1
+                          Text.Read.Lex.Ident a2
+                          -> case GHC.Base.eqString a2 Message.$fReadMessage8 of wild1 {
+                               GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
+                               GHC.Types.True -> lvl82 } })
+                 } in
+                 let {
+                   k :: () -> Text.ParserCombinators.ReadP.P b1
+                     {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl81) -}
+                   = \ (w4 :: ()) -> lvl81
+                 } in
+                 Text.ParserCombinators.ReadP.Look
+                   @ b1
+                   (\ (a :: GHC.Base.String) ->
+                    (Text.ParserCombinators.ReadP.skipSpaces_skip a)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
+                      @ b1
+                      k)) -}
+6c995d21cf40f8e4b969415cce5860e5
+  $fReadMessage8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Exists"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage9 ::
+    (Message.Message -> Text.ParserCombinators.ReadP.P b1)
+    -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 1,
+     Unfolding: (\ @ b1
+                   (k1 :: Message.Message -> Text.ParserCombinators.ReadP.P b1) ->
+                 let {
+                   lvl81 :: Text.ParserCombinators.ReadP.P b1
+                   = let {
+                       lvl82 :: Text.ParserCombinators.ReadP.P b1
+                       = GHC.Read.$fReadChar2
+                           Message.$fReadMessage6
+                           @ b1
+                           (\ (a1 :: GHC.IO.FilePath) -> k1 (Message.Delete a1))
+                     } in
+                     Text.Read.Lex.expect2
+                       @ b1
+                       (\ (a1 :: Text.Read.Lex.Lexeme) ->
+                        case a1 of wild {
+                          DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b1
+                          Text.Read.Lex.Ident a2
+                          -> case GHC.Base.eqString a2 Message.$fReadMessage10 of wild1 {
+                               GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b1
+                               GHC.Types.True -> lvl82 } })
+                 } in
+                 let {
+                   k :: () -> Text.ParserCombinators.ReadP.P b1
+                     {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                        Unfolding: InlineRule (1, True, True) (\ (w4 :: ()) -> lvl81) -}
+                   = \ (w4 :: ()) -> lvl81
+                 } in
+                 Text.ParserCombinators.ReadP.Look
+                   @ b1
+                   (\ (a :: GHC.Base.String) ->
+                    (Text.ParserCombinators.ReadP.skipSpaces_skip a)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <()>_R)
+                      @ b1
+                      k)) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [Message.Message]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [Message.Message]
+                   Message.$fReadMessage23) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [Message.Message]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Message.$fReadMessage1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[Message.Message]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[Message.Message]>_R))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec Message.Message
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Message.$fReadMessage2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <Message.Message>_R)) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fReadMessage_$creadsPrec ::
+    GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS Message.Message
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ Message.Message
+                   ((GHC.Read.parens1
+                       @ Message.Message
+                       Message.$fReadMessage3
+                         `cast`
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <Message.Message>_R))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <Message.Message>_R)
+                      @ Message.Message
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ Message.Message))) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fShowMessage :: GHC.Show.Show Message.Message
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Message.Message
+                  Message.$fShowMessage_$cshowsPrec
+                  Message.$fShowMessage_$cshow
+                  Message.$fShowMessage_$cshowList -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fShowMessage1 :: Message.Message -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Message.$fShowMessage_$cshowsPrec
+                   Message.$fShowMessage2) -}
+1fa4d41b4e05292aef1de58aa1daeff9
+  $fShowMessage2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fShowMessage_$cshow :: Message.Message -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Message.Message) ->
+                 Message.$fShowMessage_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fShowMessage_$cshowList :: [Message.Message] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Message.Message
+                   Message.$fShowMessage1) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  $fShowMessage_$cshowsPrec ::
+    GHC.Types.Int -> Message.Message -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+afb6af1e1e7c71695c63a520eeae3156
+  $tc'Delete :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6411637882018499601##
+                   5895843423758908781##
+                   Message.$trModule
+                   Message.$tc'Delete1) -}
+37fbf81f69e78ef00afda51c2b62fe6a
+  $tc'Delete1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Delete"#) -}
+0e430fdcffe9042cca952b038d8570b8
+  $tc'Exists :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6175506741757168388##
+                   14004684284893228876##
+                   Message.$trModule
+                   Message.$tc'Exists1) -}
+5a50bbdfea238a97e2223ce4032671cc
+  $tc'Exists1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Exists"#) -}
+f24190dc85dcd666b15f5060c18afb88
+  $tc'Finish :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7551006306285140501##
+                   17967008531554095406##
+                   Message.$trModule
+                   Message.$tc'Finish1) -}
+c10051260bf92fb3d81fcfd382351f3a
+  $tc'Finish1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Finish"#) -}
+01d7690cbb9d801186203d6d8776886e
+  $tc'Hello :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16832774414776653685##
+                   7204122263060081044##
+                   Message.$trModule
+                   Message.$tc'Hello1) -}
+80c1600943dbe9db1aee8125b1ffcc55
+  $tc'Hello1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Hello"#) -}
+e9d0a339d329185552eecf3f958935ff
+  $tc'Read :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7234898021320982070##
+                   1105962558808661314##
+                   Message.$trModule
+                   Message.$tc'Read1) -}
+d40b795088a99f8d9ed41b9951c7f576
+  $tc'Read1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Read"#) -}
+010f5fde9b1b9a70aaf9e0f2ce01367f
+  $tc'State :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12346378903176778023##
+                   3944420522723061903##
+                   Message.$trModule
+                   Message.$tc'State1) -}
+083f03af84a3286ea851ada1c37dfa89
+  $tc'State1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'State"#) -}
+85d2688ccd0e46d74c3239e8d49a1256
+  $tc'Write :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10289200983732768183##
+                   16802825143807801861##
+                   Message.$trModule
+                   Message.$tc'Write1) -}
+11823b23ed51e4126b6a152a4f695af5
+  $tc'Write1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Write"#) -}
+8a7436a1d7690470c222d6cdb2172d20
+  $tcMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   587564390143988129##
+                   3109859037210167244##
+                   Message.$trModule
+                   Message.$trModule1) -}
+ae221ed29408cc199968ab77c2f3af0c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Message.$trModule2
+                   Message.$trModule1) -}
+d820ae4020c9a2d19b966625481cef97
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Message"#) -}
+125d5adaa35fce3568355409f52cd99d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk"#) -}
+76ee1b8ca1051997e1191b2bc5ff100e
+  data Message
+    = Read GHC.IO.FilePath
+    | Write GHC.IO.FilePath
+    | Delete GHC.IO.FilePath
+    | Exists GHC.IO.FilePath
+    | State GHC.IO.FilePath
+    | Hello
+    | Finish
+08da839964a970402b5c10341fcb22d0
+  deleteF :: GHC.IO.FilePath -> Message.Message
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m3,
+     Unfolding: InlineRule (0, True, True) Message.Delete -}
+65ba7b08a8616c6000171618322aaba3
+  existsF :: GHC.IO.FilePath -> Message.Message
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m4,
+     Unfolding: InlineRule (0, True, True) Message.Exists -}
+3ced991f66103d18a579a02dbc4b3498
+  finish :: Message.Message
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) Message.Finish -}
+28b8dc124815f023ca5d46f89d3ba012
+  hello :: Message.Message
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) Message.Hello -}
+4bc00a863bc8babbae40c4120acfd9ed
+  readF :: GHC.IO.FilePath -> Message.Message
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (0, True, True) Message.Read -}
+5145a8a6e55464be547668620d98bbfc
+  stateF :: GHC.IO.FilePath -> Message.Message
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m5,
+     Unfolding: InlineRule (0, True, True) Message.State -}
+709b460e387194c4a056bdd89af15b97
+  writeF :: GHC.IO.FilePath -> Message.Message
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True) Message.Write -}
+instance [safe] GHC.Read.Read [Message.Message]
+  = Message.$fReadMessage
+instance [safe] GHC.Show.Show [Message.Message]
+  = Message.$fShowMessage
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

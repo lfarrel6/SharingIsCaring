@@ -1,0 +1,38 @@
+name:                DirectoryServer
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/DirectoryServer#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+                     , Database
+  build-depends:       base >= 4.7 && < 5
+                     , persistent
+                     , persistent-sqlite
+                     , persistent-template
+                     , yesod
+                     , resourcet
+                     , monad-logger
+                     , text
+                     , time
+                     , mtl
+                     , process
+  default-language:    Haskell2010
+
+executable DirectoryServer
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , DirectoryServer

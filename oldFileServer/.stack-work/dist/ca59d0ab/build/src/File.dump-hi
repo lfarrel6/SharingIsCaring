@@ -1,0 +1,818 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-14 16:47:14.5255069 UTC
+
+interface FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk:File [family instance module] 8002
+  interface hash: fe5077e0272d266e10f4b4975f052e84
+  ABI hash: 7ffbf95bf37e13dd93e90656ee898725
+  export-list hash: a0d653ae027f2ff906aca77a32fecaec
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ea5008e80db1ee79bf8347aabf19ba01
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  File.getPath
+  File.newFile
+  File.File{File.File path state}
+module dependencies: Locking
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk:Locking
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  Locking 9294e2753f2e2c117fc470f990650459
+  exports: f0fcc29e0644045e38955af8c977a910
+  FileState e2bfb9ea4d85276093d0fc0ba82e9310
+  available f4f16ba697856f60eb790dbd32bf8627
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types 28377cc79570fe4253ad6113f2450a93
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.Types.ToJSON f36660aaef3410ced418ccb283e21448
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 3f1875e753ac8c44dae64dc062ea742e
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Generics 87e8d511f978e043d53db008cc403901
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  filepath-1.4.1.1@filepath-1.4.1.1:System.FilePath a1833828b05bb217a8b2e2d074b495d5
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Concurrent.STM d9d67004f2499de74f3785f434493839
+68c8921225098e9f56a43e751ec56a75
+  $fGenericFile :: GHC.Generics.Generic File.File
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ File.File File.$fGenericFile_$cfrom File.$fGenericFile_$cto -}
+68c8921225098e9f56a43e751ec56a75
+  $fGenericFile1 ::
+    File.File
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "File" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "path")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "state")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1 GHC.Generics.R Locking.FileState))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: File.File) ->
+                 case x1 of wild { File.File g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "path")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "state")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Locking.FileState))
+                    @ x
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <GHC.IO.FilePath>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "path")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath>_R) <x>_N))
+                    g2
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <Locking.FileState>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "state")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R Locking.FileState>_R) <x>_N)))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "File" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "path")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "state")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R Locking.FileState)>_R) <x>_N) }) -}
+68c8921225098e9f56a43e751ec56a75
+  $fGenericFile_$cfrom :: File.File -> GHC.Generics.Rep File.File x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                File.$fGenericFile1
+                  `cast`
+                (forall (x :: <GHC.Types.*>_N).
+                 <File.File>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "File"
+                                       "File"
+                                       "FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk"
+                                       'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "File" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "path")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+                                        GHC.Generics.:*: GHC.Generics.M1
+                                                           GHC.Generics.S
+                                                           ('GHC.Generics.MetaSel
+                                                              ('GHC.Base.Just "state")
+                                                              'GHC.Generics.NoSourceUnpackedness
+                                                              'GHC.Generics.NoSourceStrictness
+                                                              'GHC.Generics.DecidedLazy)
+                                                           (GHC.Generics.K1
+                                                              GHC.Generics.R
+                                                              Locking.FileState))>_R))
+                          (Sub (Sym (File.Rep_File[0]))) <x>_N) -}
+68c8921225098e9f56a43e751ec56a75
+  $fGenericFile_$cto :: GHC.Generics.Rep File.File x -> File.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep File.File x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (File.Rep_File[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "File"
+                                        "File"
+                                        "FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk"
+                                        'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "File" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "path")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "state")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R
+                                                               Locking.FileState))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "File" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "path")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "state")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            Locking.FileState)>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 File.File
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "path")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <GHC.IO.FilePath>_R <x>_P))
+                   ds2
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "state")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Locking.FileState>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <Locking.FileState>_R <x>_P)) }) -}
+68c8921225098e9f56a43e751ec56a75
+  $fShowFile :: GHC.Show.Show File.File
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ File.File
+                  File.$fShowFile_$cshowsPrec
+                  File.$fShowFile_$cshow
+                  File.$fShowFile_$cshowList -}
+68c8921225098e9f56a43e751ec56a75
+  $fShowFile1 :: File.File -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: File.File) (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { File.File ww1 ww2 ->
+                 GHC.Base.++ @ GHC.Types.Char (File.$w$cshow ww1) s }) -}
+ad9a5c6366044e6fdbaf48104eec7ae8
+  $fShowFile2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "]"#) -}
+0879fef581ae4d645366523ca781b5b7
+  $fShowFile3 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+68c8921225098e9f56a43e751ec56a75
+  $fShowFile_$cshow :: File.File -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,A)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: File.File) ->
+                 case w of ww { File.File ww1 ww2 -> File.$w$cshow ww1 }) -}
+68c8921225098e9f56a43e751ec56a75
+  $fShowFile_$cshowList :: [File.File] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [File.File]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ File.File File.$fShowFile1 ls s) -}
+68c8921225098e9f56a43e751ec56a75
+  $fShowFile_$cshowsPrec ::
+    GHC.Types.Int -> File.File -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U(1*U,A)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int) (x :: File.File) (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n (File.$fShowFile_$cshow x))
+                   s) -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile :: Data.Aeson.Types.ToJSON.ToJSON File.File
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ File.File
+                  File.$fToJSONFile_$ctoJSON
+                  File.$fToJSONFile_$ctoEncoding
+                  File.$fToJSONFile_$ctoJSONList
+                  File.$fToJSONFile_$ctoEncodingList -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile1 ::
+    File.File
+    -> Data.Tagged.Tagged
+         Data.Aeson.Types.Generic.True Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: File.File) ->
+                 case w of ww { File.File ww1 ww2 ->
+                 case File.$w$ctoJSON ww1 ww2 of ww3 { Unit# ww4 ->
+                 (Data.Aeson.Types.Internal.Object ww4)
+                   `cast`
+                 (Sym (Data.Tagged.N:Tagged[0]
+                           <*>_N
+                           <Data.Aeson.Types.Generic.True>_P
+                           <Data.Aeson.Types.Internal.Value>_R)) } }) -}
+dda66929f8ab31cc08ebab7efce1192b
+  $fToJSONFile2 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        File.$fToJSONFile3 of ds13 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+280088a8466b8e102fbbf87575cb5f94
+  $fToJSONFile3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds13 { (#,#) ipv ipv1 ->
+                 Data.Aeson.Types.ToJSON.$wouter4
+                   ipv1
+                   4#
+                   File.$fToJSONFile4
+                   0#
+                   ipv }) -}
+e425f47266825b6fe577d931c598d3a5
+  $fToJSONFile4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "state"#) -}
+8430043fcd977232f413f7e874350ca1
+  $fToJSONFile5 :: Data.Aeson.Types.Internal.Options
+  {- Unfolding: (Data.Aeson.Types.Internal.Options
+                   (GHC.Base.id @ GHC.Base.String)
+                   (GHC.Base.id @ GHC.Base.String)
+                   GHC.Types.True
+                   GHC.Types.False
+                   Data.Aeson.Types.Internal.defaultTaggedObject
+                   GHC.Types.False) -}
+62a23b9d3327cbd3f9cd1973120a55dd
+  $fToJSONFile6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "path"#) -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile_$ctoEncoding ::
+    File.File -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: File.File) ->
+                 Data.Aeson.Encoding.Internal.value
+                   (File.$fToJSONFile_$ctoJSON eta)) -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile_$ctoEncodingList ::
+    [File.File] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: [File.File]) ->
+                 case eta of wild {
+                   [] -> Data.Aeson.Encoding.Internal.emptyArray_
+                   : x xs
+                   -> (Data.ByteString.Builder.Internal.append
+                         (Data.Aeson.Encoding.Internal.openBracket
+                            @ Data.Aeson.Types.Internal.Value)
+                           `cast`
+                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                              <Data.Aeson.Types.Internal.Value>_P)
+                         (Data.ByteString.Builder.Internal.append
+                            (Data.Aeson.Encoding.Internal.value (File.$fToJSONFile_$ctoJSON x))
+                              `cast`
+                            (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                 <Data.Aeson.Types.Internal.Value>_P)
+                            (Data.ByteString.Builder.Internal.append
+                               (GHC.Base.foldr
+                                  @ File.File
+                                  @ (Data.Aeson.Encoding.Internal.Encoding'
+                                       Data.Aeson.Types.Internal.Value)
+                                  (\ (v :: File.File)
+                                     (vs :: Data.Aeson.Encoding.Internal.Encoding'
+                                              Data.Aeson.Types.Internal.Value)[OneShot] ->
+                                   Data.ByteString.Builder.Internal.append
+                                     (Data.Aeson.Encoding.Internal.comma
+                                        @ Data.Aeson.Types.Internal.Value)
+                                       `cast`
+                                     (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                          <Data.Aeson.Types.Internal.Value>_P)
+                                     (Data.ByteString.Builder.Internal.append
+                                        (Data.Aeson.Encoding.Internal.value
+                                           (File.$fToJSONFile_$ctoJSON v))
+                                          `cast`
+                                        (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                             <Data.Aeson.Types.Internal.Value>_P)
+                                        vs
+                                          `cast`
+                                        (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                             <Data.Aeson.Types.Internal.Value>_P)))
+                                    `cast`
+                                  (<File.File>_R
+                                   ->_R <Data.Aeson.Encoding.Internal.Encoding'
+                                           Data.Aeson.Types.Internal.Value>_R
+                                   ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                 <Data.Aeson.Types.Internal.Value>_P))
+                                  (Data.Aeson.Encoding.Internal.empty
+                                     @ Data.Aeson.Types.Internal.Value)
+                                  xs)
+                                 `cast`
+                               (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                    <Data.Aeson.Types.Internal.Value>_P)
+                               (Data.Aeson.Encoding.Internal.closeBracket
+                                  @ Data.Aeson.Types.Internal.Value)
+                                 `cast`
+                               (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                    <Data.Aeson.Types.Internal.Value>_P))))
+                        `cast`
+                      (Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                <Data.Aeson.Types.Internal.Value>_P)) }) -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile_$ctoJSON ::
+    File.File -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>m1,
+     Unfolding: InlineRule (0, True, True)
+                File.$fToJSONFile1
+                  `cast`
+                (<File.File>_R
+                 ->_R Data.Tagged.N:Tagged[0]
+                          <*>_N
+                          <Data.Aeson.Types.Generic.True>_P
+                          <Data.Aeson.Types.Internal.Value>_R) -}
+68c8921225098e9f56a43e751ec56a75
+  $fToJSONFile_$ctoJSONList ::
+    [File.File] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: [File.File]) ->
+                 case Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ Data.Aeson.Types.Internal.Value
+                        (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ Data.Aeson.Types.Internal.Value
+                           (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                           (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                              @ Data.Vector.Fusion.Util.Id
+                              @ Data.Aeson.Types.Internal.Value
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              Data.Vector.Fusion.Bundle.Size.Unknown
+                              (GHC.Base.build
+                                 @ Data.Aeson.Types.Internal.Value
+                                 (\ @ b1
+                                    (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                    (n :: b1)[OneShot] ->
+                                  GHC.Base.foldr
+                                    @ File.File
+                                    @ b1
+                                    (GHC.Base.mapFB
+                                       @ Data.Aeson.Types.Internal.Value
+                                       @ b1
+                                       @ File.File
+                                       c
+                                       File.$fToJSONFile_$ctoJSON)
+                                    n
+                                    eta)))) of dt1 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 Data.Aeson.Types.Internal.Array dt1 }) -}
+fd11d977fac4614331538427c61352a1
+  $tc'File :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12727628493987857077##
+                   1992514523344444528##
+                   File.$trModule
+                   File.$tc'File1) -}
+b452aed87af1f166099818e34b14b0cd
+  $tc'File1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'File"#) -}
+09673bfa031c3ca67e1fbe1a46407b3f
+  $tcFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11563200416469919584##
+                   3156934839449608875##
+                   File.$trModule
+                   File.$trModule1) -}
+9892aab3bda94009cf2f9a70c21aeab6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module File.$trModule2 File.$trModule1) -}
+611bb83f81077bc36891ea9f0c08edd1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "File"#) -}
+bca86107c76099c0de5fb35c3bf6bded
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk"#) -}
+f6f76b53251a7faa89df87a65ad8ea19
+  $w$cshow :: GHC.IO.FilePath -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.IO.FilePath) ->
+                 GHC.CString.unpackAppendCString#
+                   "["#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      (GHC.Types.:
+                         @ GHC.Types.Char
+                         GHC.Show.shows6
+                         (GHC.Show.showLitString ww File.$fShowFile3))
+                      File.$fShowFile2)) -}
+f170e52e4e092c2f8faeb7b65718a655
+  $w$ctoJSON ::
+    GHC.IO.FilePath
+    -> Locking.FileState -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 2, Strictness: <L,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.IO.FilePath) (ww1 :: Locking.FileState) ->
+                 case File.$w$dRecordToPairs
+                        @ GHC.Prim.Any
+                        File.$fToJSONFile5
+                        ww
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Generics.N:K1[0]
+                                       <GHC.Generics.R>_P <GHC.IO.FilePath>_R <GHC.Prim.Any>_P))
+                             (Sym (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          ('GHC.Base.Just "path")
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R GHC.IO.FilePath>_R) <GHC.Prim.Any>_N))
+                        (GHC.Types.:
+                           @ (Data.Text.Internal.Text, Data.Aeson.Types.Internal.Value)
+                           (File.$fToJSONFile2,
+                            (Locking.$fToJSONFileState1 ww1)
+                              `cast`
+                            (Data.Tagged.N:Tagged[0]
+                                 <*>_N
+                                 <Data.Aeson.Types.Generic.True>_P
+                                 <Data.Aeson.Types.Internal.Value>_R))
+                           (GHC.Types.[]
+                              @ Data.Aeson.Types.Internal.Pair)) of ww2 { (#,#) ww3 ww4 ->
+                 case Data.Aeson.Types.Internal.$sfromList1
+                        @ Data.Aeson.Types.Internal.Value
+                        (GHC.Types.:
+                           @ (Data.Text.Internal.Text, Data.Aeson.Types.Internal.Value)
+                           ww3
+                           ww4)
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
+                 (# dt1 #) } }) -}
+f14ccec835628c2fdf1318c9412cb8a5
+  $w$dRecordToPairs ::
+    Data.Aeson.Types.Internal.Options
+    -> GHC.Generics.S1
+         ('GHC.Generics.MetaSel
+            ('GHC.Base.Just "path")
+            'GHC.Generics.NoSourceUnpackedness
+            'GHC.Generics.NoSourceStrictness
+            'GHC.Generics.DecidedLazy)
+         (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+         a1
+    -> [(Data.Text.Internal.Text, Data.Aeson.Types.Internal.Value)]
+    -> (# (Data.Text.Internal.Text, Data.Aeson.Types.Internal.Value),
+          [(Data.Text.Internal.Text, Data.Aeson.Types.Internal.Value)] #)
+  {- Arity: 3, Strictness: <L,1*U(1*C1(U),A,A,A,A,A)><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a1
+                   (w :: Data.Aeson.Types.Internal.Options)
+                   (w1 :: GHC.Generics.S1
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "path")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath)
+                            a1)
+                   (w2 :: [(Data.Text.Internal.Text,
+                            Data.Aeson.Types.Internal.Value)]) ->
+                 (# (case w of wild { Data.Aeson.Types.Internal.Options ds7 ds8 ds9 ds10 ds11 ds12 ->
+                     case ds7 File.$fToJSONFile6 of dt1 { DEFAULT ->
+                     case GHC.Magic.runRW#
+                            @ 'GHC.Types.PtrRepLifted
+                            @ Data.Text.Internal.Text
+                            (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                             case GHC.Prim.newByteArray#
+                                    @ GHC.Prim.RealWorld
+                                    10#
+                                    s1 of ds13 { (#,#) ipv ipv1 ->
+                             Data.Aeson.Types.ToJSON.$wouter4
+                               ipv1
+                               4#
+                               dt1
+                               0#
+                               ipv }) of ds13 { (#,#) ipv ipv1 ->
+                     ipv1 } } },
+                     case GHC.Magic.runRW#
+                            @ 'GHC.Types.PtrRepLifted
+                            @ Data.Text.Internal.Text
+                            (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                             case GHC.Prim.newByteArray#
+                                    @ GHC.Prim.RealWorld
+                                    10#
+                                    s1 of ds1 { (#,#) ipv ipv1 ->
+                             File.$wouter
+                               ipv1
+                               4#
+                               w1
+                                 `cast`
+                               (Trans
+                                    (GHC.Generics.N:M1[0]
+                                         <GHC.Generics.S>_P
+                                         <'GHC.Generics.MetaSel
+                                            ('GHC.Base.Just "path")
+                                            'GHC.Generics.NoSourceUnpackedness
+                                            'GHC.Generics.NoSourceStrictness
+                                            'GHC.Generics.DecidedLazy>_P
+                                         <GHC.Generics.K1 GHC.Generics.R GHC.IO.FilePath>_R <a1>_N)
+                                    (GHC.Generics.N:K1[0]
+                                         <GHC.Generics.R>_P <[GHC.Types.Char]>_R <a1>_P))
+                               0#
+                               ipv }) of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of dt1 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                     Data.Aeson.Types.Internal.String dt1 } }),
+                    w2 #)) -}
+4bd5ace8bd411dd9aa0ac50e83f99f57
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+68c8921225098e9f56a43e751ec56a75
+  data File
+    = File {path :: GHC.IO.FilePath, state :: Locking.FileState}
+68c8921225098e9f56a43e751ec56a75
+  axiom Rep_File::
+      GHC.Generics.Rep File.File
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "File"
+               "File"
+               "FileServerV2-0.1.0.0-3sOZFy9Sb6rIPqFM3ZvKEk"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "File" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "path")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 GHC.IO.FilePath)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "state")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 Locking.FileState)))
+36da1a07f990c227c1fcff890dece7f9
+  getPath :: File.File -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (f :: File.File) ->
+                 case f of wild { File.File ds ds1 -> ds }) -}
+e723e3902344ec497d6422aadd72e1a8
+  newFile :: GHC.IO.FilePath -> File.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (loc :: GHC.IO.FilePath) -> File.File loc Locking.Available) -}
+f43352c37c4a4fc340502e98923d38d1
+  path :: File.File -> GHC.IO.FilePath
+  RecSel Left File.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: File.File) ->
+                 case ds of wild { File.File ds1 ds2 -> ds1 }) -}
+f46d6d348bdab3cd183b88845d170b93
+  state :: File.File -> Locking.FileState
+  RecSel Left File.File
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: File.File) ->
+                 case ds of wild { File.File ds1 ds2 -> ds2 }) -}
+instance GHC.Generics.Generic [File.File] = File.$fGenericFile
+instance GHC.Show.Show [File.File] = File.$fShowFile
+instance Data.Aeson.Types.ToJSON.ToJSON [File.File]
+  = File.$fToJSONFile
+family instance GHC.Generics.Rep [File.File] = File.Rep_File
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
