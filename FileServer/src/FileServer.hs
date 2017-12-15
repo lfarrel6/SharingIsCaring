@@ -16,7 +16,7 @@ import Servant
 import Network.Wai
 import Network.Wai.Handler.Warp hiding (getPort)
 
-import MyApi.DirectoryServerApi
+import MyApi.DirectoryServerApi (addServer')
 import MyApi.FileServerApi
 import MyApi.FileApi
 import MyApi.Query
@@ -36,11 +36,18 @@ instance Show FileServer where
 
 getPort fs@FileServer{..} = port
 
-buildFileServer :: Config -> Handler FileServer
+buildFileServer :: Config -> IO ()
 buildFileServer cfg@Config{..} = do
   fs <- liftIO $ initialiseFileServer fileServerPort directoryServerPort
   --query to directory server to let know file server is alive
-  return fs
+  files <- liftIO $ getAllFiles fs
+  liftIO $ query (addServer' fileServerPort files) ("localhost",directoryServerPort)
+  startServer fs
+
+getAllFiles :: FileServer -> IO [File]
+getAllFiles fs@FileServer{..} = do
+ filesMap <- atomically $ readTVar fileListing
+ return $ Map.elems filesMap
 
 initialiseFileServer :: Int -> Int -> IO FileServer
 initialiseFileServer portNum ds = do

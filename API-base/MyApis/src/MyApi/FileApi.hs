@@ -10,7 +10,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeOperators #-}
 
-module MyApi.FileApi (readFile' , createFile' , updateFile' , makeFile , getLocation , fileAPI , FileAPI, File) where
+module MyApi.FileApi (readFile' , createFile' , updateFile' , makeFile , getLocation , getName , fileAPI , FileAPI, File) where
 
 import Network.HTTP.Client (newManager, defaultManagerSettings)
 import Data.Aeson
@@ -33,7 +33,10 @@ makeFile n c l = File{
 , content  = c
 , location = l
 }
+
 getLocation f@File{..} = location
+
+getName     f@File{..} = name
 
 newtype QuerySuccess = QuerySuccess {
 

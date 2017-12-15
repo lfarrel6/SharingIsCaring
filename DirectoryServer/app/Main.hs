@@ -1,6 +1,12 @@
 module Main where
 
-import Lib
+import DirectoryServer (startApp)
+
+import System.Environment
 
 main :: IO ()
-main = startApp
+main = do
+  input <- getArgs
+  case input of
+   [port] -> startApp (read port :: Int)
+   _      -> putStrLn "bad input"

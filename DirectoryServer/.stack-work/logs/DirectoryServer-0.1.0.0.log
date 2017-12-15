@@ -1,10 +1,9 @@
 Preprocessing library DirectoryServer-0.1.0.0...
-[2 of 2] Compiling DirectoryServer  ( src\DirectoryServer.hs, .stack-work\dist\ca59d0ab\build\DirectoryServer.o )
-
-src\DirectoryServer.hs:6:1: error:
-    Failed to load interface for `FileServer'
-    Use -v to see a list of the files searched for.
-
-src\DirectoryServer.hs:7:1: error:
-    Failed to load interface for `Message'
-    Use -v to see a list of the files searched for.
+Preprocessing executable 'DirectoryServer-exe' for DirectoryServer-0.1.0.0...
+[1 of 1] Compiling Main             ( app\Main.hs, .stack-work\dist\ca59d0ab\build\DirectoryServer-exe\DirectoryServer-exe-tmp\Main.o )
+Linking .stack-work\dist\ca59d0ab\build\DirectoryServer-exe\DirectoryServer-exe.exe ...
+Installing library in
+C:\Users\Rory\Desktop\Haskell\FileServerV2\DirectoryServer\.stack-work\install\1e01afab\lib\x86_64-windows-ghc-8.0.2\DirectoryServer-0.1.0.0-3u9k9prEiyPD0b34DuVRKW
+Installing executable(s) in
+C:\Users\Rory\Desktop\Haskell\FileServerV2\DirectoryServer\.stack-work\install\1e01afab\bin
+Registering DirectoryServer-0.1.0.0...

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-15 19:55:56.0842124 UTC
+2017-12-15 22:25:32.6865838 UTC
 
 interface MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileServerApi 8002
-  interface hash: 21d310080b398567bb37274b73bc654e
+  interface hash: 784f55f6b7962fc8582a97d63265f14e
   ABI hash: 61b66279e9530dd52f7f077938bff256
   export-list hash: 4a06576bcc0ab5a7b324a50104cbf326
   orphan hash: 3ff09268d038d676e3b55b2558751b7c
@@ -157,8 +157,8 @@ family instance modules: MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileApi
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  MyApi.FileApi 999b65ffdf4d0c7279f037b5e3fc3abc
-  exports: f93985caca857fb4ba98ba9628e394d3
+import  -/  MyApi.FileApi 5e00dc48d458266a568e81fa6a3394e2
+  exports: 75b2193cbe5d11ea40f6b30220f470e7
   File 0679e37ca68d20878ccbcf0902ddb658
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson 2c2ea416ea3f3f7ead4fbc7d22c60646
 import  -/  base-4.9.1.0:Data.Proxy 657d37a7ff49fc895edf1c731d0fa581

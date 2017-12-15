@@ -10,7 +10,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeOperators #-}
 
-module MyApi.DirectoryServerApi (getFiles', getFile' , sendFile' , dsAPI , QuerySuccess(..) , DirectoryAPI) where
+module MyApi.DirectoryServerApi (getFiles', getFile' , sendFile' , addServer' , dsAPI , QuerySuccess(..) , DirectoryAPI) where
 
 import Network.HTTP.Client (newManager, defaultManagerSettings)
 import Data.Aeson
@@ -24,6 +24,7 @@ import MyApi.FileApi (File)
 type DirectoryAPI =  "files" :> Get '[JSON] [File]
                 :<|> "file"  :> Capture "name" String :> Get '[JSON] (Maybe File)
                 :<|> "create":> ReqBody '[JSON] File :> Post '[JSON] Bool
+                :<|> "newserver" :> Capture "port" Int :> ReqBody '[JSON] [File] :> Get '[JSON] Bool --create server with files, true false on accept
 
 dsAPI :: Proxy DirectoryAPI
 dsAPI = Proxy
@@ -39,7 +40,8 @@ instance FromJSON QuerySuccess
 api :: Proxy DirectoryAPI
 api = Proxy
 
-getFiles' :: ClientM [File]
-getFile' :: String -> ClientM (Maybe File)
-sendFile' :: File -> ClientM Bool
-getFiles' :<|> getFile' :<|> sendFile' = client dsAPI
+getFiles'  :: ClientM [File]
+getFile'   :: String -> ClientM (Maybe File)
+sendFile'  :: File -> ClientM Bool
+addServer' :: Int -> [File] -> ClientM Bool -- add new server taking port from query
+getFiles' :<|> getFile' :<|> sendFile' :<|> addServer' = client dsAPI

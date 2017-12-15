@@ -1,14 +1,11 @@
 {-# LANGUAGE RecordWildCards #-}
 
 module DirectoryServer
-    ( DirectoryServer , startServer , newDirectory , getAllFiles ) where
-
-import qualified FileServer as FS
-import Message
+    ( startApp , DirectoryServer , startServer , newDirectory , getAllFiles ) where
 
 import MyApi.DirectoryServerApi 
 import qualified MyApi.FileServerApi as FSA
-import MyApi.FileApi (File)
+import MyApi.FileApi (File,getName)
 import MyApi.Query
 
 import qualified Data.Map as Map
@@ -27,14 +24,14 @@ import Data.Hashable
 import Network.Wai
 import Network.Wai.Handler.Warp
 
-someFunc :: IO ()
-someFunc = do
+startApp :: Int -> IO ()
+startApp p = do
   newDS <- newDirectory
-  showDS newDS
+  startServer newDS p
 
 data DirectoryServer = DirectoryServer
   { fileToLocations :: TVar (Map Int [Int]) --Hash of filenames to port numbers
-  , allServers      :: TVar (Map Int Int)   --Server IDs to Port Numbers
+  , allServers      :: TVar [Int]           --Server Port Numbers
   , nServers        :: TVar Int             --Number of live File Servers
   , nextID          :: TVar Int             --Next server ID
   }
@@ -42,18 +39,17 @@ data DirectoryServer = DirectoryServer
 newDirectory :: IO DirectoryServer
 newDirectory = do
   ftl   <- atomically $ newTVar Map.empty
-  as    <- atomically $ newTVar Map.empty
+  as    <- atomically $ newTVar []
   ns    <- atomically $ newTVar 0
   return DirectoryServer { fileToLocations = ftl
                          , allServers      = as
-                         , commsChan       = comms
                          , nServers        = ns
                          , nextID          = ns
                          }
 
 showDS :: DirectoryServer -> IO ()
 showDS ds = putStrLn ">Directory Server\n"
-
+{-
 createFileServer :: DirectoryServer -> Int -> IO ()
 createFileServer ds@DirectoryServer{..} portNum =
   -- create and reply
@@ -69,15 +65,16 @@ createFileServer ds@DirectoryServer{..} portNum =
     atomically $ writeTVar allServers newServerDir
     atomically $ writeTVar nServers   (serverCount+1)
     atomically $ writeTVar nextID     (serverID+1)
-
-startServer :: DirectoryServer -> Int -> Int -> Int -> IO ()
-startServer ds dsPort fsPort nFs = do
-  initFileServers ds fsPort nFs
+-}
+startServer :: DirectoryServer -> Int -> IO ()
+startServer ds dsPort = do
   run dsPort $ dsApp ds
 
+{-
 initFileServers :: DirectoryServer -> Int -> Int -> IO ()
 initFileServers _ _ 0          = putStrLn "File Servers created"
 initFileServers ds startPort n = createFileServer ds startPort >> initFileServers ds (startPort+1) (n-1)
+-}
 
 {- \\\ SERVANT /// -}
 
@@ -85,19 +82,18 @@ myDirServer :: DirectoryServer -> Server DirectoryAPI
 myDirServer ds = getAllFiles ds
             :<|> getFile ds  
             :<|> sendFile ds
+            :<|> addServer ds
 
 getAllFiles :: DirectoryServer -> Handler [File]
 getAllFiles ds@DirectoryServer{..} = do
   servers <- liftIO $ atomically $ readTVar allServers
-  let serverList = Map.elems servers
-  getAllServerFiles [] serverList
+  getAllServerFiles [] servers
   --files <- liftIO $ query getFiles' ("localhost",1235)
   where
-   getAllServerFiles :: [File] -> [FS.FileServer] -> Handler [File]
+   getAllServerFiles :: [File] -> [Int] -> Handler [File]
    getAllServerFiles r []   = return r
    getAllServerFiles r (x:xs) = do
-    let port = FS.getPort x
-    theseFiles <- liftIO $ query FSA.getFiles' ("localhost",port)
+    theseFiles <- liftIO $ query FSA.getFiles' ("localhost",x)
     case theseFiles of
      Right fs -> getAllServerFiles (r ++ fs) xs
      Left  _  -> getAllServerFiles r xs
@@ -115,6 +111,26 @@ sendFile ds@DirectoryServer{..} f = do
   case res of
    Right x -> return x
    Left  _ -> return False
+
+addServer :: DirectoryServer -> Int -> [File] -> Handler Bool
+addServer ds@DirectoryServer{..} newPort files = do
+  --add the server first, files only added on condition of server addition success
+  serverList <- liftIO $ atomically $ readTVar allServers
+  let newServerList = serverList ++ [newPort]
+  liftIO $ atomically $ writeTVar allServers newServerList
+  --now add server's files to directory map
+  fileLocations <- liftIO $ atomically $ readTVar fileToLocations
+  let newFtl = ins fileLocations files newPort
+  liftIO $ atomically $ writeTVar fileToLocations newFtl
+  return True
+  where
+   ins ftl [] p     = ftl
+   ins ftl (x:xs) p = do case Map.lookup fid ftl of
+                          Just servers -> let adjusted = Map.adjustWithKey cons fid ftl in ins adjusted xs p
+                          Nothing -> let inserted = Map.insert fid [p] ftl in ins inserted xs p
+                         where
+                          fid = hash $ getName x
+                          cons _ value = value ++ [p]
 
 dsApp :: DirectoryServer -> Application
 dsApp ds = serve dsAPI $ myDirServer ds

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-15 19:55:55.8109755 UTC
+2017-12-15 22:27:01.1554301 UTC
 
 interface MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileApi [family instance module] 8002
-  interface hash: 84112906a14fcc7f37d4520a1ff8ce09
-  ABI hash: 999b65ffdf4d0c7279f037b5e3fc3abc
-  export-list hash: f93985caca857fb4ba98ba9628e394d3
+  interface hash: c72f567bd2772b658235807dd562ab6e
+  ABI hash: 5e00dc48d458266a568e81fa6a3394e2
+  export-list hash: 75b2193cbe5d11ea40f6b30220f470e7
   orphan hash: ee7f0f22dc2f05d362eb0e8aac441075
   flag hash: 8b0a33252897f32dd2951c27e59e2c03
   sig of: Nothing
@@ -15,6 +15,7 @@ exports:
   MyApi.FileApi.createFile'
   MyApi.FileApi.fileAPI
   MyApi.FileApi.getLocation
+  MyApi.FileApi.getName
   MyApi.FileApi.makeFile
   MyApi.FileApi.readFile'
   MyApi.FileApi.updateFile'
@@ -3515,6 +3516,12 @@ d3966470eacda007f10d2f873ffd917f
      Unfolding: InlineRule (1, True, False)
                 (\ (f :: MyApi.FileApi.File) ->
                  case f of wild { MyApi.FileApi.File ds ds1 ds2 -> ds2 }) -}
+a5baf3d611918b9ed1aabd3883116647
+  getName :: MyApi.FileApi.File -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (f :: MyApi.FileApi.File) ->
+                 case f of wild { MyApi.FileApi.File ds ds1 ds2 -> ds }) -}
 a38ef8bed02c6d806f69f7e046aa95ff
   location :: MyApi.FileApi.File -> GHC.Base.String
   RecSel Left MyApi.FileApi.File

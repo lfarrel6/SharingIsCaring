@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\bin"
-libdir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2\\MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj"
-dynlibdir  = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2"
-datadir    = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\share\\x86_64-windows-ghc-8.0.2\\MyApis-0.1.0.0"
-libexecdir = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\libexec"
-sysconfdir = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\DirectoryServer\\.stack-work\\install\\1e01afab\\etc"
+bindir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\bin"
+libdir     = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2\\MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj"
+dynlibdir  = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\lib\\x86_64-windows-ghc-8.0.2"
+datadir    = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\share\\x86_64-windows-ghc-8.0.2\\MyApis-0.1.0.0"
+libexecdir = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\libexec"
+sysconfdir = "C:\\Users\\Rory\\Desktop\\Haskell\\FileServerV2\\FileServer\\.stack-work\\install\\1e01afab\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "MyApis_bindir") (\_ -> return bindir)
