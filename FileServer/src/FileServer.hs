@@ -16,38 +16,44 @@ import Servant
 import Network.Wai
 import Network.Wai.Handler.Warp hiding (getPort)
 
+import MyApi.DirectoryServerApi
 import MyApi.FileServerApi
 import MyApi.FileApi
 import MyApi.Query
 
-import Message
+import Config
 
 data FileServer = FileServer
-  { serverID      :: Int
-  , directoryAddr :: FilePath
+  { directoryAddr :: FilePath
   , fileListing   :: TVar (Map Int File) --mapping of hashes to files
   , port          :: Int
   , fileCount     :: TVar Int
-  , msgChan       :: TChan Message
+  , mothership    :: Int --port of mothership (directory server)
   }
 
 instance Show FileServer where
-  show fs@FileServer{..} = "[FileServer: " ++ show serverID ++ "]\n\t>[Port: "++ show port ++"]\n\t>[Directory: "++show directoryAddr ++ "]"
+  show fs@FileServer{..} = "[FileServer: " ++ show port ++ "]\n\t>[Port: "++ show port ++"]\n\t>[Directory: "++show directoryAddr ++ "]"
 
 getPort fs@FileServer{..} = port
 
-buildFileServer :: Int -> Int -> IO FileServer
-buildFileServer id portNum = do
-  fs <- newFileServer id portNum
+buildFileServer :: Config -> Handler FileServer
+buildFileServer cfg@Config{..} = do
+  fs <- liftIO $ initialiseFileServer fileServerPort directoryServerPort
+  --query to directory server to let know file server is alive
+  return fs
+
+initialiseFileServer :: Int -> Int -> IO FileServer
+initialiseFileServer portNum ds = do
+  fs <- newFileServer portNum ds
   let dp = directoryAddr fs
   createDirectoryIfMissing True dp
   creationTime <- fmap show getCurrentTime
   writeFile (dp++"/serverDOB.txt") creationTime
-  let starterFile = makeFile (dp++"/serverDOB.txt") creationTime "serverDOB.txt"
-  --files <- listDirectory dp
-  --newFiles <- newFile files []
-  let contents = initFileList [starterFile]--newFiles 
-  let newFileCount = 1 --length files
+  let starterFile = makeFile "serverDOB.txt" creationTime (dp++"/serverDOB.txt")
+  files <- listDirectory dp
+  newFiles <- newFile files []
+  let contents = initFileList newFiles 
+  let newFileCount = length files
   atomically $ writeTVar (fileListing fs) contents
   atomically $ writeTVar (fileCount   fs) newFileCount
   return fs
@@ -60,17 +66,15 @@ newFile (fp:fps) fs = do
   newFile fps (fs ++ [file])
 
 newFileServer :: Int -> Int -> IO FileServer
-newFileServer id portNum = do
-  let dirPath = "data/" ++ show id
+newFileServer portNum ds = do
+  let dirPath = "data/" ++ show portNum
   fl    <- atomically $ getFileList
   fc    <- atomically $ getFileCount
-  mchan <- newTChanIO
-  return FileServer { serverID      = id
-                    , directoryAddr = dirPath
+  return FileServer { directoryAddr = dirPath
                     , fileListing   = fl
                     , port          = portNum
                     , fileCount     = fc
-                    , msgChan       = mchan
+                    , mothership    = ds
                     }
   where
    getFileList  = newTVar Map.empty
@@ -84,7 +88,6 @@ addFile :: FileServer -> File -> IO ()
 addFile fs@FileServer{..} f = do
   -- insert file to server
   insertFile
-  --putStrLn ("[File " ++ show path ++ " - " ++ show state ++ "] added to [FileServer " ++ show serverID ++ "]")
   where
    insertFile = atomically $ do
     files <- readTVar fileListing
@@ -100,13 +103,6 @@ addFile fs@FileServer{..} f = do
       let fileRemoved = Map.delete fID files
           newListing  = Map.insert fID f fileRemoved
       writeTVar fileListing newListing
-
-
-startServer :: FileServer -> IO ()
-startServer fs@FileServer{..} = run port $ fsApp fs
-
-handleMsg :: FileServer -> Message -> IO Bool
-handleMsg fs@FileServer{..} msg = return True
 
 {- \\\ SERVANT /// -}
 
@@ -125,6 +121,12 @@ getFile fs@FileServer{..} requested = do
  files <- liftIO $ atomically $ readTVar fileListing
  return $ Map.lookup (hash requested) files
 
+fsApp :: FileServer -> Application
+fsApp fs = serve fileServerAPI $ myFileServer fs
+
+startServer :: FileServer -> IO ()
+startServer fs@FileServer{..} = run port $ fsApp fs
+
 {-  
   let fHash = hash file
   ftl <- liftIO $ atomically $ readTVar fileToLocations
@@ -139,5 +141,3 @@ sendFile ds@DirectoryServer{..} f = do
   --invoke method on fileserver
   -- return $ F.newFile ".."
 -}
-fsApp :: FileServer -> Application
-fsApp fs = serve fileServerAPI $ myFileServer fs

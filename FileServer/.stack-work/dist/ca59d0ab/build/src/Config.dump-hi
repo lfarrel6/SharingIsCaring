@@ -1,0 +1,154 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-15 21:49:51.3175076 UTC
+
+interface FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K:Config 8002
+  interface hash: 4bd303ba7ad198b26cb0d230b6f1abaf
+  ABI hash: 55448e72811c65654d8bbe3637a940fd
+  export-list hash: d586dca9578b734ed53e84737cfa4f3c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f8b847b675a91348479da0c1f8d4b9ba
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Config.parseConfig
+  Config.Config{Config.Config directoryServerPort fileServerPort}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+202c952a589e4ba402aac37fc4de6b0e
+  $tc'Config :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4571440554495450503##
+                   298406361321556942##
+                   Config.$trModule
+                   Config.$tc'Config1) -}
+19aa0c7dc5c141121a3895005371a6cd
+  $tc'Config1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Config"#) -}
+4f6a2436f0ba6165d3408d7e3c8963ce
+  $tcConfig :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9128578703943737145##
+                   10307352005385183702##
+                   Config.$trModule
+                   Config.$trModule1) -}
+9acc83972b0c169691f89346a5f1891c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Config.$trModule2
+                   Config.$trModule1) -}
+b4e112f88d5edc85ad3aac25d572e81e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Config"#) -}
+825354a4b73a5ab4d6329cc58cc9e15d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K"#) -}
+1db6f1ced26d5f8a718db761ea11f84d
+  data Config
+    = Config {fileServerPort :: GHC.Types.Int,
+              directoryServerPort :: GHC.Types.Int}
+71c2ae72265829d7d35b15a464176d5b
+  directoryServerPort :: Config.Config -> GHC.Types.Int
+  RecSel Left Config.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Config.Config) ->
+                 case ds of wild { Config.Config ds1 ds2 -> ds2 }) -}
+c6bc6db8486a0776d9d94c0c2a5e69a2
+  fileServerPort :: Config.Config -> GHC.Types.Int
+  RecSel Left Config.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Config.Config) ->
+                 case ds of wild { Config.Config ds1 ds2 -> ds1 }) -}
+9c344520aeeb5c7bf10b786855a7d23b
+  parseConfig ::
+    [GHC.Base.String] -> GHC.Types.IO (GHC.Base.Maybe Config.Config)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Config.parseConfig1
+                  `cast`
+                (<[GHC.Base.String]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe Config.Config>_R)) -}
+c168e682eeede6205b4a6fd654d295c3
+  parseConfig1 ::
+    [GHC.Base.String]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe Config.Config #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (args :: [GHC.Base.String])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case args of wild {
+                   [] -> (# eta, GHC.Base.Nothing @ Config.Config #)
+                   : fsp ds
+                   -> case ds of wild1 {
+                        [] -> (# eta, GHC.Base.Nothing @ Config.Config #)
+                        : dsp ds1
+                        -> case ds1 of wild2 {
+                             []
+                             -> (# eta,
+                                   GHC.Base.Just
+                                     @ Config.Config
+                                     (Config.Config
+                                        (case Text.Read.readEither6
+                                                @ GHC.Types.Int
+                                                (Text.ParserCombinators.ReadP.run
+                                                   @ GHC.Types.Int
+                                                   Config.parseConfig4
+                                                   fsp) of wild3 {
+                                           [] -> Config.parseConfig3
+                                           : x ds2
+                                           -> case ds2 of wild4 {
+                                                [] -> x : ipv ipv1 -> Config.parseConfig2 } })
+                                        (case Text.Read.readEither6
+                                                @ GHC.Types.Int
+                                                (Text.ParserCombinators.ReadP.run
+                                                   @ GHC.Types.Int
+                                                   Config.parseConfig4
+                                                   dsp) of wild3 {
+                                           [] -> Config.parseConfig3
+                                           : x ds2
+                                           -> case ds2 of wild4 {
+                                                [] -> x : ipv ipv1 -> Config.parseConfig2 } })) #)
+                             : ipv ipv1 -> (# eta, GHC.Base.Nothing @ Config.Config #) } } }) -}
+79c2556e84b9ff306745191fc4a1647e
+  parseConfig2 :: GHC.Types.Int
+  {- Strictness: x -}
+157ea35d35629ae7e36bfbd03164b3ab
+  parseConfig3 :: GHC.Types.Int
+  {- Strictness: x -}
+f878fe69c369d485503909998bade450
+  parseConfig4 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: (GHC.Read.$fReadInt3
+                   GHC.Read.$fReadInt_$sconvertInt
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -28,12 +28,54 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package containers-0.5.7.1 */
+#define VERSION_containers "0.5.7.1"
+#define MIN_VERSION_containers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 7)
+
+/* package directory-1.3.0.0 */
+#define VERSION_directory "1.3.0.0"
+#define MIN_VERSION_directory(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  3 || \
+  (major1) == 1 && (major2) == 3 && (minor) <= 0)
+
+/* package hashable-1.2.6.1 */
+#define VERSION_hashable "1.2.6.1"
+#define MIN_VERSION_hashable(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 6)
+
+/* package network-2.6.3.2 */
+#define VERSION_network "2.6.3.2"
+#define MIN_VERSION_network(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  6 || \
+  (major1) == 2 && (major2) == 6 && (minor) <= 3)
+
 /* package servant-server-0.11.0.1 */
 #define VERSION_servant_server "0.11.0.1"
 #define MIN_VERSION_servant_server(major1,major2,minor) (\
   (major1) <  0 || \
   (major1) == 0 && (major2) <  11 || \
   (major1) == 0 && (major2) == 11 && (minor) <= 0)
+
+/* package stm-2.4.4.1 */
+#define VERSION_stm "2.4.4.1"
+#define MIN_VERSION_stm(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  4 || \
+  (major1) == 2 && (major2) == 4 && (minor) <= 4)
+
+/* package time-1.6.0.1 */
+#define VERSION_time "1.6.0.1"
+#define MIN_VERSION_time(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  6 || \
+  (major1) == 1 && (major2) == 6 && (minor) <= 0)
 
 /* package wai-3.2.1.1 */
 #define VERSION_wai "3.2.1.1"
@@ -119,7 +161,7 @@
   (major1) == 2 && (major2) <  25 || \
   (major1) == 2 && (major2) == 25 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "FileServer-0.1.0.0-LSdxTuyTfMXL09wHtZIXxn"
+#define CURRENT_COMPONENT_ID "FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K"
 
-#define CURRENT_PACKAGE_KEY "FileServer-0.1.0.0-LSdxTuyTfMXL09wHtZIXxn"
+#define CURRENT_PACKAGE_KEY "FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K"
 

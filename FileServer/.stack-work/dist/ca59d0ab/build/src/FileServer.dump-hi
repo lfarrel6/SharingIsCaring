@@ -1,0 +1,1934 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-15 21:49:52.4951315 UTC
+
+interface FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K:FileServer 8002
+  interface hash: e995df09bde33d96ccc173ac4e0d37ab
+  ABI hash: d1ec4dd6f08f85a7cc07d6f5d963b7c4
+  export-list hash: e3a05dd97fa47ffc13baf706915742c2
+  orphan hash: 9d63c946efa632c9a72eab980b635059
+  flag hash: b17205fb016d7ec64e27f697b667a002
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FileServer.buildFileServer
+  FileServer.getFile
+  FileServer.getFiles
+  FileServer.getPort
+  FileServer.startServer
+  FileServer.FileServer
+module dependencies: Config
+package dependencies: MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-5krMHmbflz8EYj7W9e0kqT
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-1D5OUKQ7UrJ7IpOe0di4Un
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.3@cookie-0.4.3-LVlxdgOdUJj73o1VFenWKF
+                      cryptonite-0.23@cryptonite-0.23-49rV2wu97anC98UHoy23eG
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o
+                      http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv
+                      http-date-0.0.6.1@http-date-0.0.6.1-AkYFHBFn90lGSerD29arC9
+                      http-media-0.6.4@http-media-0.6.4-L2HKUvjwG4m4RLl78rlCa
+                      http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY
+                      http2-1.6.3@http2-1.6.3-5WuWRsIVuKR43Sq9Cs2O4Z integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi
+                      lifted-base-0.2.3.11@lifted-base-0.2.3.11-Ei0JSPdt7KOCD2HIA5jFqV
+                      memory-0.14.10@memory-0.14.10-7xcdDSbUSfw8bjCpT4TVFU
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-6b3z22GcDYZLEl2kkfCUAB
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      natural-transformation-0.4@natural-transformation-0.4-1wekIVD0YQa62debXjfFg3
+                      network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      psqueues-0.2.4.0@psqueues-0.2.4.0-CvAhEbuBRGQCwl61vq8zYS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-Db8txM8kTsI6Y49CY6g5Jn
+                      servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5
+                      servant-client-0.11@servant-client-0.11-5TOjDGoMbhsGnWqdSOtDEK
+                      servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-8Q1MsGyzrPPGgHz2C1BSr4
+                      string-conversions-0.4.0.1@string-conversions-0.4.0.1-HK2T4drDKhqGigpJdBBdRG
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-4J6CourUSTG17Ll1LWtjiq
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vault-0.3.0.7@vault-0.3.0.7-FSJCPczyPWW8DwvwP76qt4
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+                      wai-3.2.1.1@wai-3.2.1.1-9FGPcqW2iUN5VP944fCq2b
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-H3uaMNyFHAfGbmzGMEFL9Z
+                      warp-3.2.13@warp-3.2.13-JeA4XUH1GfPICGzPbFBDHD
+                      word8-0.1.3@word8-0.1.3-9o1uWQQ6KysJq8GGsVHHit
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Block
+         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UArray.Base
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client.Request
+         network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.DirectoryServerApi
+                         MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileApi
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Block.Base
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.BoxedArray
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Monad
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.MutableBuilder
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Nat
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.NonEmpty
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Numerical.Subtractive
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.ASCII7
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.UTF16
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.String.Encoding.UTF32
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Types.AsciiString
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.Types.OffsetSize
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UArray.Base
+                         basement-0.0.4@basement-0.0.4-7rMFzW0TOqA3p16MKBn0rj:Basement.UTF8.Base
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Array.Bitmap
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Buildable
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Element
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Keyed
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Collection.Mutable
+                         foundation-0.0.17@foundation-0.0.17-CqA9OWROCqFJCjdVOHwlnw:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o:Web.Internal.FormUrlEncoded
+                         http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client
+                         iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi:Data.IP.Range
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph:Network.URI
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.ContentTypes
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.IsSecure
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.Verbs
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.Utils.Links
+                         servant-client-0.11@servant-client-0.11-5TOjDGoMbhsGnWqdSOtDEK:Servant.Client
+                         servant-client-0.11@servant-client-0.11-5TOjDGoMbhsGnWqdSOtDEK:Servant.Common.BaseUrl
+                         servant-client-0.11@servant-client-0.11-5TOjDGoMbhsGnWqdSOtDEK:Servant.Common.Req
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.BasicAuth
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.Handler
+                         servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.RoutingApplication
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh:URI.ByteString.Types
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  Config 55448e72811c65654d8bbe3637a940fd
+  exports: d586dca9578b734ed53e84737cfa4f3c
+  Config dc436037fc3a9356426d7ebe18693ce9
+  Config 1db6f1ced26d5f8a718db761ea11f84d
+  directoryServerPort 71c2ae72265829d7d35b15a464176d5b
+  fileServerPort c6bc6db8486a0776d9d94c0c2a5e69a2
+import  -/  MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.DirectoryServerApi 89de6e969336b9bfb5e23dc3c1b2e16d
+import  -/  MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileApi 999b65ffdf4d0c7279f037b5e3fc3abc
+import  -/  MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.FileServerApi 61b66279e9530dd52f7f077938bff256
+import  -/  MyApis-0.1.0.0@MyApis-0.1.0.0-IYIVOId0bsL3GH6SZE3VHj:MyApi.Query 14ba3d9f362f13c5593299c63cf67e7a
+import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 3f1875e753ac8c44dae64dc062ea742e
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Conc.Sync 18bcf7264dc8f03029975495d151af25
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 6c2364c30285a1caa610caab304974c4
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  directory-1.3.0.0@directory-1.3.0.0:System.Directory 4f448ef742f586f293d03ae3d978f8f8
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable bcc0805ccd30e6faaa2d13862a166356
+import  -/  hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Class e8d09170813d4540def5c8ad0cd3d04c
+import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network ccc7f9bd02df797c247d61468b8591fb
+import  -/  servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.Alternative 206d36558ab5414dd81b534ccf5088f6
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant 90701b1784f0fa8869730796ce8f4d71
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server 828c00b502e51f128a30b3dab4ea9200
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal 2207ee100b1930d92e1574e601155aa6
+import  -/  servant-server-0.11.0.1@servant-server-0.11.0.1-sZvHTHMoRV5M91Z2bwwFv:Servant.Server.Internal.Handler d31448851e376f2198e6c3ef81f31311
+import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Concurrent.STM d9d67004f2499de74f3785f434493839
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time 819d175a9e4b0a72c362762da9ea1ccd
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.POSIX 61428f31307889ffd40365cd5c4e9ca2
+import  -/  wai-3.2.1.1@wai-3.2.1.1-9FGPcqW2iUN5VP944fCq2b:Network.Wai 52b5e63d1a46c6e9b44e198225588b94
+import  -/  warp-3.2.13@warp-3.2.13-JeA4XUH1GfPICGzPbFBDHD:Network.Wai.Handler.Warp 8bf0d15acd9b2ed2ff3156a75854f721
+import  -/  warp-3.2.13@warp-3.2.13-JeA4XUH1GfPICGzPbFBDHD:Network.Wai.Handler.Warp.Run 6c20027f4c55b61ea777bf5d47feceba
+ea344b01bcdbeaeb6166d40973b72581
+  $fShowFileServer :: GHC.Show.Show FileServer.FileServer
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ FileServer.FileServer
+                  FileServer.$fShowFileServer_$cshowsPrec
+                  FileServer.$fShowFileServer_$cshow
+                  FileServer.$fShowFileServer_$cshowList -}
+ea344b01bcdbeaeb6166d40973b72581
+  $fShowFileServer1 ::
+    FileServer.FileServer -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: FileServer.FileServer)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { FileServer.FileServer ww1 ww2 ww3 ww4 ww5 ->
+                 GHC.Base.++ @ GHC.Types.Char (FileServer.$w$cshow ww1 ww3) s }) -}
+ed4340f7a60e5662c8b11c4f3d58ad3d
+  $fShowFileServer2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "]"#) -}
+e93b57227d53cfa208a26ff283ef0cc3
+  $fShowFileServer3 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ea344b01bcdbeaeb6166d40973b72581
+  $fShowFileServer_$cshow :: FileServer.FileServer -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,A,1*U(U),A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: FileServer.FileServer) ->
+                 case w of ww { FileServer.FileServer ww1 ww2 ww3 ww4 ww5 ->
+                 FileServer.$w$cshow ww1 ww3 }) -}
+ea344b01bcdbeaeb6166d40973b72581
+  $fShowFileServer_$cshowList ::
+    [FileServer.FileServer] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [FileServer.FileServer])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ FileServer.FileServer
+                   FileServer.$fShowFileServer1
+                   ls
+                   s) -}
+ea344b01bcdbeaeb6166d40973b72581
+  $fShowFileServer_$cshowsPrec ::
+    GHC.Types.Int -> FileServer.FileServer -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U(1*U,A,1*U(U),A,A)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: FileServer.FileServer)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (FileServer.$fShowFileServer_$cshow x))
+                   s) -}
+0fcd9aeab14407276ba6bfc537db3fc5
+  $s$fAllCTRender:a ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.API.ContentTypes.JSON]
+      (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ (GHC.Base.Maybe MyApi.FileApi.File)
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$cp1AllCTRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     @ (GHC.Base.Maybe MyApi.FileApi.File)
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     FileServer.$s$fAllCTRender:a1)
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     @ (GHC.Base.Maybe MyApi.FileApi.File)
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     FileServer.$s$fAllCTRender:a1) -}
+667e7ba17c4c5ed048f7d90a71166ddd
+  $s$fAllCTRender:a1 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.API.ContentTypes.JSON]
+      (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.$s$fAllCTRender:a_$s$fAllMimeRender:a0 -}
+cd0507587b8271c8b5b8cb6d81394ae0
+  $s$fAllCTRender:a2 ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.API.ContentTypes.JSON (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa -}
+cddaf7dda8190ebc307300bd1566b41c
+  $s$fAllCTRender:a3 ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ [MyApi.FileApi.File]
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$cp1AllCTRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     @ [MyApi.FileApi.File]
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     FileServer.$s$fAllCTRender:a4)
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.API.ContentTypes.JSON
+                     @ '[]
+                     @ [MyApi.FileApi.File]
+                     Servant.API.ContentTypes.$fAcceptTYPEJSON
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     FileServer.$s$fAllCTRender:a4) -}
+7ba98fbd9d4ab0ecd5aabadf8945d81b
+  $s$fAllCTRender:a4 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.$s$fAllCTRender:a_$s$fAllMimeRender:a1 -}
+5831379060823910489831eee5886733
+  $s$fAllCTRender:a5 ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.API.ContentTypes.JSON [MyApi.FileApi.File]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa1 -}
+027f78aec95d1a2cc4de663c0b965dbf
+  $s$fAllCTRender:a_$s$fAllMimeRender:a0 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.API.ContentTypes.JSON]
+      (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ (GHC.Base.Maybe MyApi.FileApi.File)
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$cp1AllMimeRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ (GHC.Base.Maybe MyApi.FileApi.File)
+                     FileServer.$s$fAllCTRender:a2)
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ (GHC.Base.Maybe MyApi.FileApi.File)
+                     FileServer.$s$fAllCTRender:a2) -}
+a2f09e03509fb9e13a81f90c47ad3fdb
+  $s$fAllCTRender:a_$s$fAllMimeRender:a1 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.API.ContentTypes.JSON]
+                  @ [MyApi.FileApi.File]
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$cp1AllMimeRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ [MyApi.FileApi.File]
+                     FileServer.$s$fAllCTRender:a5)
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.API.ContentTypes.JSON
+                     @ [MyApi.FileApi.File]
+                     FileServer.$s$fAllCTRender:a5) -}
+be141e0e7da21dbe58a2aacae2b12d28
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.API.ContentTypes.JSON (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.API.ContentTypes.JSON
+                  @ (GHC.Base.Maybe MyApi.FileApi.File)
+                  FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cp1MimeRender
+                  FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender -}
+7c3916805a107199ab3a0fadbfc9d3b5
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa1 ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.API.ContentTypes.JSON [MyApi.FileApi.File]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.API.ContentTypes.JSON
+                  @ [MyApi.FileApi.File]
+                  FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cp1MimeRender
+                  FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender1 -}
+6bbdf5ca34ad49b8a2933dcacbdc688d
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender ::
+    Data.Proxy.Proxy Servant.API.ContentTypes.JSON
+    -> GHC.Base.Maybe MyApi.FileApi.File
+    -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 2, Strictness: <L,A><L,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
+                   (eta :: GHC.Base.Maybe MyApi.FileApi.File) ->
+                 FileServer.$s$fAllCTRender:a_$sencode eta) -}
+afd96673aabe4bc5538a0332a1bb64db
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender1 ::
+    Data.Proxy.Proxy Servant.API.ContentTypes.JSON
+    -> [MyApi.FileApi.File] -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 2, Strictness: <L,A><L,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
+                   (eta :: [MyApi.FileApi.File]) ->
+                 FileServer.$s$fAllCTRender:a_$sencode1 eta) -}
+f75f823cccd6e08e3c6b97126aeace93
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cp1MimeRender ::
+    Servant.API.ContentTypes.Accept Servant.API.ContentTypes.JSON
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Servant.API.ContentTypes.$fAcceptTYPEJSON -}
+33dd7a6cb3e07ce53b41c100cc2f30d9
+  $s$fAllCTRender:a_$sencode ::
+    GHC.Base.Maybe MyApi.FileApi.File
+    -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Base.Maybe MyApi.FileApi.File) ->
+                 Data.ByteString.Builder.toLazyByteString
+                   (case eta of wild {
+                      GHC.Base.Nothing
+                      -> Data.Aeson.Encoding.Internal.null_
+                           `cast`
+                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                              <Data.Aeson.Types.Internal.Value>_P)
+                      GHC.Base.Just a1
+                      -> (Data.Aeson.Encoding.Internal.value
+                            (MyApi.FileApi.$fToJSONFile_$ctoJSON a1))
+                           `cast`
+                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                              <Data.Aeson.Types.Internal.Value>_P) })) -}
+ce2ef23e9e4342ab2c8c04c9a2c08ef4
+  $s$fAllCTRender:a_$sencode1 ::
+    [MyApi.FileApi.File] -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: [MyApi.FileApi.File]) ->
+                 Data.ByteString.Builder.toLazyByteString
+                   (case eta of wild {
+                      []
+                      -> Data.Aeson.Encoding.Internal.emptyArray_
+                           `cast`
+                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                              <Data.Aeson.Types.Internal.Value>_P)
+                      : x xs
+                      -> Data.ByteString.Builder.Internal.append
+                           (Data.Aeson.Encoding.Internal.openBracket
+                              @ Data.Aeson.Types.Internal.Value)
+                             `cast`
+                           (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                <Data.Aeson.Types.Internal.Value>_P)
+                           (Data.ByteString.Builder.Internal.append
+                              (Data.Aeson.Encoding.Internal.value
+                                 (MyApi.FileApi.$fToJSONFile_$ctoJSON x))
+                                `cast`
+                              (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                   <Data.Aeson.Types.Internal.Value>_P)
+                              (Data.ByteString.Builder.Internal.append
+                                 (GHC.Base.foldr
+                                    @ MyApi.FileApi.File
+                                    @ (Data.Aeson.Encoding.Internal.Encoding'
+                                         Data.Aeson.Types.Internal.Value)
+                                    (\ (v :: MyApi.FileApi.File)
+                                       (vs :: Data.Aeson.Encoding.Internal.Encoding'
+                                                Data.Aeson.Types.Internal.Value)[OneShot] ->
+                                     Data.ByteString.Builder.Internal.append
+                                       (Data.Aeson.Encoding.Internal.comma
+                                          @ Data.Aeson.Types.Internal.Value)
+                                         `cast`
+                                       (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                            <Data.Aeson.Types.Internal.Value>_P)
+                                       (Data.ByteString.Builder.Internal.append
+                                          (Data.Aeson.Encoding.Internal.value
+                                             (MyApi.FileApi.$fToJSONFile_$ctoJSON v))
+                                            `cast`
+                                          (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                               <Data.Aeson.Types.Internal.Value>_P)
+                                          vs
+                                            `cast`
+                                          (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                               <Data.Aeson.Types.Internal.Value>_P)))
+                                      `cast`
+                                    (<MyApi.FileApi.File>_R
+                                     ->_R <Data.Aeson.Encoding.Internal.Encoding'
+                                             Data.Aeson.Types.Internal.Value>_R
+                                     ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                   <Data.Aeson.Types.Internal.Value>_P))
+                                    (Data.Aeson.Encoding.Internal.empty
+                                       @ Data.Aeson.Types.Internal.Value)
+                                    xs)
+                                   `cast`
+                                 (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                      <Data.Aeson.Types.Internal.Value>_P)
+                                 (Data.Aeson.Encoding.Internal.closeBracket
+                                    @ Data.Aeson.Types.Internal.Value)
+                                   `cast`
+                                 (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                      <Data.Aeson.Types.Internal.Value>_P))) })) -}
+854c4cefbfe05df82f7d0683d407f611
+  $sserve10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "files"#) -}
+37dc5e9dff3e3f4d4553670a00ef464b
+  $sserve2 ::
+    Data.Proxy.Proxy
+      (("files"
+        Servant.API.Sub.:> Servant.API.Verbs.Get
+                             '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File])
+       Servant.API.Alternative.:<|> ("file"
+                                     Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                           "name" GHC.Base.String
+                                                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                              '[Servant.API.ContentTypes.JSON]
+                                                                              (GHC.Base.Maybe
+                                                                                 MyApi.FileApi.File))))
+    -> Servant.Server.Internal.Context.Context '[]
+    -> Servant.Server.Internal.RoutingApplication.Delayed
+         env
+         (Servant.Server.Internal.Server
+            (("files"
+              Servant.API.Sub.:> Servant.API.Verbs.Get
+                                   '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File])
+             Servant.API.Alternative.:<|> ("file"
+                                           Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                 "name" GHC.Base.String
+                                                               Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                    (GHC.Base.Maybe
+                                                                                       MyApi.FileApi.File)))))
+    -> Servant.Server.Internal.Router.Router env
+  {- Arity: 3, Strictness: <S,1*H><L,A><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ env
+                   (w :: Data.Proxy.Proxy
+                           (("files"
+                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                  '[Servant.API.ContentTypes.JSON]
+                                                  [MyApi.FileApi.File])
+                            Servant.API.Alternative.:<|> ("file"
+                                                          Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                "name"
+                                                                                GHC.Base.String
+                                                                              Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                   '[Servant.API.ContentTypes.JSON]
+                                                                                                   (GHC.Base.Maybe
+                                                                                                      MyApi.FileApi.File)))))
+                   (w1 :: Servant.Server.Internal.Context.Context '[])
+                   (w2 :: Servant.Server.Internal.RoutingApplication.Delayed
+                            env
+                            (Servant.Server.Internal.Server
+                               (("files"
+                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                      '[Servant.API.ContentTypes.JSON]
+                                                      [MyApi.FileApi.File])
+                                Servant.API.Alternative.:<|> ("file"
+                                                              Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                    "name"
+                                                                                    GHC.Base.String
+                                                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                                       (GHC.Base.Maybe
+                                                                                                          MyApi.FileApi.File)))))) ->
+                 case w of w3 { Data.Proxy.Proxy ->
+                 FileServer.$w$dHasServer
+                   @ env
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (("files"
+                          Servant.API.Sub.:> Servant.API.Verbs.Get
+                                               '[Servant.API.ContentTypes.JSON]
+                                               [MyApi.FileApi.File])
+                         Servant.API.Alternative.:<|> ("file"
+                                                       Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                             "name" GHC.Base.String
+                                                                           Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                '[Servant.API.ContentTypes.JSON]
+                                                                                                (GHC.Base.Maybe
+                                                                                                   MyApi.FileApi.File)))))
+                   w2 }) -}
+8ee93b2ec84b717984a9fa5ded6eb9c6
+  $sserve3 ::
+    Data.Text.Internal.Text
+    -> Servant.Server.Internal.RoutingApplication.DelayedIO
+         [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (txt :: Data.Text.Internal.Text) ->
+                 case Web.Internal.HttpApiData.$w$cparseUrlPiece3
+                        txt of ww { Unit# ww1 ->
+                 (Servant.Server.Internal.RoutingApplication.$fApplicativeDelayedIO9
+                    @ [GHC.Types.Char]
+                    ww1)
+                   `cast`
+                 (Trans
+                      (<Network.Wai.Internal.Request>_R
+                       ->_R Trans
+                                (<GHC.IORef.IORef
+                                    Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                 ->_R Trans
+                                          (Sym (GHC.Types.N:IO[0]
+                                                    <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                       [GHC.Types.Char]>_R))
+                                          (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                    <GHC.Types.IO>_R <[GHC.Types.Char]>_N)))
+                                (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                          <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                             GHC.Types.IO>_R
+                                          <[GHC.Types.Char]>_N)))
+                      (Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <Network.Wai.Internal.Request>_R
+                                     <Control.Monad.Trans.Resource.Internal.ResourceT
+                                        (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                           GHC.Types.IO)>_R
+                                     <[GHC.Types.Char]>_N))
+                           (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <[GHC.Types.Char]>_N))) }) -}
+c38adeb0a1b2bc45d6003e23f4831fbd
+  $sserve4 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text, env)
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.API.ContentTypes.JSON]
+            (GHC.Base.Maybe MyApi.FileApi.File)))
+    -> Servant.Server.Internal.Router.Router
+         (Data.Text.Internal.Text, env)
+  {- Unfolding: (\ @ env ->
+                 Servant.Server.Internal.$w$croute10
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.API.ContentTypes.JSON]
+                   @ (GHC.Base.Maybe MyApi.FileApi.File)
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   FileServer.$s$fAllCTRender:a
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   FileServer.$sserve5
+                     `cast`
+                   (Trans
+                        (Sym (GHC.TypeLits.N:SNat[0] <200>_P))
+                        (Sym (GHC.TypeLits.N:KnownNat[0]) <200>_N))
+                   @ (Data.Text.Internal.Text, env)
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.API.ContentTypes.JSON]
+                           (GHC.Base.Maybe MyApi.FileApi.File)))) -}
+a1e26a0368ae588533c90c3cd69d3a2a
+  $sserve5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (200) -}
+fefeb58f79a85753b8d50d7ca3441775
+  $sserve6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Servant.Server.Internal.$wouter
+                   ipv1
+                   4#
+                   FileServer.$sserve7
+                   0#
+                   ipv }) -}
+f7556e3e17bf83abb46378741f515311
+  $sserve7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "file"#) -}
+6ea42e82293dd1a8b3098b94bba7795a
+  $sserve8 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      env
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.API.ContentTypes.JSON]
+            [MyApi.FileApi.File]))
+    -> Servant.Server.Internal.Router.Router env
+  {- Unfolding: (\ @ env ->
+                 Servant.Server.Internal.$w$croute10
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.API.ContentTypes.JSON]
+                   @ [MyApi.FileApi.File]
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   FileServer.$s$fAllCTRender:a3
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   FileServer.$sserve5
+                     `cast`
+                   (Trans
+                        (Sym (GHC.TypeLits.N:SNat[0] <200>_P))
+                        (Sym (GHC.TypeLits.N:KnownNat[0]) <200>_N))
+                   @ env
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.API.ContentTypes.JSON]
+                           [MyApi.FileApi.File]))) -}
+85289420dfc7e59f244fc1745087ee0e
+  $sserve9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Servant.Server.Internal.$wouter
+                   ipv1
+                   4#
+                   FileServer.$sserve10
+                   0#
+                   ipv }) -}
+dfa85aea6392819d913985ea9538dd3d
+  $tc'FileServer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2305913060556804195##
+                   14872955619483603168##
+                   FileServer.$trModule
+                   FileServer.$tc'FileServer1) -}
+00ea3276801852c84179225c2d60f08e
+  $tc'FileServer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'FileServer"#) -}
+b62b3abb6bc569d3a7f191b36fd4b020
+  $tcFileServer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4785081399971085065##
+                   5250425449132929785##
+                   FileServer.$trModule
+                   FileServer.$trModule1) -}
+f715ab30305ae34a642dff1f5579a6e0
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileServer.$trModule2
+                   FileServer.$trModule1) -}
+86b0bb93d8c3639bd09835a594e01cde
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FileServer"#) -}
+86d963d6dd3be506443bf823814bc43c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FileServer-0.1.0.0-1vJh9UFbXx8EAUxoOE990K"#) -}
+9bfd322ca0b202744973cf8732736bac
+  $w$cshow :: GHC.IO.FilePath -> GHC.Types.Int -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.IO.FilePath) (ww1 :: GHC.Types.Int) ->
+                 GHC.CString.unpackAppendCString#
+                   "[FileServer: "#
+                   (case ww1 of ww2 { GHC.Types.I# ww3 ->
+                    case GHC.Show.$wshowSignedInt
+                           0#
+                           ww3
+                           (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                      (GHC.CString.unpackAppendCString#
+                         "]\n\
+                         \\t>[Port: "#
+                         (GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                            (GHC.CString.unpackAppendCString#
+                               "]\n\
+                               \\t>[Directory: "#
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (GHC.Types.:
+                                     @ GHC.Types.Char
+                                     GHC.Show.shows6
+                                     (GHC.Show.showLitString ww FileServer.$fShowFileServer3))
+                                  FileServer.$fShowFileServer2)))) } })) -}
+461cd51a563f2dc75f6681345c3e4058
+  $w$dHasServer ::
+    Data.Proxy.Proxy
+      (("files"
+        Servant.API.Sub.:> Servant.API.Verbs.Get
+                             '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File])
+       Servant.API.Alternative.:<|> ("file"
+                                     Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                           "name" GHC.Base.String
+                                                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                              '[Servant.API.ContentTypes.JSON]
+                                                                              (GHC.Base.Maybe
+                                                                                 MyApi.FileApi.File))))
+    -> Servant.Server.Internal.RoutingApplication.Delayed
+         env
+         (Servant.Server.Internal.Server
+            (("files"
+              Servant.API.Sub.:> Servant.API.Verbs.Get
+                                   '[Servant.API.ContentTypes.JSON] [MyApi.FileApi.File])
+             Servant.API.Alternative.:<|> ("file"
+                                           Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                 "name" GHC.Base.String
+                                                               Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                    (GHC.Base.Maybe
+                                                                                       MyApi.FileApi.File)))))
+    -> Servant.Server.Internal.Router.Router env
+  {- Arity: 2, Strictness: <S,1*H><L,U>, Inline: [0],
+     Unfolding: (\ @ env
+                   (w :: Data.Proxy.Proxy
+                           (("files"
+                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                  '[Servant.API.ContentTypes.JSON]
+                                                  [MyApi.FileApi.File])
+                            Servant.API.Alternative.:<|> ("file"
+                                                          Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                "name"
+                                                                                GHC.Base.String
+                                                                              Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                   '[Servant.API.ContentTypes.JSON]
+                                                                                                   (GHC.Base.Maybe
+                                                                                                      MyApi.FileApi.File)))))
+                   (w1 :: Servant.Server.Internal.RoutingApplication.Delayed
+                            env
+                            (Servant.Server.Internal.Server
+                               (("files"
+                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                      '[Servant.API.ContentTypes.JSON]
+                                                      [MyApi.FileApi.File])
+                                Servant.API.Alternative.:<|> ("file"
+                                                              Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                    "name"
+                                                                                    GHC.Base.String
+                                                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                                       (GHC.Base.Maybe
+                                                                                                          MyApi.FileApi.File)))))) ->
+                 Servant.Server.Internal.Router.choice
+                   @ env
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   (Servant.Server.Internal.Router.StaticRouter
+                      @ env
+                      @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                      (case GHC.Magic.runRW#
+                              @ 'GHC.Types.PtrRepLifted
+                              @ Data.Text.Internal.Text
+                              FileServer.$sserve9 of ds1 { (#,#) ipv ipv1 ->
+                       case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                       Data.Map.Base.Bin
+                         @ Data.Text.Internal.Text
+                         @ (Servant.Server.Internal.Router.Router'
+                              env Servant.Server.Internal.RoutingApplication.RoutingApplication)
+                         1#
+                         dt
+                         (FileServer.$sserve8
+                            @ env
+                            (Servant.Server.Internal.RoutingApplication.$fFunctorDelayed_$cfmap
+                               @ env
+                               @ (Servant.Server.Internal.Server
+                                    ("files"
+                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                          '[Servant.API.ContentTypes.JSON]
+                                                          [MyApi.FileApi.File])
+                                  Servant.API.Alternative.:<|> Servant.Server.Internal.ServerT
+                                                                 ("file"
+                                                                  Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                        "name"
+                                                                                        GHC.Base.String
+                                                                                      Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                           '[Servant.API.ContentTypes.JSON]
+                                                                                                           (GHC.Base.Maybe
+                                                                                                              MyApi.FileApi.File)))
+                                                                 Servant.Server.Internal.Handler.Handler)
+                               @ (Servant.Server.Internal.Server
+                                    ("files"
+                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                          '[Servant.API.ContentTypes.JSON]
+                                                          [MyApi.FileApi.File]))
+                               (Servant.Server.Internal.$fHasServerTYPE:<|>context2
+                                  @ ("files"
+                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                          '[Servant.API.ContentTypes.JSON]
+                                                          [MyApi.FileApi.File])
+                                  @ ("file"
+                                     Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                           "name" GHC.Base.String
+                                                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                              '[Servant.API.ContentTypes.JSON]
+                                                                              (GHC.Base.Maybe
+                                                                                 MyApi.FileApi.File))))
+                               w1
+                                 `cast`
+                               (Servant.Server.Internal.RoutingApplication.Delayed
+                                  <env>_R
+                                  (Sub (Servant.Server.Internal.D:R:ServerTTYPE:<|>m[0]
+                                            <"file"
+                                             Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                   "name" GHC.Base.String
+                                                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                      '[Servant.API.ContentTypes.JSON]
+                                                                                      (GHC.Base.Maybe
+                                                                                         MyApi.FileApi.File))>_N
+                                            <"files"
+                                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                  [MyApi.FileApi.File]>_N
+                                            <Servant.Server.Internal.Handler.Handler>_N)))_R)
+                              `cast`
+                            (Servant.Server.Internal.RoutingApplication.Delayed
+                               <env>_R
+                               (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                         <*>_N
+                                         <Servant.API.Verbs.Verb
+                                            'Network.HTTP.Types.Method.GET
+                                            200
+                                            '[Servant.API.ContentTypes.JSON]
+                                            [MyApi.FileApi.File]>_N
+                                         <"files">_N
+                                         <Servant.Server.Internal.Handler.Handler>_N)))_R)
+                         (Data.Map.Base.Tip
+                            @ Data.Text.Internal.Text
+                            @ (Servant.Server.Internal.Router.Router'
+                                 env Servant.Server.Internal.RoutingApplication.RoutingApplication))
+                         (Data.Map.Base.Tip
+                            @ Data.Text.Internal.Text
+                            @ (Servant.Server.Internal.Router.Router'
+                                 env
+                                 Servant.Server.Internal.RoutingApplication.RoutingApplication)) } })
+                      (GHC.Types.[]
+                         @ (env
+                            -> Servant.Server.Internal.RoutingApplication.RoutingApplication)))
+                   (Servant.Server.Internal.Router.StaticRouter
+                      @ env
+                      @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                      (case GHC.Magic.runRW#
+                              @ 'GHC.Types.PtrRepLifted
+                              @ Data.Text.Internal.Text
+                              FileServer.$sserve6 of ds1 { (#,#) ipv ipv1 ->
+                       case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                       Data.Map.Base.Bin
+                         @ Data.Text.Internal.Text
+                         @ (Servant.Server.Internal.Router.Router'
+                              env Servant.Server.Internal.RoutingApplication.RoutingApplication)
+                         1#
+                         dt
+                         (Servant.Server.Internal.Router.CaptureRouter
+                            @ env
+                            @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                            (FileServer.$sserve4
+                               @ env
+                               (case w1
+                                       `cast`
+                                     (Servant.Server.Internal.RoutingApplication.Delayed
+                                        <env>_R
+                                        (Sub (Servant.Server.Internal.D:R:ServerTTYPE:<|>m[0]
+                                                  <"file"
+                                                   Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                         "name" GHC.Base.String
+                                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                            '[Servant.API.ContentTypes.JSON]
+                                                                                            (GHC.Base.Maybe
+                                                                                               MyApi.FileApi.File))>_N
+                                                  <"files"
+                                                   Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                        '[Servant.API.ContentTypes.JSON]
+                                                                        [MyApi.FileApi.File]>_N
+                                                  <Servant.Server.Internal.Handler.Handler>_N)))_R of wild { Servant.Server.Internal.RoutingApplication.Delayed captures0 auth0 contentType0 params0 headers0 body0 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                                Servant.Server.Internal.RoutingApplication.addCapture
+                                  @ env
+                                  @ [GHC.Types.Char]
+                                  @ (Servant.Server.Internal.Server
+                                       (Servant.API.Verbs.Verb
+                                          'Network.HTTP.Types.Method.GET
+                                          200
+                                          '[Servant.API.ContentTypes.JSON]
+                                          (GHC.Base.Maybe MyApi.FileApi.File)))
+                                  @ Data.Text.Internal.Text
+                                  (Servant.Server.Internal.RoutingApplication.Delayed
+                                     @ env
+                                     @ (Servant.Server.Internal.Server
+                                          ("file"
+                                           Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                 "name" GHC.Base.String
+                                                               Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                    (GHC.Base.Maybe
+                                                                                       MyApi.FileApi.File))))
+                                     @ captures0
+                                     @ auth0
+                                     @ contentType0
+                                     @ params0
+                                     @ headers0
+                                     @ body0
+                                     ds2
+                                     ds3
+                                     ds4
+                                     ds5
+                                     ds6
+                                     ds7
+                                     ds8
+                                     ds9
+                                     (\ (c :: captures0)
+                                        (p :: params0)
+                                        (h :: headers0)
+                                        (a1 :: auth0)
+                                        (b1 :: body0)
+                                        (req :: Network.Wai.Internal.Request) ->
+                                      case ds10 c p h a1 b1 req of wild1 {
+                                        Servant.Server.Internal.RoutingApplication.Fail a2
+                                        -> Servant.Server.Internal.RoutingApplication.Fail
+                                             @ (Servant.Server.Internal.Server
+                                                  ("file"
+                                                   Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                         "name" GHC.Base.String
+                                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                            '[Servant.API.ContentTypes.JSON]
+                                                                                            (GHC.Base.Maybe
+                                                                                               MyApi.FileApi.File))))
+                                             a2
+                                        Servant.Server.Internal.RoutingApplication.FailFatal a2
+                                        -> Servant.Server.Internal.RoutingApplication.FailFatal
+                                             @ (Servant.Server.Internal.Server
+                                                  ("file"
+                                                   Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                         "name" GHC.Base.String
+                                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                            '[Servant.API.ContentTypes.JSON]
+                                                                                            (GHC.Base.Maybe
+                                                                                               MyApi.FileApi.File))))
+                                             a2
+                                        Servant.Server.Internal.RoutingApplication.Route a2
+                                        -> case a2 of wild2 { Servant.API.Alternative.:<|> ds11 b2 ->
+                                           case b2
+                                                  `cast`
+                                                (Trans
+                                                     (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                                               <*>_N
+                                                               <Servant.API.Capture.Capture
+                                                                  "name" GHC.Base.String
+                                                                Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                     '[Servant.API.ContentTypes.JSON]
+                                                                                     (GHC.Base.Maybe
+                                                                                        MyApi.FileApi.File)>_N
+                                                               <"file">_N
+                                                               <Servant.Server.Internal.Handler.Handler>_N))
+                                                     (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                               <*>_N
+                                                               <[GHC.Types.Char]>_N
+                                                               <"name">_N
+                                                               <Servant.API.Verbs.Verb
+                                                                  'Network.HTTP.Types.Method.GET
+                                                                  200
+                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                  (GHC.Base.Maybe
+                                                                     MyApi.FileApi.File)>_N
+                                                               <Servant.Server.Internal.Handler.Handler>_N))) of nt { DEFAULT ->
+                                           Servant.Server.Internal.RoutingApplication.Route
+                                             @ (Servant.Server.Internal.Server
+                                                  ("file"
+                                                   Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                         "name" GHC.Base.String
+                                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                            '[Servant.API.ContentTypes.JSON]
+                                                                                            (GHC.Base.Maybe
+                                                                                               MyApi.FileApi.File))))
+                                             nt
+                                               `cast`
+                                             (Trans
+                                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                 <*>_N
+                                                                 <[GHC.Types.Char]>_N
+                                                                 <"name">_N
+                                                                 <Servant.API.Verbs.Verb
+                                                                    'Network.HTTP.Types.Method.GET
+                                                                    200
+                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                    (GHC.Base.Maybe
+                                                                       MyApi.FileApi.File)>_N
+                                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                                                 <*>_N
+                                                                 <Servant.API.Capture.Capture
+                                                                    "name" GHC.Base.String
+                                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                       (GHC.Base.Maybe
+                                                                                          MyApi.FileApi.File)>_N
+                                                                 <"file">_N
+                                                                 <Servant.Server.Internal.Handler.Handler>_N)))) } } }))
+                                    `cast`
+                                  (Servant.Server.Internal.RoutingApplication.Delayed
+                                     <env>_R
+                                     (Trans
+                                          (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                                    <*>_N
+                                                    <Servant.API.Capture.Capture
+                                                       "name" GHC.Base.String
+                                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                          '[Servant.API.ContentTypes.JSON]
+                                                                          (GHC.Base.Maybe
+                                                                             MyApi.FileApi.File)>_N
+                                                    <"file">_N
+                                                    <Servant.Server.Internal.Handler.Handler>_N))
+                                          (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                    <*>_N
+                                                    <[GHC.Types.Char]>_N
+                                                    <"name">_N
+                                                    <Servant.API.Verbs.Verb
+                                                       'Network.HTTP.Types.Method.GET
+                                                       200
+                                                       '[Servant.API.ContentTypes.JSON]
+                                                       (GHC.Base.Maybe MyApi.FileApi.File)>_N
+                                                    <Servant.Server.Internal.Handler.Handler>_N))))_R
+                                  FileServer.$sserve3 })))
+                         (Data.Map.Base.Tip
+                            @ Data.Text.Internal.Text
+                            @ (Servant.Server.Internal.Router.Router'
+                                 env Servant.Server.Internal.RoutingApplication.RoutingApplication))
+                         (Data.Map.Base.Tip
+                            @ Data.Text.Internal.Text
+                            @ (Servant.Server.Internal.Router.Router'
+                                 env
+                                 Servant.Server.Internal.RoutingApplication.RoutingApplication)) } })
+                      (GHC.Types.[]
+                         @ (env
+                            -> Servant.Server.Internal.RoutingApplication.RoutingApplication)))) -}
+094515b3d4a9fbee3853063bad4abdb3
+  $w$sgo10 ::
+    GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Int a1
+    -> Data.Map.Base.Map GHC.Types.Int a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+ac2ce54237c5cae2bc6c99e4c56ea60f
+  $wbuildFileServer ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            FileServer.FileServer #)
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Int)
+                   (ww1 :: GHC.Types.Int)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar
+                             (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File))
+                        FileServer.buildFileServer5
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.atomically#
+                        @ (GHC.Conc.Sync.TVar GHC.Types.Int)
+                        FileServer.buildFileServer4
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 let {
+                   fs :: [GHC.Types.Char]
+                   = GHC.CString.unpackAppendCString#
+                       "data/"#
+                       (case ww of ww2 { GHC.Types.I# ww3 ->
+                        case GHC.Show.$wshowSignedInt
+                               0#
+                               ww3
+                               (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                        GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                 } in
+                 case System.Directory.createDirectoryIfMissing1
+                        GHC.Types.True
+                        fs
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case Data.Time.Clock.POSIX.getCurrentTime2
+                        ipv4 of ds { (#,#) ipv6 ipv7 ->
+                 case System.IO.writeFile1
+                        (GHC.Base.++ @ GHC.Types.Char fs FileServer.buildFileServer3)
+                        (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                ipv7 of ww2 { (#,#) ww3 ww4 ->
+                         case Data.Time.LocalTime.LocalTime.$wutcToLocalTime
+                                Data.Time.LocalTime.TimeZone.utc
+                                ww3
+                                ww4 of ww5 { (#,#) ww6 ww7 ->
+                         Data.Time.LocalTime.LocalTime.$w$cshow1
+                           ww6
+                           ww7
+                           Data.Time.LocalTime.TimeZone.utc } })
+                        ipv6 of ds4 { (#,#) ipv8 ipv9 ->
+                 case System.Directory.getDirectoryContents1
+                        fs
+                        ipv8 of ds13 { (#,#) ipv10 ipv11 ->
+                 let {
+                   ipv12 :: [GHC.IO.FilePath]
+                   = GHC.List.filter
+                       @ [GHC.Types.Char]
+                       System.Directory.listDirectory2
+                       ipv11
+                 } in
+                 case FileServer.buildFileServer2
+                        ipv12
+                        (GHC.Types.[] @ MyApi.FileApi.File)
+                        ipv10 of ds5 { (#,#) ipv13 ipv14 ->
+                 case GHC.Prim.atomically#
+                        @ ()
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case ipv1 of wild { GHC.Conc.Sync.TVar tvar# ->
+                         case GHC.Prim.writeTVar#
+                                @ GHC.Prim.RealWorld
+                                @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                                tvar#
+                                (FileServer.initFileList ipv14)
+                                eta of s2# { DEFAULT ->
+                         (# s2#, GHC.Tuple.() #) } })
+                        ipv13 of ds6 { (#,#) ipv15 ipv16 ->
+                 case GHC.Prim.atomically#
+                        @ ()
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case ipv3 of wild { GHC.Conc.Sync.TVar tvar# ->
+                         case GHC.Prim.writeTVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                tvar#
+                                (case GHC.List.$wlenAcc
+                                        @ [GHC.Types.Char]
+                                        ipv12
+                                        0# of ww2 { DEFAULT ->
+                                 GHC.Types.I# ww2 })
+                                eta of s2# { DEFAULT ->
+                         (# s2#, GHC.Tuple.() #) } })
+                        ipv15 of ds7 { (#,#) ipv17 ipv18 ->
+                 (# ipv17,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ FileServer.FileServer
+                      (FileServer.FileServer
+                         fs
+                         ipv1
+                         ww
+                         ipv3
+                         ww1) #) } } } } } } } } }) -}
+7c3aff8a5fb04899cefbe28422573d70
+  $wgetFile ::
+    GHC.Prim.TVar#
+      GHC.Prim.RealWorld
+      (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            (GHC.Base.Maybe MyApi.FileApi.File) #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><L,1*U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.TVar#
+                            GHC.Prim.RealWorld
+                            (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File))
+                   (w :: GHC.Base.String)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.atomically#
+                        @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         GHC.Prim.readTVar#
+                           @ GHC.Prim.RealWorld
+                           @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                           ww
+                           eta)
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ (GHC.Base.Maybe MyApi.FileApi.File)
+                      (case Data.Hashable.Class.$w$cliftHashWithSalt
+                              @ GHC.Types.Char
+                              Data.Hashable.Class.$fHashableChar_$chashWithSalt
+                              -2578643520546668380#
+                              w of ww1 { DEFAULT ->
+                       FileServer.$wpoly_go10 @ MyApi.FileApi.File ww1 ipv1 }) #) }) -}
+6b494d15007eca458843750525d25a69
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Int a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+1904d2598eadf02469e390edf3b87173
+  $wstartServer ::
+    GHC.Conc.Sync.TVar
+      (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U(U)><L,1*U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Conc.Sync.TVar
+                            (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File))
+                   (ww1 :: GHC.Types.Int)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Network.Wai.Handler.Warp.Run.$wrunSettings
+                   ww1
+                   Network.Wai.Handler.Warp.Settings.defaultSettings16
+                   Network.Wai.Handler.Warp.Settings.defaultOnException1
+                     `cast`
+                   (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
+                    ->_R <GHC.Exception.SomeException>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultOnExceptionResponse
+                   Network.Wai.Handler.Warp.Settings.defaultSettings14
+                     `cast`
+                   (<Network.Socket.Types.SockAddr>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings13
+                     `cast`
+                   (<Network.Socket.Types.SockAddr>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings12
+                   (GHC.Base.Nothing @ Network.Wai.Handler.Warp.Timeout.Manager)
+                   Network.Wai.Handler.Warp.Settings.defaultSettings11
+                   Network.Wai.Handler.Warp.Settings.defaultSettings11
+                   Network.Wai.Handler.Warp.Settings.defaultSettings9
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings10
+                     `cast`
+                   (<(forall a. GHC.Types.IO a -> GHC.Types.IO a)
+                     -> GHC.Types.IO ()>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False
+                   Network.Wai.Handler.Warp.Settings.defaultSettings8
+                     `cast`
+                   (<GHC.Types.IO ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings6
+                   Network.Wai.Handler.Warp.Settings.defaultSettings4
+                   Network.Wai.Handler.Warp.Settings.ProxyProtocolNone
+                   Network.Wai.Handler.Warp.Settings.defaultSettings3
+                   GHC.Types.True
+                   Network.Wai.Handler.Warp.Settings.defaultSettings2
+                     `cast`
+                   (<Network.Wai.Internal.Request>_R
+                    ->_R <Network.HTTP.Types.Status.Status>_R
+                    ->_R <GHC.Base.Maybe GHC.Integer.Type.Integer>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Network.Wai.Handler.Warp.Settings.defaultSettings1
+                     `cast`
+                   (<Network.Wai.Internal.Request>_R
+                    ->_R <Data.ByteString.Internal.ByteString>_R
+                    ->_R <GHC.Integer.Type.Integer>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   (Servant.Server.serveWithContext
+                      @ MyApi.FileServerApi.FileServerAPI
+                      @ '[]
+                      FileServer.$sserve2
+                        `cast`
+                      (Sym (Servant.Server.Internal.N:HasServer[0]
+                                <*>_N
+                                <("files"
+                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                       '[Servant.API.ContentTypes.JSON]
+                                                       [MyApi.FileApi.File])
+                                 Servant.API.Alternative.:<|> ("file"
+                                                               Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                     "name"
+                                                                                     GHC.Base.String
+                                                                                   Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                        '[Servant.API.ContentTypes.JSON]
+                                                                                                        (GHC.Base.Maybe
+                                                                                                           MyApi.FileApi.File)))>_N
+                                <'[]>_N))
+                      (Data.Proxy.Proxy @ * @ MyApi.FileServerApi.FileServerAPI)
+                      Servant.Server.Internal.Context.$WEmptyContext
+                      (Servant.API.Alternative.:<|>
+                         @ (Servant.Server.Internal.Handler.Handler [MyApi.FileApi.File])
+                         @ (GHC.Base.String
+                            -> Servant.Server.Internal.Handler.Handler
+                                 (GHC.Base.Maybe MyApi.FileApi.File))
+                         (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case GHC.Prim.atomically#
+                                 @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                                 (GHC.Conc.Sync.readTVar1
+                                    @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                                    ww)
+                                 eta of ds1 { (#,#) ipv ipv1 ->
+                          (# ipv,
+                             Data.Either.Right
+                               @ Servant.Server.Internal.ServantErr.ServantErr
+                               @ [MyApi.FileApi.File]
+                               (Data.Map.Base.elems
+                                  @ GHC.Types.Int
+                                  @ MyApi.FileApi.File
+                                  ipv1) #) })
+                           `cast`
+                         (Trans
+                              (Sym (GHC.Types.N:IO[0]
+                                        <Data.Either.Either
+                                           Servant.Server.Internal.ServantErr.ServantErr
+                                           [MyApi.FileApi.File]>_R))
+                              (Trans
+                                   (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                             <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                             <GHC.Types.IO>_R
+                                             <[MyApi.FileApi.File]>_N))
+                                   (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[MyApi.FileApi.File]>_N)))
+                         (\ (w1 :: GHC.Base.String)
+                            (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case ww of ww2 { GHC.Conc.Sync.TVar ww3 ->
+                          FileServer.$wgetFile ww3 w1 w2 })
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R Trans
+                                   (Sym (GHC.Types.N:IO[0]
+                                             <Data.Either.Either
+                                                Servant.Server.Internal.ServantErr.ServantErr
+                                                (GHC.Base.Maybe MyApi.FileApi.File)>_R))
+                                   (Trans
+                                        (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                  <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                  <GHC.Types.IO>_R
+                                                  <GHC.Base.Maybe MyApi.FileApi.File>_N))
+                                        (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <GHC.Base.Maybe
+                                                                                               MyApi.FileApi.File>_N))))
+                        `cast`
+                      (Trans
+                           (Trans
+                                (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                               <Network.HTTP.Types.Method.StdMethod>_N
+                                               <[MyApi.FileApi.File]>_N
+                                               <'[Servant.API.ContentTypes.JSON]>_N
+                                               <200>_N
+                                               <'Network.HTTP.Types.Method.GET>_N
+                                               <Servant.Server.Internal.Handler.Handler>_N)))
+                                (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                               <*>_N
+                                               <Servant.API.Verbs.Verb
+                                                  'Network.HTTP.Types.Method.GET
+                                                  200
+                                                  '[Servant.API.ContentTypes.JSON]
+                                                  [MyApi.FileApi.File]>_N
+                                               <"files">_N
+                                               <Servant.Server.Internal.Handler.Handler>_N)))
+                            Servant.API.Alternative.:<|> Trans
+                                                             (<[GHC.Types.Char]>_R
+                                                              ->_R Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                                                 <Network.HTTP.Types.Method.StdMethod>_N
+                                                                                 <GHC.Base.Maybe
+                                                                                    MyApi.FileApi.File>_N
+                                                                                 <'[Servant.API.ContentTypes.JSON]>_N
+                                                                                 <200>_N
+                                                                                 <'Network.HTTP.Types.Method.GET>_N
+                                                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                                                             (Trans
+                                                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                                 <*>_N
+                                                                                 <[GHC.Types.Char]>_N
+                                                                                 <"name">_N
+                                                                                 <Servant.API.Verbs.Verb
+                                                                                    'Network.HTTP.Types.Method.GET
+                                                                                    200
+                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                    (GHC.Base.Maybe
+                                                                                       MyApi.FileApi.File)>_N
+                                                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                                                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                                                                 <*>_N
+                                                                                 <Servant.API.Capture.Capture
+                                                                                    "name"
+                                                                                    GHC.Base.String
+                                                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                       '[Servant.API.ContentTypes.JSON]
+                                                                                                       (GHC.Base.Maybe
+                                                                                                          MyApi.FileApi.File)>_N
+                                                                                 <"file">_N
+                                                                                 <Servant.Server.Internal.Handler.Handler>_N)))))_R
+                           (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:<|>m[0]
+                                          <"file"
+                                           Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                 "name" GHC.Base.String
+                                                               Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                    (GHC.Base.Maybe
+                                                                                       MyApi.FileApi.File))>_N
+                                          <"files"
+                                           Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                '[Servant.API.ContentTypes.JSON]
+                                                                [MyApi.FileApi.File]>_N
+                                          <Servant.Server.Internal.Handler.Handler>_N)))))
+                   w) -}
+ea344b01bcdbeaeb6166d40973b72581
+  data FileServer
+    = FileServer {directoryAddr :: GHC.IO.FilePath,
+                  fileListing :: GHC.Conc.Sync.TVar
+                                   (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File),
+                  port :: GHC.Types.Int,
+                  fileCount :: GHC.Conc.Sync.TVar GHC.Types.Int,
+                  mothership :: GHC.Types.Int}
+758e0e4d6ba4226fdff16f965c07078e
+  buildFileServer ::
+    Config.Config
+    -> Servant.Server.Internal.Handler.Handler FileServer.FileServer
+  {- Arity: 2, Strictness: <S,1*U(U(U),U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.buildFileServer1
+                  `cast`
+                (<Config.Config>_R
+                 ->_R Trans
+                          (Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr
+                                       FileServer.FileServer>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <GHC.Types.IO>_R
+                                         <FileServer.FileServer>_N))
+                               (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <FileServer.FileServer>_N))) -}
+298f4f3d9f18f63f47a5184e7f7b8ac3
+  buildFileServer1 ::
+    Config.Config
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            FileServer.FileServer #)
+  {- Arity: 2, Strictness: <S,1*U(U(U),U)><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Config.Config)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Config.Config ww1 ww2 ->
+                 FileServer.$wbuildFileServer ww1 ww2 w1 }) -}
+2cce425e8f025e361dcf5484feee891f
+  buildFileServer2 ::
+    [GHC.IO.FilePath]
+    -> [MyApi.FileApi.File]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [MyApi.FileApi.File] #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
+661c4a588bcacdf192132ded24bd1ab6
+  buildFileServer3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "/serverDOB.txt"#) -}
+c2906e9a5d22d038653a1cb2481a6045
+  buildFileServer4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Conc.Sync.TVar GHC.Types.Int #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1# :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newTVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        (GHC.Types.I# 0#)
+                        s1# of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Conc.Sync.TVar @ GHC.Types.Int ipv1 #) }) -}
+5ecc23f2aa5a9887dcb6ee4ce9d247a0
+  buildFileServer5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Conc.Sync.TVar
+            (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File) #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1# :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newTVar#
+                        @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                        @ GHC.Prim.RealWorld
+                        (Data.Map.Base.Tip @ GHC.Types.Int @ MyApi.FileApi.File)
+                        s1# of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Conc.Sync.TVar
+                      @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                      ipv1 #) }) -}
+54604edf7ca89265208976ba59b63182
+  directoryAddr :: FileServer.FileServer -> GHC.IO.FilePath
+  RecSel Left FileServer.FileServer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLLL),1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileServer.FileServer) ->
+                 case ds of wild { FileServer.FileServer ds1 ds2 ds3 ds4 ds5 ->
+                 ds1 }) -}
+5c9269ed856c0e234f7aecfd829c53a3
+  fileCount ::
+    FileServer.FileServer -> GHC.Conc.Sync.TVar GHC.Types.Int
+  RecSel Left FileServer.FileServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSL),1*U(A,A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileServer.FileServer) ->
+                 case ds of wild { FileServer.FileServer ds1 ds2 ds3 ds4 ds5 ->
+                 ds4 }) -}
+0bddcf4e3f48f5f3633b49c26e75c728
+  fileListing ::
+    FileServer.FileServer
+    -> GHC.Conc.Sync.TVar
+         (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+  RecSel Left FileServer.FileServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileServer.FileServer) ->
+                 case ds of wild { FileServer.FileServer ds1 ds2 ds3 ds4 ds5 ->
+                 ds2 }) -}
+317b7750fb840a48136ee1a69e9d7c52
+  getFile ::
+    FileServer.FileServer
+    -> GHC.Base.String
+    -> Servant.Server.Internal.Handler.Handler
+         (GHC.Base.Maybe MyApi.FileApi.File)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LS(S)LLL),1*U(A,1*U(U),A,A,A)><L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.getFile1
+                  `cast`
+                (<FileServer.FileServer>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Trans
+                          (Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr
+                                       (GHC.Base.Maybe MyApi.FileApi.File)>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <GHC.Types.IO>_R
+                                         <GHC.Base.Maybe MyApi.FileApi.File>_N))
+                               (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <GHC.Base.Maybe
+                                                                                      MyApi.FileApi.File>_N))) -}
+e6601784d9b54ce48abe5ac1c5281c74
+  getFile1 ::
+    FileServer.FileServer
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            (GHC.Base.Maybe MyApi.FileApi.File) #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LS(S)LLL),1*U(A,1*U(U),A,A,A)><L,1*U><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: FileServer.FileServer)
+                   (w1 :: GHC.Base.String)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { FileServer.FileServer ww1 ww2 ww3 ww4 ww5 ->
+                 case ww2 of ww6 { GHC.Conc.Sync.TVar ww7 ->
+                 FileServer.$wgetFile ww7 w1 w2 } }) -}
+1b8946a41b1487576c2e4ad448fb1f36
+  getFiles ::
+    FileServer.FileServer
+    -> Servant.Server.Internal.Handler.Handler [MyApi.FileApi.File]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)LLL),1*U(A,1*U(U),A,A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.getFiles1
+                  `cast`
+                (<FileServer.FileServer>_R
+                 ->_R Trans
+                          (Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr
+                                       [MyApi.FileApi.File]>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <GHC.Types.IO>_R
+                                         <[MyApi.FileApi.File]>_N))
+                               (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[MyApi.FileApi.File]>_N))) -}
+3ee92491687906ae37bf5ddbd1da72d9
+  getFiles1 ::
+    FileServer.FileServer
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            [MyApi.FileApi.File] #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)LLL),1*U(A,1*U(U),A,A,A)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (fs :: FileServer.FileServer)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case fs of wild { FileServer.FileServer ds ds1 ds2 ds3 ds4 ->
+                 case GHC.Prim.atomically#
+                        @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                        (GHC.Conc.Sync.readTVar1
+                           @ (Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File)
+                           ds1)
+                        eta of ds5 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ [MyApi.FileApi.File]
+                      (GHC.Base.build
+                         @ MyApi.FileApi.File
+                         (\ @ b
+                            (c :: MyApi.FileApi.File -> b -> b)[OneShot]
+                            (n :: b)[OneShot] ->
+                          Data.Map.Base.foldrFB
+                            @ GHC.Types.Int
+                            @ MyApi.FileApi.File
+                            @ b
+                            (\ (ds6 :: GHC.Types.Int)
+                               (x :: MyApi.FileApi.File)[OneShot]
+                               (xs :: b)[OneShot] ->
+                             c x xs)
+                            n
+                            ipv1)) #) } }) -}
+2ead68e99d16b1d01ea6ed184fcb1ce8
+  getPort :: FileServer.FileServer -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLL),1*U(A,A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (fs :: FileServer.FileServer) ->
+                 case fs of wild { FileServer.FileServer ds ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+dd8f886d2eba663ccd510e4e2bef9683
+  initFileList ::
+    [MyApi.FileApi.File]
+    -> Data.Map.Base.Map GHC.Types.Int MyApi.FileApi.File
+  {- Arity: 1, Strictness: <S,1*U> -}
+72fe5cdb6c1fe431c04bd9682d4671a5
+  mothership :: FileServer.FileServer -> GHC.Types.Int
+  RecSel Left FileServer.FileServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileServer.FileServer) ->
+                 case ds of wild { FileServer.FileServer ds1 ds2 ds3 ds4 ds5 ->
+                 ds5 }) -}
+5967b11aee45e1f0765e5463d4fc1f65
+  port :: FileServer.FileServer -> GHC.Types.Int
+  RecSel Left FileServer.FileServer
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLL),1*U(A,A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileServer.FileServer) ->
+                 case ds of wild { FileServer.FileServer ds1 ds2 ds3 ds4 ds5 ->
+                 ds3 }) -}
+81cdb5c9b3f18569573a93d66908497d
+  startServer :: FileServer.FileServer -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,1*U(A,U(U),1*U(U),A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileServer.startServer1
+                  `cast`
+                (<FileServer.FileServer>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ee6307c56c71a57c7a23929bdf1cb05a
+  startServer1 ::
+    FileServer.FileServer
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U(A,U(U),1*U(U),A,A)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: FileServer.FileServer)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { FileServer.FileServer ww1 ww2 ww3 ww4 ww5 ->
+                 FileServer.$wstartServer ww2 ww3 w1 }) -}
+instance GHC.Show.Show [FileServer.FileServer]
+  = FileServer.$fShowFileServer
+"SPEC/FileServer $fAllCTRender:a @ JSON @ '[] @ (Maybe File)" [ALWAYS] forall ($dAllMimeRender :: Servant.API.ContentTypes.AllMimeRender
+                                                                                                    '[Servant.API.ContentTypes.JSON]
+                                                                                                    (GHC.Base.Maybe
+                                                                                                       MyApi.FileApi.File))
+                                                                              ($dAllMime :: Servant.API.ContentTypes.AllMime
+                                                                                              '[])
+                                                                              ($dAccept :: Servant.API.ContentTypes.Accept
+                                                                                             Servant.API.ContentTypes.JSON)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.API.ContentTypes.JSON
+                                           @ '[]
+                                           @ (GHC.Base.Maybe MyApi.FileApi.File)
+                                           $dAccept
+                                           $dAllMime
+                                           $dAllMimeRender
+  = FileServer.$s$fAllCTRender:a
+"SPEC/FileServer $fAllCTRender:a @ JSON @ '[] @ [File]" [ALWAYS] forall ($dAllMimeRender :: Servant.API.ContentTypes.AllMimeRender
+                                                                                              '[Servant.API.ContentTypes.JSON]
+                                                                                              [MyApi.FileApi.File])
+                                                                        ($dAllMime :: Servant.API.ContentTypes.AllMime
+                                                                                        '[])
+                                                                        ($dAccept :: Servant.API.ContentTypes.Accept
+                                                                                       Servant.API.ContentTypes.JSON)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.API.ContentTypes.JSON
+                                           @ '[]
+                                           @ [MyApi.FileApi.File]
+                                           $dAccept
+                                           $dAllMime
+                                           $dAllMimeRender
+  = FileServer.$s$fAllCTRender:a3
+"SPEC/FileServer $fAllMimeRender:a0 @ JSON @ (Maybe File)" [ALWAYS] forall ($dMimeRender :: Servant.API.ContentTypes.MimeRender
+                                                                                              Servant.API.ContentTypes.JSON
+                                                                                              (GHC.Base.Maybe
+                                                                                                 MyApi.FileApi.File))
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.API.ContentTypes.JSON
+                                              @ (GHC.Base.Maybe MyApi.FileApi.File)
+                                              $dMimeRender
+  = FileServer.$s$fAllCTRender:a_$s$fAllMimeRender:a0
+"SPEC/FileServer $fAllMimeRender:a0 @ JSON @ [File]" [ALWAYS] forall ($dMimeRender :: Servant.API.ContentTypes.MimeRender
+                                                                                        Servant.API.ContentTypes.JSON
+                                                                                        [MyApi.FileApi.File])
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.API.ContentTypes.JSON
+                                              @ [MyApi.FileApi.File]
+                                              $dMimeRender
+  = FileServer.$s$fAllCTRender:a_$s$fAllMimeRender:a1
+"SPEC/FileServer $fMimeRenderTYPEJSONa @ (Maybe File)" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                                      (GHC.Base.Maybe
+                                                                                         MyApi.FileApi.File))
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa @ (GHC.Base.Maybe
+                                                      MyApi.FileApi.File)
+                                                 $dToJSON
+  = FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa
+"SPEC/FileServer $fMimeRenderTYPEJSONa @ [File]" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                                [MyApi.FileApi.File])
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa @ [MyApi.FileApi.File]
+                                                 $dToJSON
+  = FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa1
+"SPEC/FileServer $fMimeRenderTYPEJSONa_$cmimeRender @ (Maybe File)" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                                                   (GHC.Base.Maybe
+                                                                                                      MyApi.FileApi.File))
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa_$cmimeRender @ (GHC.Base.Maybe
+                                                                   MyApi.FileApi.File)
+                                                              $dToJSON
+  = FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender
+"SPEC/FileServer $fMimeRenderTYPEJSONa_$cmimeRender @ [File]" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                                             [MyApi.FileApi.File])
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa_$cmimeRender @ [MyApi.FileApi.File]
+                                                              $dToJSON
+  = FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cmimeRender1
+"SPEC/FileServer $fMimeRenderTYPEJSONa_$cp1MimeRender @ [File]" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                                               [MyApi.FileApi.File])
+  Servant.API.ContentTypes.$fMimeRenderTYPEJSONa_$cp1MimeRender @ [MyApi.FileApi.File]
+                                                                $dToJSON
+  = FileServer.$s$fAllCTRender:a_$s$fMimeRenderTYPEJSONa_$cp1MimeRender
+"SPEC/FileServer encode @ (Maybe File)" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                       (GHC.Base.Maybe
+                                                                          MyApi.FileApi.File))
+  Data.Aeson.encode @ (GHC.Base.Maybe MyApi.FileApi.File) $dToJSON
+  = FileServer.$s$fAllCTRender:a_$sencode
+"SPEC/FileServer encode @ [File]" [ALWAYS] forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                                 [MyApi.FileApi.File])
+  Data.Aeson.encode @ [MyApi.FileApi.File] $dToJSON
+  = FileServer.$s$fAllCTRender:a_$sencode1
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
