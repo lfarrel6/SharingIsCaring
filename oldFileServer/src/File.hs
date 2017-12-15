@@ -24,6 +24,7 @@ data File = File
   } deriving Generic
 
 instance ToJSON File
+instance FromJSON File
 
 instance Show File where
   show f@File{..} = "[" ++ show path ++ "]"

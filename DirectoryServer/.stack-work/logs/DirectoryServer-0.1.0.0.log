@@ -1,0 +1,10 @@
+Preprocessing library DirectoryServer-0.1.0.0...
+[2 of 2] Compiling DirectoryServer  ( src\DirectoryServer.hs, .stack-work\dist\ca59d0ab\build\DirectoryServer.o )
+
+src\DirectoryServer.hs:6:1: error:
+    Failed to load interface for `FileServer'
+    Use -v to see a list of the files searched for.
+
+src\DirectoryServer.hs:7:1: error:
+    Failed to load interface for `Message'
+    Use -v to see a list of the files searched for.

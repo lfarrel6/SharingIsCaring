@@ -1,0 +1,10 @@
+Preprocessing library MyApis-0.1.0.0...
+[2 of 4] Compiling MyApi.FileApi    ( src\MyApi\FileApi.hs, .stack-work\dist\ca59d0ab\build\MyApi\FileApi.o )
+[3 of 4] Compiling MyApi.FileServerApi ( src\MyApi\FileServerApi.hs, .stack-work\dist\ca59d0ab\build\MyApi\FileServerApi.o ) [MyApi.FileApi changed]
+[4 of 4] Compiling MyApi.DirectoryServerApi ( src\MyApi\DirectoryServerApi.hs, .stack-work\dist\ca59d0ab\build\MyApi\DirectoryServerApi.o ) [MyApi.FileApi changed]
+Preprocessing executable 'MyApis-exe' for MyApis-0.1.0.0...
+Installing library in
+C:\Users\Rory\Desktop\Haskell\FileServerV2\oldFileServer\.stack-work\install\3573363d\lib\x86_64-windows-ghc-8.0.2\MyApis-0.1.0.0-4WR5ldCHjnH8FhhTBR1aWU
+Installing executable(s) in
+C:\Users\Rory\Desktop\Haskell\FileServerV2\oldFileServer\.stack-work\install\3573363d\bin
+Registering MyApis-0.1.0.0...

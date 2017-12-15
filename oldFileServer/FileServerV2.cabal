@@ -36,12 +36,20 @@ library
                      , hashable
                      , filepath
                      , mtl
+                     , servant
+                     , servant-client
+                     , servant-server
                      , directory
                      , time
                      , aeson
                      , aeson-compat
                      , base-compat
                      , servant-server
+                     , http-client
+                     , http-media
+                     , wai
+                     , warp
+                     , MyApis
   default-language:    Haskell2010
 
 executable FileServerV2-exe
@@ -61,12 +69,16 @@ executable FileServerV2-exe
                      , http-media
                      , wai
                      , warp
+                     , servant
                      , servant-server
+                     , servant-client
                      , directory
                      , blaze-markup
                      , blaze-html
                      , lucid
                      , stm
+                     , http-client
+                     , MyApis
   default-language:    Haskell2010
 
 test-suite FileServerV2-test

@@ -1,0 +1,609 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-15 17:24:24.9598744 UTC
+
+interface MyApis-0.1.0.0-4WR5ldCHjnH8FhhTBR1aWU:Query 8002
+  interface hash: 59fb8db8b5e4ad36610b012aa4789827
+  ABI hash: 9f6b575c474af876b22d1040e6e4e4d4
+  export-list hash: 1da8bba0125c8709d4e91992d23bd100
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d6c48ad680aa7f9ecd2b91909ca0355b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Query.query
+  Query.queryNStrip
+  Query.simpleQuery
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-5krMHmbflz8EYj7W9e0kqT
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.10@case-insensitive-1.2.0.10-1D5OUKQ7UrJ7IpOe0di4Un
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.3@cookie-0.4.3-LVlxdgOdUJj73o1VFenWKF
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o
+                      http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv
+                      http-date-0.0.6.1@http-date-0.0.6.1-AkYFHBFn90lGSerD29arC9
+                      http-media-0.6.4@http-media-0.6.4-L2HKUvjwG4m4RLl78rlCa
+                      http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY
+                      http2-1.6.3@http2-1.6.3-5WuWRsIVuKR43Sq9Cs2O4Z integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      psqueues-0.2.4.0@psqueues-0.2.4.0-CvAhEbuBRGQCwl61vq8zYS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-Db8txM8kTsI6Y49CY6g5Jn
+                      servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5
+                      servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-8Q1MsGyzrPPGgHz2C1BSr4
+                      string-conversions-0.4.0.1@string-conversions-0.4.0.1-HK2T4drDKhqGigpJdBBdRG
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-4J6CourUSTG17Ll1LWtjiq
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vault-0.3.0.7@vault-0.3.0.7-FSJCPczyPWW8DwvwP76qt4
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+                      wai-3.2.1.1@wai-3.2.1.1-9FGPcqW2iUN5VP944fCq2b
+                      warp-3.2.13@warp-3.2.13-JeA4XUH1GfPICGzPbFBDHD
+                      word8-0.1.3@word8-0.1.3-9o1uWQQ6KysJq8GGsVHHit
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client.Request
+         network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.1@http-api-data-0.3.7.1-7NnF4RF8ZyHLp4JnTvgs2o:Web.Internal.FormUrlEncoded
+                         http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client
+                         iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-9BRunn4fZ2LJijFUX0wAoi:Data.IP.Range
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-7BN1tbB3iHQ2XgvmqLAYph:Network.URI
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.ContentTypes
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.IsSecure
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API.Verbs
+                         servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.Utils.Links
+                         servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Client
+                         servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Common.BaseUrl
+                         servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Common.Req
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uri-bytestring-0.2.3.3@uri-bytestring-0.2.3.3-Hc1wKsF7VwW2mAD17PrIxh:URI.ByteString.Types
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson 2c2ea416ea3f3f7ead4fbc7d22c60646
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-IYYaF432Hu8HQKp7no3ap1:Data.Aeson.TH 511e3a1fa647e5f2abbad14e1d7c044d
+import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client c24b93fb9a4ffed6f83b867cd78fc640
+import  -/  http-client-0.5.7.1@http-client-0.5.7.1-HDXEC4rM95fB9tiaeHmLsv:Network.HTTP.Client.Manager ec1048ad9168de451a632609ea4f7f08
+import  -/  servant-0.11@servant-0.11-344Z2ZonT0o1kvPHJTs9K5:Servant.API aa197f1858c0b040268c39ab9e5cdc03
+import  -/  servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Client 53700040ac10f0b2a7219dab4dd9f976
+import  -/  servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Common.BaseUrl 5830a6d9440b4528672a067361e48119
+import  -/  servant-client-0.11@servant-client-0.11-Iwm46QwUS366f3LDfutHMy:Servant.Common.Req ee80ccd314e79ef2bfd7299369c2891d
+import  -/  wai-3.2.1.1@wai-3.2.1.1-9FGPcqW2iUN5VP944fCq2b:Network.Wai 52b5e63d1a46c6e9b44e198225588b94
+import  -/  warp-3.2.13@warp-3.2.13-JeA4XUH1GfPICGzPbFBDHD:Network.Wai.Handler.Warp 8bf0d15acd9b2ed2ff3156a75854f721
+13cd20b3791c1ef243e9282caeddf8a7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Query.$trModule2 Query.$trModule1) -}
+315986051e745e5457d4f6d1241207c2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Query"#) -}
+1bc07b504ef4b58d2734f2d6d19f87c3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "MyApis-0.1.0.0-4WR5ldCHjnH8FhhTBR1aWU"#) -}
+a4596664863cc8b3f8252201147a86cd
+  $wquery ::
+    Servant.Common.Req.ClientM a
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either Servant.Common.Req.ServantError a #)
+  {- Arity: 4, Strictness: <L,1*C1(C1(U(U,U)))><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Servant.Common.Req.ClientM a)
+                   (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Types.Int)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.HTTP.Client.Manager.$wnewManager
+                        Network.HTTP.Client.Manager.defaultManagerSettings13
+                        Network.HTTP.Client.Manager.defaultManagerSettings10
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings9
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings6
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <Data.ByteString.Internal.ByteString
+                                   -> (Network.HTTP.Client.Types.Connection -> GHC.Types.IO ())
+                                   -> GHC.Base.String
+                                   -> GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Types.ResponseTimeoutDefault
+                        Network.HTTP.Client.Manager.defaultManagerSettings5
+                        Network.HTTP.Client.Manager.defaultManagerSettings3
+                          `cast`
+                        (forall (a1 :: <*>_N).
+                         <Network.HTTP.Client.Types.Request>_R
+                         ->_R <GHC.Types.IO a1>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings2
+                        (GHC.Base.returnIO1 @ Network.HTTP.Client.Types.Request)
+                          `cast`
+                        (<Network.HTTP.Client.Types.Request>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Network.HTTP.Client.Types.Request>_R))
+                        (GHC.Base.returnIO1
+                           @ (Network.HTTP.Client.Types.Response
+                                Network.HTTP.Client.Types.BodyReader))
+                          `cast`
+                        (<Network.HTTP.Client.Types.Response
+                            Network.HTTP.Client.Types.BodyReader>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <Network.HTTP.Client.Types.Response
+                                          Network.HTTP.Client.Types.BodyReader>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 (w `cast`
+                  (Trans
+                       (Servant.Common.Req.N:ClientM[0] <a>_N)
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N
+                            <Servant.Common.Req.ClientEnv>_R
+                            <Control.Monad.Trans.Except.ExceptT
+                               Servant.Common.Req.ServantError GHC.Types.IO>_R
+                            <a>_N))
+                    (Servant.Common.Req.ClientEnv
+                       ipv1
+                       (Servant.Common.BaseUrl.BaseUrl
+                          Servant.Common.BaseUrl.Http
+                          ww
+                          ww1
+                          (GHC.Types.[] @ GHC.Types.Char))))
+                   `cast`
+                 (Trans
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <Servant.Common.Req.ServantError>_N <GHC.Types.IO>_R <a>_N)
+                      (GHC.Types.N:IO[0]
+                           <Data.Either.Either Servant.Common.Req.ServantError a>_R))
+                   ipv }) -}
+a06bbda9213db32208e999e1a8109b55
+  $wqueryNStrip ::
+    Servant.Common.Req.ClientM Servant.Common.Req.ServantError
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Servant.Common.Req.ServantError #)
+  {- Arity: 4, Strictness: <L,1*C1(C1(U(U,1*U)))><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Servant.Common.Req.ClientM
+                           Servant.Common.Req.ServantError)
+                   (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Types.Int)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.HTTP.Client.Manager.$wnewManager
+                        Network.HTTP.Client.Manager.defaultManagerSettings13
+                        Network.HTTP.Client.Manager.defaultManagerSettings10
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings9
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings6
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <Data.ByteString.Internal.ByteString
+                                   -> (Network.HTTP.Client.Types.Connection -> GHC.Types.IO ())
+                                   -> GHC.Base.String
+                                   -> GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Types.ResponseTimeoutDefault
+                        Network.HTTP.Client.Manager.defaultManagerSettings5
+                        Network.HTTP.Client.Manager.defaultManagerSettings3
+                          `cast`
+                        (forall (a :: <*>_N).
+                         <Network.HTTP.Client.Types.Request>_R
+                         ->_R <GHC.Types.IO a>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings2
+                        (GHC.Base.returnIO1 @ Network.HTTP.Client.Types.Request)
+                          `cast`
+                        (<Network.HTTP.Client.Types.Request>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Network.HTTP.Client.Types.Request>_R))
+                        (GHC.Base.returnIO1
+                           @ (Network.HTTP.Client.Types.Response
+                                Network.HTTP.Client.Types.BodyReader))
+                          `cast`
+                        (<Network.HTTP.Client.Types.Response
+                            Network.HTTP.Client.Types.BodyReader>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <Network.HTTP.Client.Types.Response
+                                          Network.HTTP.Client.Types.BodyReader>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case (w `cast`
+                       (Trans
+                            (Servant.Common.Req.N:ClientM[0] <Servant.Common.Req.ServantError>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N
+                                 <Servant.Common.Req.ClientEnv>_R
+                                 <Control.Monad.Trans.Except.ExceptT
+                                    Servant.Common.Req.ServantError GHC.Types.IO>_R
+                                 <Servant.Common.Req.ServantError>_N))
+                         (Servant.Common.Req.ClientEnv
+                            ipv1
+                            (Servant.Common.BaseUrl.BaseUrl
+                               Servant.Common.BaseUrl.Http
+                               ww
+                               ww1
+                               (GHC.Types.[] @ GHC.Types.Char))))
+                        `cast`
+                      (Trans
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Servant.Common.Req.ServantError>_N
+                                <GHC.Types.IO>_R
+                                <Servant.Common.Req.ServantError>_N)
+                           (GHC.Types.N:IO[0]
+                                <Data.Either.Either
+                                   Servant.Common.Req.ServantError
+                                   Servant.Common.Req.ServantError>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   Data.Either.Left y -> (# ipv2, y #)
+                   Data.Either.Right x -> (# ipv2, x #) } } }) -}
+6d8a498feb2b890f3bd3ca680889e9e9
+  $wsimpleQuery ::
+    Servant.Common.Req.ClientM a
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 4, Strictness: <L,1*C1(C1(U(U,1*U)))><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Servant.Common.Req.ClientM a)
+                   (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Types.Int)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.HTTP.Client.Manager.$wnewManager
+                        Network.HTTP.Client.Manager.defaultManagerSettings13
+                        Network.HTTP.Client.Manager.defaultManagerSettings10
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings9
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings6
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <Data.ByteString.Internal.ByteString
+                                   -> (Network.HTTP.Client.Types.Connection -> GHC.Types.IO ())
+                                   -> GHC.Base.String
+                                   -> GHC.Base.Maybe Network.Socket.Types.HostAddress
+                                   -> GHC.Base.String
+                                   -> GHC.Types.Int
+                                   -> GHC.Types.IO Network.HTTP.Client.Types.Connection>_R))
+                        Network.HTTP.Client.Types.ResponseTimeoutDefault
+                        Network.HTTP.Client.Manager.defaultManagerSettings5
+                        Network.HTTP.Client.Manager.defaultManagerSettings3
+                          `cast`
+                        (forall (a1 :: <*>_N).
+                         <Network.HTTP.Client.Types.Request>_R
+                         ->_R <GHC.Types.IO a1>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings2
+                        (GHC.Base.returnIO1 @ Network.HTTP.Client.Types.Request)
+                          `cast`
+                        (<Network.HTTP.Client.Types.Request>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Network.HTTP.Client.Types.Request>_R))
+                        (GHC.Base.returnIO1
+                           @ (Network.HTTP.Client.Types.Response
+                                Network.HTTP.Client.Types.BodyReader))
+                          `cast`
+                        (<Network.HTTP.Client.Types.Response
+                            Network.HTTP.Client.Types.BodyReader>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <Network.HTTP.Client.Types.Response
+                                          Network.HTTP.Client.Types.BodyReader>_R))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        Network.HTTP.Client.Manager.defaultManagerSettings1
+                          `cast`
+                        (Trans
+                             (<GHC.Types.Bool>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Network.HTTP.Client.Types.Request
+                                             -> Network.HTTP.Client.Types.Request>_R))
+                             (Sym (Network.HTTP.Client.Types.N:ProxyOverride[0])))
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case (w `cast`
+                       (Trans
+                            (Servant.Common.Req.N:ClientM[0] <a>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N
+                                 <Servant.Common.Req.ClientEnv>_R
+                                 <Control.Monad.Trans.Except.ExceptT
+                                    Servant.Common.Req.ServantError GHC.Types.IO>_R
+                                 <a>_N))
+                         (Servant.Common.Req.ClientEnv
+                            ipv1
+                            (Servant.Common.BaseUrl.BaseUrl
+                               Servant.Common.BaseUrl.Http
+                               ww
+                               ww1
+                               (GHC.Types.[] @ GHC.Types.Char))))
+                        `cast`
+                      (Trans
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Servant.Common.Req.ServantError>_N <GHC.Types.IO>_R <a>_N)
+                           (GHC.Types.N:IO[0]
+                                <Data.Either.Either Servant.Common.Req.ServantError a>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   Data.Either.Left ds -> (# ipv2, GHC.Types.False #)
+                   Data.Either.Right ds -> (# ipv2, GHC.Types.True #) } } }) -}
+639a52ff202df8745ebb1624442f237f
+  query ::
+    Servant.Common.Req.ClientM a
+    -> (GHC.Base.String, GHC.Types.Int)
+    -> GHC.Types.IO
+         (Data.Either.Either Servant.Common.Req.ServantError a)
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,U)))><S,1*U(U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Query.query1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Servant.Common.Req.ClientM a>_R
+                 ->_R <(GHC.Base.String, GHC.Types.Int)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either Servant.Common.Req.ServantError a>_R)) -}
+09987265f10b55ae5c17bd88651b33eb
+  query1 ::
+    Servant.Common.Req.ClientM a
+    -> (GHC.Base.String, GHC.Types.Int)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either Servant.Common.Req.ServantError a #)
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,U)))><S,1*U(U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Servant.Common.Req.ClientM a)
+                   (w1 :: (GHC.Base.String, GHC.Types.Int))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { (,) ww1 ww2 -> Query.$wquery @ a w ww1 ww2 w2 }) -}
+cd9618912bf8251aea6d13f598e9e322
+  queryNStrip ::
+    Servant.Common.Req.ClientM Servant.Common.Req.ServantError
+    -> (GHC.Base.String, GHC.Types.Int)
+    -> GHC.Types.IO Servant.Common.Req.ServantError
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,1*U)))><S,1*U(U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Query.queryNStrip1
+                  `cast`
+                (<Servant.Common.Req.ClientM Servant.Common.Req.ServantError>_R
+                 ->_R <(GHC.Base.String, GHC.Types.Int)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Servant.Common.Req.ServantError>_R)) -}
+a8f110cc88027d34a126d0be39cbac7b
+  queryNStrip1 ::
+    Servant.Common.Req.ClientM Servant.Common.Req.ServantError
+    -> (GHC.Base.String, GHC.Types.Int)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Servant.Common.Req.ServantError #)
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,1*U)))><S,1*U(U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Servant.Common.Req.ClientM
+                           Servant.Common.Req.ServantError)
+                   (w1 :: (GHC.Base.String, GHC.Types.Int))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 Query.$wqueryNStrip w ww1 ww2 w2 }) -}
+c91034d97a39bae57a1019b9cf1aaac9
+  simpleQuery ::
+    Servant.Common.Req.ClientM a
+    -> (GHC.Base.String, GHC.Types.Int) -> GHC.Types.IO GHC.Types.Bool
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,1*U)))><S,1*U(U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Query.simpleQuery1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Servant.Common.Req.ClientM a>_R
+                 ->_R <(GHC.Base.String, GHC.Types.Int)>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
+8f5086463e720a94cdb2d255b84260dc
+  simpleQuery1 ::
+    Servant.Common.Req.ClientM a
+    -> (GHC.Base.String, GHC.Types.Int)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 3, Strictness: <L,1*C1(C1(U(U,1*U)))><S,1*U(U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Servant.Common.Req.ClientM a)
+                   (w1 :: (GHC.Base.String, GHC.Types.Int))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 Query.$wsimpleQuery @ a w ww1 ww2 w2 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

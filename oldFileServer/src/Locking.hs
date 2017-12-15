@@ -19,6 +19,7 @@ data FileState = Available
                deriving (Show, Generic)
 
 instance ToJSON FileState
+instance FromJSON FileState
 
 available   = Available
 readOnly    = ReadOnly
